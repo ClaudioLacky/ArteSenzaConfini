@@ -228,7 +228,6 @@ GameObject:
   - component: {fileID: 8107242}
   - component: {fileID: 8107241}
   - component: {fileID: 8107244}
-  - component: {fileID: 8107246}
   - component: {fileID: 8107245}
   m_Layer: 0
   m_Name: Bacio di Hayez
@@ -333,26 +332,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 8107238}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db113ad968d7ad84a87db49aa43bc12f, type: 3}
+  m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxInteractionDistance: 5
---- !u!114 &8107246
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8107238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f46d55866ee4a5143b2b9c4b39caf803, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  paintingImage: {fileID: 21300000, guid: edec22396e8850140af1648e87afc094, type: 3}
-  paintingTitle: Bacio di Heyez
-  customWidth: 500
-  customHeight: 500
+  image: {fileID: 21300000, guid: edec22396e8850140af1648e87afc094, type: 3}
+  size: {x: 200, y: 500}
+  text: Il bacio di Hayez
 --- !u!4 &11980699 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4667380264713814, guid: 3793ad411fa918d4685c2c4c1494c970, type: 3}
@@ -1597,54 +1582,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 490890, guid: 0401a3f0164b9cf40bd8c14f152e69ab, type: 3}
   m_PrefabInstance: {fileID: 605913940}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &141276620
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 141276622}
-  - component: {fileID: 141276621}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &141276621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 141276620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b299da5e3c6ab5948aeec3112f934f42, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  uiPanel: {fileID: 1444248593}
-  paintingImage: {fileID: 1574841390}
-  titleText: {fileID: 1209345007}
-  paintingImageRect: {fileID: 1574841388}
---- !u!4 &141276622
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 141276620}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -45.50293, y: 13.7813425, z: 59.800003}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &144684883
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9924,7 +9861,6 @@ GameObject:
   - component: {fileID: 711742309}
   - component: {fileID: 711742308}
   - component: {fileID: 711742311}
-  - component: {fileID: 711742313}
   - component: {fileID: 711742312}
   m_Layer: 0
   m_Name: Impressione, levar del sole
@@ -10029,26 +9965,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 711742305}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db113ad968d7ad84a87db49aa43bc12f, type: 3}
+  m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxInteractionDistance: 5
---- !u!114 &711742313
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 711742305}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f46d55866ee4a5143b2b9c4b39caf803, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  paintingImage: {fileID: 21300000, guid: 3b61cecf92df2214a9ae3e9facc8a3e9, type: 3}
-  paintingTitle: Impressione levar del sole
-  customWidth: 500
-  customHeight: 500
+  image: {fileID: 21300000, guid: 3b61cecf92df2214a9ae3e9facc8a3e9, type: 3}
+  size: {x: 200, y: 200}
+  text: Impressione sole nascente
 --- !u!1001 &713761401
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13279,6 +13201,55 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 5624604160975893476, guid: 911afdef4b782214b8634f0480d69a85, type: 3}
+--- !u!1 &965509339
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 965509341}
+  - component: {fileID: 965509340}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &965509340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965509339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db113ad968d7ad84a87db49aa43bc12f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 1444248593}
+  displayImage: {fileID: 1574841390}
+  displayText: {fileID: 1209345007}
+  cameraController: {fileID: 329310381}
+  id: Clickable
+--- !u!4 &965509341
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965509339}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 771.26544, y: 517.175, z: 246.17906}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &965799504
 GameObject:
   m_ObjectHideFlags: 0
@@ -22990,7 +22961,6 @@ GameObject:
   - component: {fileID: 1507199862}
   - component: {fileID: 1507199861}
   - component: {fileID: 1507199864}
-  - component: {fileID: 1507199866}
   - component: {fileID: 1507199865}
   m_Layer: 0
   m_Name: Persistenza della memoria
@@ -23095,26 +23065,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1507199858}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db113ad968d7ad84a87db49aa43bc12f, type: 3}
+  m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxInteractionDistance: 5
---- !u!114 &1507199866
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1507199858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f46d55866ee4a5143b2b9c4b39caf803, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  paintingImage: {fileID: 21300000, guid: a3213d99bec2e004cb84b83f48e6b7b5, type: 3}
-  paintingTitle: Persistenza della memoria
-  customWidth: 300
-  customHeight: 80000
+  image: {fileID: 21300000, guid: a3213d99bec2e004cb84b83f48e6b7b5, type: 3}
+  size: {x: 300, y: 300}
+  text: Persistenza della memoria
 --- !u!1 &1508607946 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3192135346236803323, guid: 911afdef4b782214b8634f0480d69a85, type: 3}
@@ -29800,8 +29756,6 @@ GameObject:
   - component: {fileID: 1987585482}
   - component: {fileID: 1987585481}
   - component: {fileID: 1987585484}
-  - component: {fileID: 1987585486}
-  - component: {fileID: 1987585485}
   m_Layer: 0
   m_Name: La lezione di danza
   m_TagString: Clickable
@@ -29896,35 +29850,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.0000002, y: 1, z: 6.123235e-17}
   m_Center: {x: -0.0000038146973, y: 0, z: 0}
---- !u!114 &1987585485
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1987585478}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db113ad968d7ad84a87db49aa43bc12f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxInteractionDistance: 5
---- !u!114 &1987585486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1987585478}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f46d55866ee4a5143b2b9c4b39caf803, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  paintingImage: {fileID: 21300000, guid: fdee87fc9220ccb429a3779d8944e1c6, type: 3}
-  paintingTitle: La lezione di danza
-  customWidth: 500
-  customHeight: 500
 --- !u!1001 &1988367558
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30819,7 +30744,6 @@ GameObject:
   - component: {fileID: 2078881978}
   - component: {fileID: 2078881977}
   - component: {fileID: 2078881980}
-  - component: {fileID: 2078881982}
   - component: {fileID: 2078881981}
   m_Layer: 0
   m_Name: Monna Lisa
@@ -30924,26 +30848,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2078881974}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db113ad968d7ad84a87db49aa43bc12f, type: 3}
+  m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxInteractionDistance: 5
---- !u!114 &2078881982
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2078881974}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f46d55866ee4a5143b2b9c4b39caf803, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  paintingImage: {fileID: 21300000, guid: 88ab9dc3177830d4c956529e2c2d37e5, type: 3}
-  paintingTitle: Mona Lisa
-  customWidth: 500
-  customHeight: 500
+  image: {fileID: 21300000, guid: 88ab9dc3177830d4c956529e2c2d37e5, type: 3}
+  size: {x: 300, y: 300}
+  text: Monna Lisa
 --- !u!4 &2078926852 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 490890, guid: 0401a3f0164b9cf40bd8c14f152e69ab, type: 3}
@@ -31704,4 +31614,4 @@ SceneRoots:
   - {fileID: 1309089240}
   - {fileID: 1785595586}
   - {fileID: 1771854733}
-  - {fileID: 141276622}
+  - {fileID: 965509341}
