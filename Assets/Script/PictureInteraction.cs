@@ -8,9 +8,9 @@ public class PictureInteraction : MonoBehaviour
     public GameObject panel; // Pannello che si apre
     public Image displayImage; // Immagine ingrandita nel pannello
     public TextMeshProUGUI displayText; // Testo nel pannello
-    public MonoBehaviour cameraController; // Controllore della camera
+    public float maxDistance = 5f;
 
-    public string id;
+    public string id = "Clickable";
 
     private bool isPanelActive = false; // Stato del pannello
     private Camera mainCamera;
@@ -18,7 +18,7 @@ public class PictureInteraction : MonoBehaviour
     void Start()
     {
         mainCamera = Camera.main;
-        panel.SetActive(false); // Nascondi il pannello all'inizio
+        panel.SetActive(isPanelActive); // Nascondi il pannello all'inizio
     }
 
     void Update()
@@ -28,7 +28,7 @@ public class PictureInteraction : MonoBehaviour
             Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
-            if (Physics.Raycast(ray, out hit, 10f)) // Cambia 10f con la distanza massima
+            if (Physics.Raycast(ray, out hit, maxDistance)) // Cambia 10f con la distanza massima
             {
                 if (hit.collider.CompareTag(id)) // Assicurati che il quadro abbia questo tag
                 {
@@ -54,35 +54,19 @@ public class PictureInteraction : MonoBehaviour
         displayImage.rectTransform.sizeDelta = data.size; // Imposta dimensione immagine
         displayText.text = data.text; // Imposta testo
 
-        panel.SetActive(true);
         isPanelActive = true;
+        panel.SetActive(isPanelActive);
 
-        // Disabilita il movimento della camera
-                if (cameraController != null)
-                {
-                    cameraController.enabled = false; // Disabilita il controllo della camera
-                }
+        Time.timeScale = 0f;  // Blocca il gioco
 
-        // Disabilita movimento (esempio per CharacterController)
-        var controller = FindObjectOfType<CharacterController>();
-        if (controller != null)
-            controller.enabled = false;
     }
 
     void ClosePanel()
     {
-        panel.SetActive(false);
+
         isPanelActive = false;
+        panel.SetActive(isPanelActive);
 
-        // Riabilita il movimento della camera
-                if (cameraController != null)
-                {
-                    cameraController.enabled = true; // Riabilita il controllo della camera
-                }
-
-        // Riabilita movimento
-        var controller = FindObjectOfType<CharacterController>();
-        if (controller != null)
-            controller.enabled = true;
+        Time.timeScale = 1f;  // Sblocca il gioco
     }
 }

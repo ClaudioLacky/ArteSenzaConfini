@@ -1,6 +1,5 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Collider))]
 public class PictureData : MonoBehaviour
 {
     public Sprite image; // Immagine del quadro
