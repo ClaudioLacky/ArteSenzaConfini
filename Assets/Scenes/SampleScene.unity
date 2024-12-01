@@ -1246,8 +1246,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 0}
-  size: {x: 0, y: 0}
+  image: {fileID: 21300000, guid: 429d9ea567495de40bf4606869ba9840, type: 3}
+  size: {x: 600, y: 600}
   text: "L'Elasticit\xE0"
 --- !u!65 &77651959
 BoxCollider:
@@ -3359,8 +3359,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 0}
-  size: {x: 0, y: 0}
+  image: {fileID: 21300000, guid: d8caaf25aab86d44da1477f7b7b386a2, type: 3}
+  size: {x: 393.9, y: 600}
   text: Lampada ad arco
 --- !u!65 &231575336
 BoxCollider:
@@ -3611,6 +3611,7 @@ GameObject:
   - component: {fileID: 247507464}
   - component: {fileID: 247507463}
   - component: {fileID: 247507462}
+  - component: {fileID: 247507465}
   m_Layer: 0
   m_Name: Gli Amanti
   m_TagString: Clickable
@@ -3706,6 +3707,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 247507460}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &247507465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 247507460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 21300000, guid: 3cd89b09d23bb3944b1e56e0d6c4a180, type: 3}
+  size: {x: 811.1, y: 600}
+  text: Gli amanti
 --- !u!1001 &253842960
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4656,7 +4672,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1247ac1671e3313479478955362e0b99, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1334142261}
   m_SourcePrefab: {fileID: 100100000, guid: 1247ac1671e3313479478955362e0b99, type: 3}
 --- !u!4 &324913353 stripped
 Transform:
@@ -6670,7 +6689,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.0000002, y: 0.99999994, z: 6.123235e-17}
+  m_Size: {x: 1.0000002, y: 1, z: 6.123235e-17}
   m_Center: {x: 0.0000009536743, y: 0.00000011920929, z: 0}
 --- !u!114 &479941405
 MonoBehaviour:
@@ -7008,11 +7027,12 @@ Transform:
   m_GameObject: {fileID: 497430515}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: -37.84, y: 2, z: 3.93}
+  m_LocalPosition: {x: -38.72, y: 1.8, z: 5.07}
   m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1413883867}
+  - {fileID: 1325934386}
   m_Father: {fileID: 1309089240}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -90}
 --- !u!1 &500654932
@@ -13794,7 +13814,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 531f033866bff414b9bf04bad0e8c4b2, type: 2}
+  - {fileID: 2100000, guid: 53e475692debba24a8f6031f18be0a40, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13857,7 +13877,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: 38d5e3c781e1426449bd2eaeb0d5beb4, type: 3}
+  image: {fileID: 21300000, guid: 53b160823aa7c0c4f8d3e9d05d998723, type: 3}
   size: {x: 484.6, y: 600}
   text: L'urlo
 --- !u!4 &955219668 stripped
@@ -14407,6 +14427,7 @@ GameObject:
   - component: {fileID: 981901737}
   - component: {fileID: 981901736}
   - component: {fileID: 981901735}
+  - component: {fileID: 981901738}
   m_Layer: 0
   m_Name: Il Tradimento delle Immagini
   m_TagString: Clickable
@@ -14502,6 +14523,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 981901733}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &981901738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981901733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 21300000, guid: 3489637a0a421b14c94a8c36d25c1d18, type: 3}
+  size: {x: 807, y: 600}
+  text: Il tradimento delle immagini
 --- !u!1 &984990003 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2526962886146384484, guid: 911afdef4b782214b8634f0480d69a85, type: 3}
@@ -15098,8 +15134,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 0}
-  size: {x: 0, y: 0}
+  image: {fileID: 21300000, guid: 9c7e7f1561f392e46a1a3739cfe256d7, type: 3}
+  size: {x: 427.2, y: 600}
   text: Ritratto di Ambroise Vollard
 --- !u!65 &1031122459
 BoxCollider:
@@ -18195,7 +18231,6 @@ Transform:
   - {fileID: 2068166764}
   - {fileID: 77651954}
   - {fileID: 231575331}
-  - {fileID: 1325934386}
   - {fileID: 497430516}
   - {fileID: 981901734}
   - {fileID: 247507461}
@@ -18520,13 +18555,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1325934385}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -37.7, y: 2.22, z: 3.9}
-  m_LocalScale: {x: 0.06, y: 0.06, z: 0.03}
+  m_LocalRotation: {x: 0.7071068, y: 0.7071068, z: -0, w: 0}
+  m_LocalPosition: {x: -1.499927, y: 7.00016, z: 11}
+  m_LocalScale: {x: 3, y: 3, z: 1.4999999}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 324913353}
-  m_Father: {fileID: 1309089240}
+  m_Father: {fileID: 497430516}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &1326757243
 PrefabInstance:
@@ -18617,6 +18652,32 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 5624604160975893476, guid: 911afdef4b782214b8634f0480d69a85, type: 3}
+--- !u!1 &1334142258 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1247ac1671e3313479478955362e0b99, type: 3}
+  m_PrefabInstance: {fileID: 324913352}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1334142261
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334142258}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 53.25902, y: 53.252422, z: 83.63005}
+  m_Center: {x: 0, y: 0, z: 41.804527}
 --- !u!1001 &1335011710
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19629,7 +19690,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9ce1b348a4aeb7048ae62e5e89267bf6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1525755108}
   m_SourcePrefab: {fileID: 100100000, guid: 9ce1b348a4aeb7048ae62e5e89267bf6, type: 3}
 --- !u!4 &1413883867 stripped
 Transform:
@@ -20861,7 +20925,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 88b88f875cf0af442996954ba27bdf64, type: 2}
     - target: {fileID: -5922730521982517193, guid: 911afdef4b782214b8634f0480d69a85, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 555
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -5909304921848704711, guid: 911afdef4b782214b8634f0480d69a85, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -24571,6 +24635,32 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 442750, guid: 3247a876b9df76e4187d8ddffa5028cb, type: 3}
   m_PrefabInstance: {fileID: 237635932}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1525755105 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9ce1b348a4aeb7048ae62e5e89267bf6, type: 3}
+  m_PrefabInstance: {fileID: 1413883866}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1525755108
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525755105}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 189.6274, y: 132.1467, z: 516.86365}
+  m_Center: {x: 20.833, y: 0.74684906, z: 257.9295}
 --- !u!1001 &1531877706
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26140,7 +26230,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c5d23cce4d5995348aea800f59c3c55b, type: 2}
+  - {fileID: 2100000, guid: c3a30c66bd4e497469ebe6f7b5f6f509, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -26182,8 +26272,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 0}
-  size: {x: 0, y: 0}
+  image: {fileID: 21300000, guid: 2e01d5e5f437eab4490af70bb289848f, type: 3}
+  size: {x: 799.2, y: 600}
   text: La colazione dei canottieri
 --- !u!65 &1644094158
 BoxCollider:
@@ -26409,8 +26499,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 0}
-  size: {x: 0, y: 0}
+  image: {fileID: 21300000, guid: 1dc6c3cd4bec7e64297508737bbce754, type: 3}
+  size: {x: 805.3, y: 600}
   text: Il Ballo al Moulin de la Galette
 --- !u!65 &1658784772
 BoxCollider:
@@ -27734,8 +27824,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 0}
-  size: {x: 0, y: 0}
+  image: {fileID: 21300000, guid: 500cdf02a1cb2b240aa0333d92792aab, type: 3}
+  size: {x: 525.5, y: 600}
   text: Il Giudizio universale
 --- !u!65 &1730971605
 BoxCollider:
@@ -31628,8 +31718,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 0}
-  size: {x: 0, y: 0}
+  image: {fileID: 21300000, guid: 749d7da8a96f6fd408b02275abe6f399, type: 3}
+  size: {x: 480, y: 600}
   text: 'Natura Morta Con Tovaglia '
 --- !u!65 &1986753398
 BoxCollider:
@@ -32687,8 +32777,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 0}
-  size: {x: 0, y: 0}
+  image: {fileID: 21300000, guid: 1212581cd7e375546b9b8592ebb2a048, type: 3}
+  size: {x: 489, y: 600}
   text: Case all'Estaque
 --- !u!65 &2068166769
 BoxCollider:
@@ -32841,8 +32931,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 0}
-  size: {x: 0, y: 0}
+  image: {fileID: 21300000, guid: 44f47515afee47644bc5798313ab483d, type: 3}
+  size: {x: 1333.3, y: 600}
   text: Le Ninfee
 --- !u!65 &2070262210
 BoxCollider:
@@ -33201,7 +33291,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c64ad6a87d8ca3f4d9c37fb06eb925f3, type: 2}
+  - {fileID: 2100000, guid: 44eb8d92f0aa94544aaaa823b64416e0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -33264,7 +33354,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: d9f2e96b634e9514e9cc6c4325cab987, type: 3}
+  image: {fileID: 21300000, guid: 7d3a059e5cc873144b80cd3b9a5bee17, type: 3}
   size: {x: 968.7, y: 600}
   text: Nascita di Venere
 --- !u!1 &2101303733 stripped
