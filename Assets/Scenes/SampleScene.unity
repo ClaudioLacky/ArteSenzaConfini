@@ -245,7 +245,7 @@ Transform:
   m_GameObject: {fileID: 8107238}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -29.31, y: 2.33, z: -35.85}
+  m_LocalPosition: {x: -29.439, y: 2.33, z: -35.85}
   m_LocalScale: {x: 1.7, y: 2.16, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -337,7 +337,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: edec22396e8850140af1648e87afc094, type: 3}
   size: {x: 200, y: 500}
-  text: Il bacio di Hayez
+  text: Il bacio
 --- !u!4 &11980699 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4667380264713814, guid: 3793ad411fa918d4685c2c4c1494c970, type: 3}
@@ -1159,7 +1159,8 @@ GameObject:
   - component: {fileID: 77651954}
   - component: {fileID: 77651957}
   - component: {fileID: 77651956}
-  - component: {fileID: 77651955}
+  - component: {fileID: 77651959}
+  - component: {fileID: 77651958}
   m_Layer: 0
   m_Name: "Elasticit\xE0"
   m_TagString: Untagged
@@ -1176,35 +1177,13 @@ Transform:
   m_GameObject: {fileID: 77651953}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.57, y: 2.66, z: 55.71}
+  m_LocalPosition: {x: -19.57, y: 2.66, z: 55.798}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 58103132}
   m_Father: {fileID: 1309089240}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &77651955
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 77651953}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &77651956
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1255,6 +1234,42 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 77651953}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &77651958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77651953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 0}
+  size: {x: 0, y: 0}
+  text: "L'Elasticit\xE0"
+--- !u!65 &77651959
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77651953}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 6.1232336e-17}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &82119183
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1269,7 +1284,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9157582319999989385, guid: 240d456f7bd617a42a4db760744cd66c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 9157582319999989385, guid: 240d456f7bd617a42a4db760744cd66c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1277,7 +1292,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9157582319999989385, guid: 240d456f7bd617a42a4db760744cd66c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.02
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 9157582319999989385, guid: 240d456f7bd617a42a4db760744cd66c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2204,6 +2219,7 @@ GameObject:
   - component: {fileID: 168752386}
   - component: {fileID: 168752385}
   - component: {fileID: 168752388}
+  - component: {fileID: 168752390}
   - component: {fileID: 168752389}
   m_Layer: 0
   m_Name: "Citt\xE0 che sale"
@@ -2221,7 +2237,7 @@ Transform:
   m_GameObject: {fileID: 168752382}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -29.35, y: 2.68, z: 34.14}
+  m_LocalPosition: {x: -29.42, y: 2.68, z: 34.14}
   m_LocalScale: {x: 6.04, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2311,6 +2327,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ce329ecf458ce64ea48b73e90eca6cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &168752390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168752382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 0}
+  size: {x: 0, y: 0}
+  text: "La citt\xE0 che sale"
 --- !u!4 &179660272 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4061433567504106, guid: c954a7e383194f246b3502f6c815acb4, type: 3}
@@ -2708,6 +2739,7 @@ GameObject:
   - component: {fileID: 195856717}
   - component: {fileID: 195856716}
   - component: {fileID: 195856719}
+  - component: {fileID: 195856721}
   - component: {fileID: 195856720}
   m_Layer: 0
   m_Name: Les Demoiselles d'Avignon
@@ -2815,6 +2847,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ce329ecf458ce64ea48b73e90eca6cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &195856721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195856713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 0}
+  size: {x: 0, y: 0}
+  text: Les Demoiselles d'Avignon
 --- !u!4 &196777598 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 491874, guid: 0d41f7c400e70b14784c7dc6996384f2, type: 3}
@@ -3373,7 +3420,8 @@ GameObject:
   - component: {fileID: 231575331}
   - component: {fileID: 231575334}
   - component: {fileID: 231575333}
-  - component: {fileID: 231575332}
+  - component: {fileID: 231575336}
+  - component: {fileID: 231575335}
   m_Layer: 0
   m_Name: Lampada ad arco
   m_TagString: Untagged
@@ -3397,28 +3445,6 @@ Transform:
   - {fileID: 82119184}
   m_Father: {fileID: 1309089240}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!64 &231575332
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 231575330}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &231575333
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3469,6 +3495,42 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 231575330}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &231575335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231575330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 0}
+  size: {x: 0, y: 0}
+  text: Lampada ad arco
+--- !u!65 &231575336
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231575330}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000002, y: 0.99999994, z: 6.123235e-17}
+  m_Center: {x: 0.0000076293945, y: 0, z: 0}
 --- !u!4 &234293400 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 462720, guid: 8b23b54510c08544b924f8e4502acc8f, type: 3}
@@ -3623,7 +3685,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9157582319999989385, guid: 240d456f7bd617a42a4db760744cd66c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.02
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 9157582319999989385, guid: 240d456f7bd617a42a4db760744cd66c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6556,6 +6618,7 @@ GameObject:
   - component: {fileID: 479941401}
   - component: {fileID: 479941400}
   - component: {fileID: 479941403}
+  - component: {fileID: 479941405}
   - component: {fileID: 479941404}
   m_Layer: 0
   m_Name: Guernica
@@ -6573,7 +6636,7 @@ Transform:
   m_GameObject: {fileID: 479941397}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -9.28, y: 2.64, z: 24.1}
+  m_LocalPosition: {x: -9.3, y: 2.64, z: 24.1}
   m_LocalScale: {x: 7.8, y: 3.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6663,6 +6726,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ce329ecf458ce64ea48b73e90eca6cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &479941405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479941397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 0}
+  size: {x: 0, y: 0}
+  text: Guernica
 --- !u!1 &480286970 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7755251282990857330, guid: 911afdef4b782214b8634f0480d69a85, type: 3}
@@ -6971,6 +7049,7 @@ GameObject:
   - component: {fileID: 500654936}
   - component: {fileID: 500654935}
   - component: {fileID: 500654938}
+  - component: {fileID: 500654940}
   - component: {fileID: 500654939}
   m_Layer: 0
   m_Name: Il bacio di Klimt
@@ -6988,7 +7067,7 @@ Transform:
   m_GameObject: {fileID: 500654932}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -11.16, y: 2.84, z: -11.8}
+  m_LocalPosition: {x: -9.95, y: 2.84, z: -11.8}
   m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7078,6 +7157,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ce329ecf458ce64ea48b73e90eca6cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &500654940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500654932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 0}
+  size: {x: 0, y: 0}
+  text: Il bacio
 --- !u!1 &501839918 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1387905957086926293, guid: 911afdef4b782214b8634f0480d69a85, type: 3}
@@ -7231,6 +7325,7 @@ GameObject:
   - component: {fileID: 510463640}
   - component: {fileID: 510463639}
   - component: {fileID: 510463642}
+  - component: {fileID: 510463644}
   - component: {fileID: 510463643}
   m_Layer: 0
   m_Name: Creazione di Adamo
@@ -7248,7 +7343,7 @@ Transform:
   m_GameObject: {fileID: 510463636}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 20.5, y: 2.72, z: -45.35}
+  m_LocalPosition: {x: 20.5, y: 2.72, z: -45.46}
   m_LocalScale: {x: 7.125, y: 3.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7338,6 +7433,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ce329ecf458ce64ea48b73e90eca6cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &510463644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510463636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 0}
+  size: {x: 0, y: 0}
+  text: Creazione di Adamo
 --- !u!1 &510836412 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3436175908704807724, guid: 911afdef4b782214b8634f0480d69a85, type: 3}
@@ -9435,6 +9545,7 @@ GameObject:
   - component: {fileID: 655446991}
   - component: {fileID: 655446990}
   - component: {fileID: 655446993}
+  - component: {fileID: 655446995}
   - component: {fileID: 655446994}
   m_Layer: 0
   m_Name: Viandante sul mare di nebbia
@@ -9452,7 +9563,7 @@ Transform:
   m_GameObject: {fileID: 655446987}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -9.92, y: 2.89, z: -36.96}
+  m_LocalPosition: {x: -9.91, y: 2.89, z: -36.96}
   m_LocalScale: {x: 1.5, y: 1.94, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9542,6 +9653,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ce329ecf458ce64ea48b73e90eca6cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &655446995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655446987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 0}
+  size: {x: 0, y: 0}
+  text: 'Il Viandante sul mare di nebbia '
 --- !u!4 &659169639 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4632248465466338, guid: d15d3707ee72e6e4992de2448a2bfccb, type: 3}
@@ -11317,7 +11443,8 @@ GameObject:
   - component: {fileID: 806922364}
   - component: {fileID: 806922367}
   - component: {fileID: 806922366}
-  - component: {fileID: 806922365}
+  - component: {fileID: 806922369}
+  - component: {fileID: 806922368}
   m_Layer: 0
   m_Name: Levar del sole
   m_TagString: Untagged
@@ -11334,35 +11461,13 @@ Transform:
   m_GameObject: {fileID: 806922363}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 30.03, y: 2.8, z: 52.75}
+  m_LocalPosition: {x: 30.079, y: 2.8, z: 52.75}
   m_LocalScale: {x: 1.33, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 940335455}
   m_Father: {fileID: 1309089240}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!64 &806922365
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 806922363}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &806922366
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11413,6 +11518,42 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 806922363}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &806922368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806922363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 0}
+  size: {x: 0, y: 0}
+  text: 'Impressione, levar del sole '
+--- !u!65 &806922369
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806922363}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000002, y: 1, z: 6.123235e-17}
+  m_Center: {x: -0.0000076293945, y: 0, z: 0}
 --- !u!1 &807094035 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6248615165812638482, guid: 911afdef4b782214b8634f0480d69a85, type: 3}
@@ -11746,6 +11887,7 @@ GameObject:
   - component: {fileID: 825872886}
   - component: {fileID: 825872885}
   - component: {fileID: 825872888}
+  - component: {fileID: 825872890}
   - component: {fileID: 825872889}
   m_Layer: 0
   m_Name: Dinamismo di un Cane al Guinzaglio
@@ -11763,7 +11905,7 @@ Transform:
   m_GameObject: {fileID: 825872882}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -10.06, y: 2.77, z: 22.88}
+  m_LocalPosition: {x: -9.927, y: 2.77, z: 22.88}
   m_LocalScale: {x: 1.82, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11853,6 +11995,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ce329ecf458ce64ea48b73e90eca6cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &825872890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825872882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 0}
+  size: {x: 0, y: 0}
+  text: Dinamismo di un cane al guinzaglio
 --- !u!1 &830526140 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8792795716136862693, guid: 911afdef4b782214b8634f0480d69a85, type: 3}
@@ -12589,6 +12746,7 @@ GameObject:
   - component: {fileID: 896533469}
   - component: {fileID: 896533468}
   - component: {fileID: 896533471}
+  - component: {fileID: 896533473}
   - component: {fileID: 896533472}
   m_Layer: 0
   m_Name: "La libert\xE0 che guida il popolo"
@@ -12606,7 +12764,7 @@ Transform:
   m_GameObject: {fileID: 896533465}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -20.02, y: 2.53, z: -45.43}
+  m_LocalPosition: {x: -20.02, y: 2.53, z: -45.46}
   m_LocalScale: {x: 6.25, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12696,6 +12854,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ce329ecf458ce64ea48b73e90eca6cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &896533473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896533465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 0}
+  size: {x: 0, y: 0}
+  text: "La Libert\xE0 che guida il popolo"
 --- !u!1001 &897604163
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13597,6 +13770,7 @@ GameObject:
   - component: {fileID: 955135690}
   - component: {fileID: 955135689}
   - component: {fileID: 955135692}
+  - component: {fileID: 955135694}
   - component: {fileID: 955135693}
   m_Layer: 0
   m_Name: L'urlo di Munch
@@ -13614,7 +13788,7 @@ Transform:
   m_GameObject: {fileID: 955135686}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -9.287, y: 2.87, z: -11.83}
+  m_LocalPosition: {x: -9.295, y: 2.87, z: -11.83}
   m_LocalScale: {x: 1.5, y: 1.85, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -13704,6 +13878,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ce329ecf458ce64ea48b73e90eca6cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &955135694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955135686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 0}
+  size: {x: 0, y: 0}
+  text: L'urlo
 --- !u!4 &955219668 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 446386, guid: c578b4309ba7d374a81ecb4ead9452b4, type: 3}
@@ -13775,6 +13964,7 @@ GameObject:
   - component: {fileID: 965799508}
   - component: {fileID: 965799507}
   - component: {fileID: 965799510}
+  - component: {fileID: 965799512}
   - component: {fileID: 965799511}
   m_Layer: 0
   m_Name: Il bar delle folies
@@ -13792,7 +13982,7 @@ Transform:
   m_GameObject: {fileID: 965799504}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 10.739, y: 2.59, z: 48.09}
+  m_LocalPosition: {x: 10.709, y: 2.59, z: 48.09}
   m_LocalScale: {x: 2.03, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -13882,6 +14072,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ce329ecf458ce64ea48b73e90eca6cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &965799512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965799504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 0}
+  size: {x: 0, y: 0}
+  text: "Il bar delle Folies-Berg\xE8re"
 --- !u!1 &965864978
 GameObject:
   m_ObjectHideFlags: 0
@@ -13894,6 +14099,7 @@ GameObject:
   - component: {fileID: 965864982}
   - component: {fileID: 965864981}
   - component: {fileID: 965864984}
+  - component: {fileID: 965864986}
   - component: {fileID: 965864985}
   m_Layer: 0
   m_Name: La Primavera
@@ -13911,7 +14117,7 @@ Transform:
   m_GameObject: {fileID: 965864978}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 30.036, y: 2.01, z: -12.13}
+  m_LocalPosition: {x: 30.083, y: 2.01, z: -12.13}
   m_LocalScale: {x: 3.85, y: 2.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -14001,6 +14207,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ce329ecf458ce64ea48b73e90eca6cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &965864986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965864978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 0}
+  size: {x: 0, y: 0}
+  text: La primavera
 --- !u!4 &966549798 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4441627224141016, guid: 95ad7e2cecb192d43a4a02f1b422beed, type: 3}
@@ -14619,7 +14840,8 @@ GameObject:
   - component: {fileID: 1031122454}
   - component: {fileID: 1031122457}
   - component: {fileID: 1031122456}
-  - component: {fileID: 1031122455}
+  - component: {fileID: 1031122459}
+  - component: {fileID: 1031122458}
   m_Layer: 0
   m_Name: Ritratto diAmbroise Vollard
   m_TagString: Untagged
@@ -14636,35 +14858,13 @@ Transform:
   m_GameObject: {fileID: 1031122453}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -9.24, y: 2.57, z: 48.11}
+  m_LocalPosition: {x: -9.293, y: 2.57, z: 48.11}
   m_LocalScale: {x: 1.13, y: 1.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1326757244}
   m_Father: {fileID: 1309089240}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!64 &1031122455
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1031122453}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1031122456
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14715,6 +14915,42 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031122453}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1031122458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031122453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 0}
+  size: {x: 0, y: 0}
+  text: Ritratto di Ambroise Vollard
+--- !u!65 &1031122459
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031122453}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000002, y: 1, z: 6.123235e-17}
+  m_Center: {x: 0, y: 0, z: 0.0000038146973}
 --- !u!1 &1031499659 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8659532965975645979, guid: 911afdef4b782214b8634f0480d69a85, type: 3}
@@ -23929,7 +24165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: a3213d99bec2e004cb84b83f48e6b7b5, type: 3}
   size: {x: 1000, y: 600}
-  text: Persistenza della memoria
+  text: La persistenza della memoria
 --- !u!1 &1508607946 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3192135346236803323, guid: 911afdef4b782214b8634f0480d69a85, type: 3}
@@ -24534,7 +24770,8 @@ GameObject:
   - component: {fileID: 1558768285}
   - component: {fileID: 1558768288}
   - component: {fileID: 1558768287}
-  - component: {fileID: 1558768286}
+  - component: {fileID: 1558768290}
+  - component: {fileID: 1558768289}
   m_Layer: 0
   m_Name: Notte stellata
   m_TagString: Untagged
@@ -24551,35 +24788,13 @@ Transform:
   m_GameObject: {fileID: 1558768284}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 10.06, y: 2.56, z: -13.14}
+  m_LocalPosition: {x: 10.084, y: 2.56, z: -13.14}
   m_LocalScale: {x: 1.89, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1116038932}
   m_Father: {fileID: 1309089240}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!64 &1558768286
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1558768284}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1558768287
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24630,6 +24845,42 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1558768284}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1558768289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558768284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 0}
+  size: {x: 0, y: 0}
+  text: La notte stellata
+--- !u!65 &1558768290
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558768284}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000002, y: 1, z: 6.123235e-17}
+  m_Center: {x: 0, y: -0.00000023841858, z: 0}
 --- !u!1 &1562249849 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -91497884308713725, guid: 911afdef4b782214b8634f0480d69a85, type: 3}
@@ -25368,6 +25619,7 @@ GameObject:
   - component: {fileID: 1627838186}
   - component: {fileID: 1627838185}
   - component: {fileID: 1627838188}
+  - component: {fileID: 1627838190}
   - component: {fileID: 1627838189}
   m_Layer: 0
   m_Name: La zattera della Medusa
@@ -25385,7 +25637,7 @@ Transform:
   m_GameObject: {fileID: 1627838182}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -29.15, y: 2.52, z: -17.62}
+  m_LocalPosition: {x: -29.45, y: 2.52, z: -17.62}
   m_LocalScale: {x: 7.29, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -25475,6 +25727,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ce329ecf458ce64ea48b73e90eca6cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1627838190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627838182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 0}
+  size: {x: 0, y: 0}
+  text: La zattera della Medusa
 --- !u!4 &1633356556 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 497062, guid: edfc85d2272c60b49beb757027f79980, type: 3}
@@ -25572,7 +25839,8 @@ GameObject:
   - component: {fileID: 1644094153}
   - component: {fileID: 1644094156}
   - component: {fileID: 1644094155}
-  - component: {fileID: 1644094154}
+  - component: {fileID: 1644094158}
+  - component: {fileID: 1644094157}
   m_Layer: 0
   m_Name: La Colazione dei Canottieri
   m_TagString: Untagged
@@ -25589,35 +25857,13 @@ Transform:
   m_GameObject: {fileID: 1644094152}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 30.04, y: 2.7, z: 23.74}
+  m_LocalPosition: {x: 30.05, y: 2.7, z: 23.74}
   m_LocalScale: {x: 3.1, y: 2.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 636362179}
   m_Father: {fileID: 1309089240}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!64 &1644094154
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1644094152}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1644094155
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25668,6 +25914,42 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1644094152}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1644094157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644094152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 0}
+  size: {x: 0, y: 0}
+  text: La colazione dei canottieri
+--- !u!65 &1644094158
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644094152}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000002, y: 1, z: 6.123235e-17}
+  m_Center: {x: -0.0000019073486, y: 0, z: -0.0000009536743}
 --- !u!1 &1646951064 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5216540151879444685, guid: 911afdef4b782214b8634f0480d69a85, type: 3}
@@ -25784,7 +26066,8 @@ GameObject:
   - component: {fileID: 1658784767}
   - component: {fileID: 1658784770}
   - component: {fileID: 1658784769}
-  - component: {fileID: 1658784768}
+  - component: {fileID: 1658784772}
+  - component: {fileID: 1658784771}
   m_Layer: 0
   m_Name: Il Ballo al Moulin de la Galette
   m_TagString: Untagged
@@ -25801,35 +26084,13 @@ Transform:
   m_GameObject: {fileID: 1658784766}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 30.07, y: 2.25, z: 45.33}
+  m_LocalPosition: {x: 30.085, y: 2.25, z: 45.33}
   m_LocalScale: {x: 3.1, y: 2.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1718891798}
   m_Father: {fileID: 1309089240}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!64 &1658784768
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658784766}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1658784769
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25880,6 +26141,42 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1658784766}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1658784771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658784766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 0}
+  size: {x: 0, y: 0}
+  text: Il Ballo al Moulin de la Galette
+--- !u!65 &1658784772
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658784766}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000002, y: 1, z: 6.123235e-17}
+  m_Center: {x: 0, y: 0.00000011920929, z: 0.0000009536743}
 --- !u!4 &1665129926 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4667380264713814, guid: 3793ad411fa918d4685c2c4c1494c970, type: 3}
@@ -27094,7 +27391,8 @@ GameObject:
   - component: {fileID: 1730971600}
   - component: {fileID: 1730971603}
   - component: {fileID: 1730971602}
-  - component: {fileID: 1730971601}
+  - component: {fileID: 1730971605}
+  - component: {fileID: 1730971604}
   m_Layer: 0
   m_Name: Giudizio Universale
   m_TagString: Untagged
@@ -27118,28 +27416,6 @@ Transform:
   - {fileID: 820415784}
   m_Father: {fileID: 1309089240}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!64 &1730971601
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1730971599}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1730971602
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27190,6 +27466,42 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1730971599}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1730971604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730971599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 0}
+  size: {x: 0, y: 0}
+  text: Il Giudizio universale
+--- !u!65 &1730971605
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730971599}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000004, y: 1, z: 6.123235e-17}
+  m_Center: {x: 0.0000009536743, y: 0.000000059604645, z: 0.0000019073486}
 --- !u!1 &1734220987
 GameObject:
   m_ObjectHideFlags: 0
@@ -30854,7 +31166,8 @@ GameObject:
   - component: {fileID: 1986753393}
   - component: {fileID: 1986753396}
   - component: {fileID: 1986753395}
-  - component: {fileID: 1986753394}
+  - component: {fileID: 1986753398}
+  - component: {fileID: 1986753397}
   m_Layer: 0
   m_Name: Natura Morta con Tovaglia a Quadri
   m_TagString: Untagged
@@ -30878,28 +31191,6 @@ Transform:
   - {fileID: 855629611}
   m_Father: {fileID: 1309089240}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!64 &1986753394
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1986753392}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1986753395
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30950,6 +31241,42 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1986753392}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1986753397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986753392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 0}
+  size: {x: 0, y: 0}
+  text: 'Natura Morta Con Tovaglia '
+--- !u!65 &1986753398
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986753392}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000002, y: 1, z: 6.123235e-17}
+  m_Center: {x: 0.0000038146973, y: 0, z: -0.0000019073486}
 --- !u!1 &1986932964 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7421686934836038364, guid: 911afdef4b782214b8634f0480d69a85, type: 3}
@@ -30989,6 +31316,7 @@ GameObject:
   - component: {fileID: 1987585482}
   - component: {fileID: 1987585481}
   - component: {fileID: 1987585484}
+  - component: {fileID: 1987585485}
   m_Layer: 0
   m_Name: La lezione di danza
   m_TagString: Clickable
@@ -31005,7 +31333,7 @@ Transform:
   m_GameObject: {fileID: 1987585478}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 10.8, y: 2.68, z: 23.19}
+  m_LocalPosition: {x: 10.72, y: 2.68, z: 23.19}
   m_LocalScale: {x: 2.17, y: 2.45, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -31083,6 +31411,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.0000002, y: 1, z: 6.123235e-17}
   m_Center: {x: -0.0000038146973, y: 0, z: 0}
+--- !u!114 &1987585485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987585478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 0}
+  size: {x: 0, y: 0}
+  text: La lezione di danza
 --- !u!1001 &1988367558
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31882,7 +32225,8 @@ GameObject:
   - component: {fileID: 2068166764}
   - component: {fileID: 2068166767}
   - component: {fileID: 2068166766}
-  - component: {fileID: 2068166765}
+  - component: {fileID: 2068166769}
+  - component: {fileID: 2068166768}
   m_Layer: 0
   m_Name: Case all'Estaque
   m_TagString: Untagged
@@ -31906,28 +32250,6 @@ Transform:
   - {fileID: 1315558439}
   m_Father: {fileID: 1309089240}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!64 &2068166765
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2068166763}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &2068166766
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -31978,6 +32300,42 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2068166763}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2068166768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068166763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 0}
+  size: {x: 0, y: 0}
+  text: Case all'Estaque
+--- !u!65 &2068166769
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068166763}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000002, y: 1, z: 6.123235e-17}
+  m_Center: {x: -0.0000076293945, y: 0, z: 0.0000019073486}
 --- !u!1 &2069481016 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6038389213227564698, guid: 911afdef4b782214b8634f0480d69a85, type: 3}
@@ -32021,7 +32379,8 @@ GameObject:
   - component: {fileID: 2070262205}
   - component: {fileID: 2070262208}
   - component: {fileID: 2070262207}
-  - component: {fileID: 2070262206}
+  - component: {fileID: 2070262210}
+  - component: {fileID: 2070262209}
   m_Layer: 0
   m_Name: Le Ninfee
   m_TagString: Untagged
@@ -32038,35 +32397,13 @@ Transform:
   m_GameObject: {fileID: 2070262204}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.81, y: 2.69, z: 55.58}
+  m_LocalPosition: {x: 19.81, y: 2.69, z: 55.81}
   m_LocalScale: {x: 10, y: 4.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1203544119}
   m_Father: {fileID: 1309089240}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &2070262206
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2070262204}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &2070262207
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -32117,6 +32454,42 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2070262204}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2070262209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070262204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 0}
+  size: {x: 0, y: 0}
+  text: Le Ninfee
+--- !u!65 &2070262210
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070262204}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1.0000001, z: 6.1232336e-17}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &2073285885 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4034965763944526, guid: fc7f1d4af8d817e4f98e42d198325d99, type: 3}
@@ -32300,7 +32673,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 88ab9dc3177830d4c956529e2c2d37e5, type: 3}
   size: {x: 300, y: 300}
-  text: Monna Lisa
+  text: La Gioconda
 --- !u!4 &2078926852 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 490890, guid: 0401a3f0164b9cf40bd8c14f152e69ab, type: 3}
@@ -32409,6 +32782,7 @@ GameObject:
   - component: {fileID: 2095137417}
   - component: {fileID: 2095137416}
   - component: {fileID: 2095137419}
+  - component: {fileID: 2095137421}
   - component: {fileID: 2095137420}
   m_Layer: 0
   m_Name: Nascita di Venere
@@ -32516,6 +32890,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ce329ecf458ce64ea48b73e90eca6cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2095137421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2095137413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 0}
+  size: {x: 0, y: 0}
+  text: Nascita di Venere
 --- !u!1 &2101303733 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1486887685701077878, guid: 911afdef4b782214b8634f0480d69a85, type: 3}
