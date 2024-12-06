@@ -10586,7 +10586,7 @@ Transform:
   m_GameObject: {fileID: 329310380}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 10.05, y: 1.51, z: 26.75}
+  m_LocalPosition: {x: -19.7, y: 3.2, z: 26.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12302,8 +12302,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -24}
-  m_SizeDelta: {x: 300, y: 300}
+  m_AnchoredPosition: {x: 0, y: 24}
+  m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &389395575
 MonoBehaviour:
@@ -29260,10 +29260,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 57ce36a91cdfef74094ab66fe6b77f5d, type: 3}
-  title: La Primavera
+  title: La primavera
   description: gfndfndmdmdmhmdmgmhhmhmd
   audioClip: {fileID: 8300000, guid: 6672c61dd479eb64187031b7cfc999aa, type: 3}
-  size: {x: 924.6, y: 600}
+  size: {x: 308, y: 200}
 --- !u!4 &966549798 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4441627224141016, guid: 95ad7e2cecb192d43a4a02f1b422beed, type: 3}
@@ -36246,14 +36246,14 @@ RectTransform:
   m_GameObject: {fileID: 1209345005}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1.0545225, y: 0.9757806, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1444248594}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -499, y: 235}
+  m_AnchoredPosition: {x: -269, y: 156}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1209345007
@@ -65728,10 +65728,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 88ab9dc3177830d4c956529e2c2d37e5, type: 3}
-  title: Monna Lisa
+  title: La Gioconda
   description: cllaudioooooo
   audioClip: {fileID: 8300000, guid: 83387b7b8dbd50c43b31dfcdeacafe5c, type: 3}
-  size: {x: 300, y: 300}
+  size: {x: 128.2, y: 200}
 --- !u!4 &2078926852 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 490890, guid: 0401a3f0164b9cf40bd8c14f152e69ab, type: 3}
