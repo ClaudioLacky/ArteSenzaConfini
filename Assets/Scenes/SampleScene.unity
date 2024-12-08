@@ -682,10 +682,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: b8fea9d7f58af6042aa4e3b3d5965191, type: 3}
-  title: 
+  title: L'Ultima Cena
   description: 
   audioClip: {fileID: 0}
-  size: {x: 1146.8, y: 600}
+  size: {x: 382.3, y: 200}
 --- !u!1 &8107238
 GameObject:
   m_ObjectHideFlags: 0
@@ -806,10 +806,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: edec22396e8850140af1648e87afc094, type: 3}
-  title: 
+  title: Il bacio
   description: 
   audioClip: {fileID: 0}
-  size: {x: 471, y: 600}
+  size: {x: 157.4, y: 200}
 --- !u!4 &11980699 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4667380264713814, guid: 3793ad411fa918d4685c2c4c1494c970, type: 3}
@@ -9180,10 +9180,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 1ad979f475dbf6a4fab64eda8d50c098, type: 3}
-  title: 
+  title: La Dama con l'ermellino
   description: 
   audioClip: {fileID: 0}
-  size: {x: 441.7, y: 600}
+  size: {x: 147.2, y: 200}
 --- !u!64 &291851092
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15659,10 +15659,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: d359d2cd4e533bc479503aff9623192e, type: 3}
-  title: 
+  title: 'Il bacio '
   description: 
   audioClip: {fileID: 0}
-  size: {x: 600, y: 600}
+  size: {x: 200, y: 200}
 --- !u!4 &501309619 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9190095107950864778, guid: 8949b4a88fb989e4483115e02dfafc96, type: 3}
@@ -15991,10 +15991,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: afb8514b2a254214396c63659a9175c9, type: 3}
-  title: 
+  title: Creazione di Adamo
   description: 
   audioClip: {fileID: 0}
-  size: {x: 1220, y: 600}
+  size: {x: 407.1, y: 200}
 --- !u!1 &510836412 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3436175908704807724, guid: 911afdef4b782214b8634f0480d69a85, type: 3}
@@ -20250,10 +20250,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 0db0de9fee74f4d4f8267bb447bd1817, type: 3}
-  title: 
+  title: 'Il Viandante sul mare di nebbia '
   description: 
   audioClip: {fileID: 0}
-  size: {x: 464, y: 600}
+  size: {x: 154.64, y: 200}
 --- !u!1001 &655990059
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24396,10 +24396,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 3b61cecf92df2214a9ae3e9facc8a3e9, type: 3}
-  title: 
+  title: 'Impressione, levar del sole '
   description: 
   audioClip: {fileID: 0}
-  size: {x: 787, y: 600}
+  size: {x: 266, y: 200}
 --- !u!65 &806922369
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27362,10 +27362,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 389d7ad4ad38f994ab1fdc13cd7b95c5, type: 3}
-  title: 
+  title: "La Libert\xE0 che guida il popolo"
   description: 
   audioClip: {fileID: 0}
-  size: {x: 750, y: 600}
+  size: {x: 250, y: 200}
 --- !u!1001 &897604163
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46363,10 +46363,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 09ab79bc5b6821643a75a09d9123ec06, type: 3}
-  title: 
+  title: La Scuola di Atene
   description: 
   audioClip: {fileID: 0}
-  size: {x: 840, y: 600}
+  size: {x: 280, y: 200}
 --- !u!64 &1451946174
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -49179,10 +49179,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 555d1ea868652804ab267e1b7de88481, type: 3}
-  title: 
+  title: La notte stellata
   description: 
   audioClip: {fileID: 0}
-  size: {x: 749.8, y: 600}
+  size: {x: 252, y: 200}
 --- !u!65 &1558768290
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51470,10 +51470,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 6d38d6ed822ca2043beeffbbeb6cf881, type: 3}
-  title: 
+  title: La zattera della Medusa
   description: 
   audioClip: {fileID: 0}
-  size: {x: 875, y: 600}
+  size: {x: 291.6, y: 200}
 --- !u!4 &1633356556 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 497062, guid: edfc85d2272c60b49beb757027f79980, type: 3}
@@ -52085,10 +52085,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 1dc6c3cd4bec7e64297508737bbce754, type: 3}
-  title: 
+  title: Il Ballo al Moulin de la Galette
   description: 
   audioClip: {fileID: 0}
-  size: {x: 805.3, y: 600}
+  size: {x: 248, y: 200}
 --- !u!65 &1658784772
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -65985,10 +65985,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 7d3a059e5cc873144b80cd3b9a5bee17, type: 3}
-  title: 
+  title: Nascita di Venere
   description: 
   audioClip: {fileID: 0}
-  size: {x: 968.7, y: 600}
+  size: {x: 322.9, y: 200}
 --- !u!1001 &2099422097
 PrefabInstance:
   m_ObjectHideFlags: 0
