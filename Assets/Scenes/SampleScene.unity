@@ -171,10 +171,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 6deaaa2b11958424fb40aabfc7bcc678, type: 3}
-  title: 
+  title: Gold Marilyn Monroe
   description: 
   audioClip: {fileID: 0}
-  size: {x: 600, y: 600}
+  size: {x: 200, y: 200}
 --- !u!64 &64415
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -296,10 +296,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 9b5583ed884b4294b8f0369cc2e21a36, type: 3}
-  title: 
+  title: Girasoli
   description: 
   audioClip: {fileID: 0}
-  size: {x: 476.1, y: 600}
+  size: {x: 159.1, y: 200}
 --- !u!64 &1608710
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2630,10 +2630,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 429d9ea567495de40bf4606869ba9840, type: 3}
-  title: 
+  title: "L'Elasticit\xE0"
   description: 
   audioClip: {fileID: 0}
-  size: {x: 600, y: 600}
+  size: {x: 200, y: 200}
 --- !u!65 &77651959
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5135,10 +5135,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 5779ef621fec99c488cc0d005d66a963, type: 3}
-  title: 
+  title: "La citt\xE0 che sale"
   description: 
   audioClip: {fileID: 0}
-  size: {x: 906, y: 600}
+  size: {x: 302, y: 200}
 --- !u!4 &171352004 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 323447626348936477, guid: 09f62888a31213240ab1388135e1f1a6, type: 3}
@@ -7331,10 +7331,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: d8354fc0dfc0b714ab4db12c6171cbaf, type: 3}
-  title: 
+  title: I tre musici
   description: 
   audioClip: {fileID: 0}
-  size: {x: 666.4, y: 600}
+  size: {x: 221.6, y: 200}
 --- !u!64 &231238653
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7506,10 +7506,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: d8caaf25aab86d44da1477f7b7b386a2, type: 3}
-  title: 
+  title: Lampada ad arco
   description: 
   audioClip: {fileID: 0}
-  size: {x: 393.9, y: 600}
+  size: {x: 131.3, y: 200}
 --- !u!65 &231575336
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8125,10 +8125,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 3cd89b09d23bb3944b1e56e0d6c4a180, type: 3}
-  title: 
+  title: Gli amanti
   description: 
   audioClip: {fileID: 0}
-  size: {x: 811.1, y: 600}
+  size: {x: 270, y: 200}
 --- !u!1001 &249425491
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9513,10 +9513,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 38b20aca43c95fa439436e96bd76856b, type: 3}
-  title: 
+  title: L.H.O.O.Q.
   description: 
   audioClip: {fileID: 0}
-  size: {x: 412, y: 600}
+  size: {x: 138.3, y: 200}
 --- !u!64 &298362120
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10865,10 +10865,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 4cf5e4d40bdfceb4d9ce0ba5cde37722, type: 3}
-  title: 
+  title: Bambina con il palloncino
   description: 
   audioClip: {fileID: 0}
-  size: {x: 300, y: 600}
+  size: {x: 100, y: 200}
 --- !u!64 &334383055
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14773,10 +14773,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 8dd103f3394b855438ae70e0030c26d4, type: 3}
-  title: 
+  title: Guernica
   description: 
   audioClip: {fileID: 0}
-  size: {x: 1336, y: 600}
+  size: {x: 445.7, y: 200}
 --- !u!1 &480286970 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7755251282990857330, guid: 911afdef4b782214b8634f0480d69a85, type: 3}
@@ -14940,10 +14940,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 1520c14bc079f8848a80f36db88c4702, type: 3}
-  title: 
+  title: "La Grenouill\xE8re "
   description: 
   audioClip: {fileID: 0}
-  size: {x: 736.4, y: 600}
+  size: {x: 245.3, y: 200}
 --- !u!64 &482073139
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21173,10 +21173,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 40c88a8dd2791fc4d8de6632f65eced6, type: 3}
-  title: 
+  title: I nottambuli
   description: 
   audioClip: {fileID: 0}
-  size: {x: 1087.3, y: 600}
+  size: {x: 362, y: 200}
 --- !u!64 &704580014
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -24982,10 +24982,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 650225d779f82b644bba6e89c480fd95, type: 3}
-  title: 
+  title: Dinamismo di un cane al guinzaglio
   description: 
   audioClip: {fileID: 0}
-  size: {x: 726, y: 600}
+  size: {x: 242.7, y: 200}
 --- !u!1 &827527516 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ed64eb9a0672aabe0bb601171dea2cb7, type: 3}
@@ -28953,10 +28953,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 53b160823aa7c0c4f8d3e9d05d998723, type: 3}
-  title: 
+  title: L'urlo
   description: 
   audioClip: {fileID: 0}
-  size: {x: 484.6, y: 600}
+  size: {x: 162.2, y: 200}
 --- !u!4 &955219668 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 446386, guid: c578b4309ba7d374a81ecb4ead9452b4, type: 3}
@@ -29136,10 +29136,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: f34297e35e9e25741b89028a53b77888, type: 3}
-  title: 
+  title: "Il bar delle Folies-Berg\xE8re"
   description: 
   audioClip: {fileID: 0}
-  size: {x: 812, y: 600}
+  size: {x: 270.7, y: 200}
 --- !u!1 &965864978
 GameObject:
   m_ObjectHideFlags: 0
@@ -29835,10 +29835,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 3489637a0a421b14c94a8c36d25c1d18, type: 3}
-  title: 
+  title: Il tradimento delle immagini
   description: 
   audioClip: {fileID: 0}
-  size: {x: 807, y: 600}
+  size: {x: 271.2, y: 200}
 --- !u!1001 &982902039
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30565,10 +30565,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 5e9d3b0d5f93dc44ba28cf70e6c4bfd2, type: 3}
-  title: 
+  title: Les Demoiselles d'Avignon
   description: 
   audioClip: {fileID: 0}
-  size: {x: 574, y: 600}
+  size: {x: 191.6, y: 200}
 --- !u!64 &1006999858
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -31376,10 +31376,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 9c7e7f1561f392e46a1a3739cfe256d7, type: 3}
-  title: 
+  title: Ritratto di Ambroise Vollard
   description: 
   audioClip: {fileID: 0}
-  size: {x: 427.2, y: 600}
+  size: {x: 141.25, y: 200}
 --- !u!65 &1031122459
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36246,14 +36246,14 @@ RectTransform:
   m_GameObject: {fileID: 1209345005}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0545225, y: 0.9757806, z: 1}
+  m_LocalScale: {x: 1.02082, y: 0.9757806, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1444248594}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -269, y: 156}
+  m_AnchoredPosition: {x: -253.8, y: 156}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1209345007
@@ -47874,10 +47874,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: a3213d99bec2e004cb84b83f48e6b7b5, type: 3}
-  title: 
+  title: La persistenza della memoria
   description: 
   audioClip: {fileID: 0}
-  size: {x: 962, y: 600}
+  size: {x: 274.7, y: 200}
 --- !u!1 &1508607946 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3192135346236803323, guid: 911afdef4b782214b8634f0480d69a85, type: 3}
@@ -51729,10 +51729,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 2e01d5e5f437eab4490af70bb289848f, type: 3}
-  title: 
+  title: La colazione dei canottieri
   description: 
   audioClip: {fileID: 0}
-  size: {x: 799.2, y: 600}
+  size: {x: 248, y: 200}
 --- !u!65 &1644094158
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -60010,10 +60010,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: ce0a7ee72161f494d9538ea4f2035aac, type: 3}
-  title: 
+  title: Composizione VIII
   description: 
   audioClip: {fileID: 0}
-  size: {x: 861.4, y: 600}
+  size: {x: 286.7, y: 200}
 --- !u!64 &1902061892
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -62687,10 +62687,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 749d7da8a96f6fd408b02275abe6f399, type: 3}
-  title: 
+  title: 'Natura Morta Con Tovaglia '
   description: 
   audioClip: {fileID: 0}
-  size: {x: 480, y: 600}
+  size: {x: 133.3, y: 200}
 --- !u!65 &1986753398
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -62924,10 +62924,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: fdee87fc9220ccb429a3779d8944e1c6, type: 3}
-  title: 
+  title: La lezione di danza
   description: 
   audioClip: {fileID: 0}
-  size: {x: 529, y: 600}
+  size: {x: 177.2, y: 200}
 --- !u!1 &1987943045
 GameObject:
   m_ObjectHideFlags: 0
@@ -63209,10 +63209,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 6ea6d6343645b5647b8cc8c22280e6e9, type: 3}
-  title: 
+  title: La Grande Jatte
   description: 
   audioClip: {fileID: 0}
-  size: {x: 892.8, y: 600}
+  size: {x: 297.3, y: 200}
 --- !u!64 &1993218289
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -63522,10 +63522,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 848ef545fa3db3242839443afdd56865, type: 3}
-  title: 
+  title: Composizione in rosso, giallo, blu e nero
   description: 
   audioClip: {fileID: 0}
-  size: {x: 600, y: 600}
+  size: {x: 200, y: 200}
 --- !u!64 &2000951292
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -65057,10 +65057,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: e3a8d998d9600634dacc36a52bf45b0e, type: 3}
-  title: 
+  title: Il figlio dell'uomo
   description: 
   audioClip: {fileID: 0}
-  size: {x: 460.3, y: 600}
+  size: {x: 154.5, y: 200}
 --- !u!64 &2058804118
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -65484,10 +65484,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 1212581cd7e375546b9b8592ebb2a048, type: 3}
-  title: 
+  title: Case all'Estaque
   description: 
   audioClip: {fileID: 0}
-  size: {x: 489, y: 600}
+  size: {x: 162.7, y: 200}
 --- !u!65 &2068166769
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -66872,10 +66872,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: a6e6b0b7734883641be64f978313fee4, type: 3}
-  title: 
+  title: Campo di grano con voli di corvi
   description: 
   audioClip: {fileID: 0}
-  size: {x: 1223.8, y: 600}
+  size: {x: 413.3, y: 200}
 --- !u!64 &2127770202
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -66997,10 +66997,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 86e656bf8b6ddac40a108c3d234c5256, type: 3}
-  title: 
+  title: Sera sul viale karl johan
   description: 
   audioClip: {fileID: 0}
-  size: {x: 859.2, y: 600}
+  size: {x: 286, y: 200}
 --- !u!64 &2128016005
 MeshCollider:
   m_ObjectHideFlags: 0

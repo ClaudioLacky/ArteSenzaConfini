@@ -21,11 +21,7 @@ public class AudioManager : MonoBehaviour
 
             audioSource.Stop();  // Ferma l'audio precedente
             audioSource.Play();  // Avvia la riproduzione dell'audio
-            Debug.Log("Audio aggiornato e riprodotto: " + newAudioClip.name); // Debugging
-        }
-        else
-        {
-            Debug.Log("Audio già in riproduzione, nessuna modifica: " + currentAudioClip.name); // Debugging
+
         }
     }
 
