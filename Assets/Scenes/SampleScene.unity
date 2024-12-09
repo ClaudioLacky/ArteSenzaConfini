@@ -812,7 +812,7 @@ MonoBehaviour:
     sapiente della prospettiva che guida lo sguardo verso la figura centrale di Ges\xF9.
     L\u2019opera cattura la tensione e la drammaticit\xE0 del momento, rendendola
     un\u2019icona universale. "
-  audioClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: bcdcf1d881fabbb45bf7713594a6ce72, type: 3}
   size: {x: 382.3, y: 200}
 --- !u!1 &8013039
 GameObject:
@@ -976,7 +976,7 @@ MonoBehaviour:
     drammatica, si inserisce in un contesto di lotta sociale e politica, diventando
     un emblema del romanticismo e delle speranze di riscatto della societ\xE0 italiana
     dell'epoca. "
-  audioClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: baa44b633b81b3e41bdf30a7c389b0f5, type: 3}
   size: {x: 157.4, y: 200}
 --- !u!1 &10414624
 GameObject:
@@ -13672,12 +13672,12 @@ MonoBehaviour:
   image: {fileID: 21300000, guid: 1ad979f475dbf6a4fab64eda8d50c098, type: 3}
   title: La Dama con l'ermellino
   description: "La Dama con l\u2019ermellino, dipinta da Leonardo da Vinci, ritrae
-    una giovane donna, Cecilia Gallerani, con uno sguardo sereno e un elegante ermellino
-    tra le braccia. L\u2019opera si distingue per la sua raffinatezza nei dettagli,
-    come l\u2019illuminazione che modella il volto e l\u2019espressione vivace del
-    soggetto. Il rapporto tra la dama e l\u2019ermellino simboleggia purezza e virt\xF9,
-    aggiungendo profondit\xE0 simbolica a questo straordinario ritratto. "
-  audioClip: {fileID: 0}
+    una giovane donna, con uno sguardo sereno e un elegante ermellino tra le braccia.
+    L\u2019opera si distingue per la sua raffinatezza nei dettagli, come l\u2019illuminazione
+    che modella il volto e l\u2019espressione vivace del soggetto. Il rapporto tra
+    la dama e l\u2019ermellino simboleggia purezza e virt\xF9, aggiungendo profondit\xE0
+    simbolica a questo straordinario ritratto. "
+  audioClip: {fileID: 8300000, guid: 06815dc566edcf245a948ab626523859, type: 3}
   size: {x: 147.2, y: 200}
 --- !u!64 &291851092
 MeshCollider:
@@ -24758,7 +24758,7 @@ MonoBehaviour:
     mentre Adamo \xE8 raffigurato con un corpo idealizzato, esprimendo l\u2019umanit\xE0
     in tutta la sua perfezione. L\u2019opera \xE8 un\u2019emblema della creazione
     e della connessione tra l\u2019umano e il divino. "
-  audioClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 31c71bac7dc803046a938abbf38553b7, type: 3}
   size: {x: 407.1, y: 200}
 --- !u!1 &510836412 stripped
 GameObject:
@@ -32961,7 +32961,7 @@ MonoBehaviour:
     con l'uomo che sembra confrontarsi con la vastit\xE0 della natura. L'opera, tipica
     del romanticismo, esplora il tema dell'individuo di fronte all'infinito e all'ignoto,
     utilizzando la nebbia e il paesaggio come metafore della condizione umana. "
-  audioClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: b09173ad9d2d5ab4690770090213d14d, type: 3}
   size: {x: 154.64, y: 200}
 --- !u!1001 &655990059
 PrefabInstance:
@@ -39775,14 +39775,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 3b61cecf92df2214a9ae3e9facc8a3e9, type: 3}
   title: 'Impressione, levar del sole '
-  description: "Impressione, sole nascente, dipinta da Claude Monet, cattura l'alba
+  description: "Impressione, levar del sole, dipinta da Claude Monet, cattura l'alba
     sul porto di Le Havre, immerso in una luce morbida e sfumata. La scena \xE8 dominata
     da riflessi dell'acqua e da una nebbiolina che avvolge l'ambiente, dando un senso
     di intangibilit\xE0 e movimento. Monet utilizza colori vividi e pennellate rapide,
     caratteristiche tipiche dell'impressionismo, per trasmettere l'effetto della
     luce naturale e l'impressione fugace del momento, anzich\xE9 una resa realistica
     dei dettagli. "
-  audioClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: d5327f4efe5225747a748b75945b779b, type: 3}
   size: {x: 266, y: 200}
 --- !u!65 &806922369
 BoxCollider:
@@ -45256,13 +45256,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 389d7ad4ad38f994ab1fdc13cd7b95c5, type: 3}
   title: "La Libert\xE0 che guida il popolo"
-  description: "La Libert\xE0 che Guida il Popolo, dipinta da Eug\xE8ne Delacroix,
-    rappresenta un momento di lotta e speranza durante le rivoluzioni del XIX secolo.
-    La figura centrale, personificazione della Libert\xE0, \xE8 una donna che solleva
-    la bandiera tricolore mentre guida un gruppo di rivoluzionari di diverse classi
-    sociali. L'opera \xE8 un simbolo di lotta per la libert\xE0 e l'uguaglianza,
-    con un forte dinamismo e un uso di colori vivaci che esprimono passione e determinazione.  "
-  audioClip: {fileID: 0}
+  description: "La Libert\xE0 che Guida il Popolo, dipinta da Delacroix, rappresenta
+    un momento di lotta e speranza durante le rivoluzioni del XIX secolo. La figura
+    centrale, personificazione della Libert\xE0, \xE8 una donna che solleva la bandiera
+    tricolore mentre guida un gruppo di rivoluzionari di diverse classi sociali.
+    L'opera \xE8 un simbolo di lotta per la libert\xE0 e l'uguaglianza, con un forte
+    dinamismo e un uso di colori vivaci che esprimono passione e determinazione.  "
+  audioClip: {fileID: 8300000, guid: 273ced3f81ed4fa4e99524856d5472b3, type: 3}
   size: {x: 250, y: 200}
 --- !u!1001 &897604163
 PrefabInstance:
@@ -73899,7 +73899,7 @@ MonoBehaviour:
     con figure che dialogano e si confrontano sotto una maestosa architettura. L'uso
     della prospettiva e la disposizione dinamica dei personaggi conferiscono all\u2019opera
     una straordinaria profondit\xE0 e un senso di equilibrio tra filosofia e arte. "
-  audioClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 695b65cbfd425b6428f877fee968f126, type: 3}
   size: {x: 280, y: 200}
 --- !u!64 &1451946174
 MeshCollider:
@@ -78702,7 +78702,7 @@ MonoBehaviour:
     cielo. L'opera trasmette una sensazione di movimento e intensit\xE0 emotiva,
     rendendo la bellezza della natura e la profondit\xE0 dell\u2019animo umano attraverso
     pennellate dinamiche e un uso "
-  audioClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: c34b72dca9c5eb141b76a3f15624a0c0, type: 3}
   size: {x: 252, y: 200}
 --- !u!65 &1558768290
 BoxCollider:
@@ -83999,14 +83999,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 1dc6c3cd4bec7e64297508737bbce754, type: 3}
   title: Il Ballo al Moulin de la Galette
-  description: "Il Ballo al Moulin de la Galette, dipinto da Pierre-Auguste Renoir,
-    ritrae una scena vivace di socialit\xE0 e danza all'aperto, in una tipica domenica
-    parigina. La composizione cattura l'atmosfera gioiosa di un ballo tra amici,
-    con figure sorridenti e abbigliate elegantemente, immerse in una luce calda e
-    morbida. Renoir utilizza pennellate fluide e colori vivaci per esprimere la vitalit\xE0
-    e il movimento, trasmettendo un senso di leggerezza e spensieratezza tipico della
-    Parigi dell'epoca. "
-  audioClip: {fileID: 0}
+  description: "Il Ballo al Moulin de la Galette, dipinto da Renoir, ritrae una scena
+    vivace di socialit\xE0 e danza all'aperto, in una tipica domenica parigina. La
+    composizione cattura l'atmosfera gioiosa di un ballo tra amici, con figure sorridenti
+    e abbigliate elegantemente, immerse in una luce calda e morbida. Renoir utilizza
+    pennellate fluide e colori vivaci per esprimere la vitalit\xE0 e il movimento,
+    trasmettendo un senso di leggerezza e spensieratezza tipico della Parigi dell'epoca. "
+  audioClip: {fileID: 8300000, guid: f6fa54bfaab7f974eafe0eec70a38981, type: 3}
   size: {x: 248, y: 200}
 --- !u!65 &1658784772
 BoxCollider:
