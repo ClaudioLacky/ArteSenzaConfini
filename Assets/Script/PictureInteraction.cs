@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Collections;
 
 public class PictureInteraction : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class PictureInteraction : MonoBehaviour
     public TextMeshProUGUI displayText; // Testo nel pannello
     public TextMeshProUGUI descriptionText; // Descrizione nel pannello
     public float maxDistance = 5f;
+    public float wordDelay = 0.6f; // Ritardo tra una parola e l'altra
 
     public string id = "Clickable"; // Tag per identificare il quadro
 
@@ -16,6 +18,7 @@ public class PictureInteraction : MonoBehaviour
     private Camera mainCamera;
 
     private AudioManager audioManager; // Riferimento all'AudioManager
+    private Coroutine descriptionCoroutine; // Riferimento alla coroutine attiva
 
     void Start()
     {
@@ -53,11 +56,17 @@ public class PictureInteraction : MonoBehaviour
 
     void OpenPanel(PictureData data)
     {
-        // Imposta immagine, titolo, descrizione e dimensione dell'immagine
+        // Imposta immagine, titolo e dimensione dell'immagine
         displayImage.sprite = data.image;
         displayImage.rectTransform.sizeDelta = data.size;
         displayText.text = data.title;
-        descriptionText.text = data.description;
+
+        // Avvia la visualizzazione graduale della descrizione
+        if (descriptionCoroutine != null)
+        {
+            StopCoroutine(descriptionCoroutine);
+        }
+        descriptionCoroutine = StartCoroutine(DisplayDescription(data.description));
 
         // Controlla se il PictureData ha un AudioClip e passa l'audio all'AudioManager
         if (data.audioClip != null)
@@ -86,9 +95,23 @@ public class PictureInteraction : MonoBehaviour
 
         // Ferma l'audio
         audioManager.StopAudio();
+
+        // Ferma la visualizzazione della descrizione
+        if (descriptionCoroutine != null)
+        {
+            StopCoroutine(descriptionCoroutine);
+            descriptionCoroutine = null;
+        }
+    }
+
+    IEnumerator DisplayDescription(string description)
+    {
+        descriptionText.text = ""; // Pulisci il testo iniziale
+        string[] words = description.Split(' '); // Dividi la descrizione in parole
+        foreach (string word in words)
+        {
+            descriptionText.text += word + " "; // Aggiungi una parola
+            yield return new WaitForSecondsRealtime(wordDelay); // Aspetta un intervallo di tempo
+        }
     }
 }
-
-
-
-

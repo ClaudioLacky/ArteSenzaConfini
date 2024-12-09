@@ -172,7 +172,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 6deaaa2b11958424fb40aabfc7bcc678, type: 3}
   title: Gold Marilyn Monroe
-  description: 
+  description: "Gold Marilyn Monroe, dipinto da Andy Warhol, \xE8 un ritratto iconico
+    della celebre attrice Marilyn Monroe, stilizzato e riprodotto con la tecnica
+    della serigrafia. L'immagine di Monroe \xE8 sovrapposta a uno sfondo dorato che
+    riflette l'uso tipico di Warhol dei colori vivaci e dell'elemento del consumismo.
+    La ripetizione dell'immagine di Marilyn, unita alla sua aureola dorata, crea
+    un effetto di santificazione della celebrit\xE0, esplorando temi di iconoclastia
+    e di consumo delle figure pubbliche. L'opera \xE8 una fusione di arte e cultura
+    popolare, che critica la mercificazione delle icone mediatiche e la loro elevazione
+    a oggetti di culto. "
   audioClip: {fileID: 0}
   size: {x: 200, y: 200}
 --- !u!64 &64415
@@ -404,7 +412,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 9b5583ed884b4294b8f0369cc2e21a36, type: 3}
   title: Girasoli
-  description: 
+  description: "Girasoli, dipinto da Vincent van Gogh, rappresenta un bouquet di
+    fiori in un vaso, con girasoli in piena fioritura. L'opera \xE8 una delle pi\xF9
+    celebri della serie che Van Gogh dedic\xF2 a questi fiori, e riflette la sua
+    tecnica distintiva, caratterizzata da pennellate spesse e vibranti. I girasoli
+    sono dipinti con colori caldi e intensi, che vanno dal giallo dorato all\u2019arancione,
+    creando un contrasto visivo che esprime vitalit\xE0 e passione. Questo dipinto
+    \xE8 anche simbolico della bellezza effimera della vita e della natura. "
   audioClip: {fileID: 0}
   size: {x: 159.1, y: 200}
 --- !u!64 &1608710
@@ -791,7 +805,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: b8fea9d7f58af6042aa4e3b3d5965191, type: 3}
   title: L'Ultima Cena
-  description: 
+  description: "L\u2019Ultima Cena, capolavoro di Leonardo da Vinci, rappresenta
+    il momento in cui Ges\xF9 annuncia il tradimento di uno degli apostoli. Disposti
+    attorno a una lunga tavola, i dodici apostoli reagiscono con emozioni intense
+    e gesti dinamici. La composizione \xE8 armoniosa e piena di simbolismo, con l\u2019uso
+    sapiente della prospettiva che guida lo sguardo verso la figura centrale di Ges\xF9.
+    L\u2019opera cattura la tensione e la drammaticit\xE0 del momento, rendendola
+    un\u2019icona universale. "
   audioClip: {fileID: 0}
   size: {x: 382.3, y: 200}
 --- !u!1 &8013039
@@ -949,7 +969,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: edec22396e8850140af1648e87afc094, type: 3}
   title: Il bacio
-  description: 
+  description: " Il Bacio, dipinto da Hayez, ritrae un appassionato abbraccio e bacio
+    tra una giovane coppia, simbolo dell'amore e del desiderio. L'opera \xE8 carica
+    di tensione emotiva, con la donna che sembra cedere al sentimento, mentre l'uomo
+    la stringe a s\xE9 con intensit\xE0. Il loro incontro, avvolto in un'atmosfera
+    drammatica, si inserisce in un contesto di lotta sociale e politica, diventando
+    un emblema del romanticismo e delle speranze di riscatto della societ\xE0 italiana
+    dell'epoca. "
   audioClip: {fileID: 0}
   size: {x: 157.4, y: 200}
 --- !u!1 &10414624
@@ -3441,7 +3467,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 429d9ea567495de40bf4606869ba9840, type: 3}
   title: "L'Elasticit\xE0"
-  description: 
+  description: "L'Elasticit\xE0, dipinto di Umberto Boccioni, \xE8 un'opera futurista
+    che esplora il concetto di movimento e trasformazione attraverso la deformazione
+    delle figure. Il dipinto rappresenta una figura umana in una posa dinamica, le
+    cui forme sembrano fluire e adattarsi in un'azione che suggerisce l'elasticit\xE0
+    fisica e la continua metamorfosi della materia. L'uso di linee curve e pennellate
+    vorticosi crea un forte senso di tensione e di energia, incarnando i principi
+    futuristi di velocit\xE0, movimento e la fusione tra corpo umano e il mondo circostante.
+    L'opera riflette l'idea di una realt\xE0 in costante cambiamento, dove la materia
+    e la forma si adattano all'energia e al movimento. "
   audioClip: {fileID: 0}
   size: {x: 200, y: 200}
 --- !u!65 &77651959
@@ -7523,8 +7557,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 5779ef621fec99c488cc0d005d66a963, type: 3}
   title: "La citt\xE0 che sale"
-  description: 
-  audioClip: {fileID: 0}
+  description: "La Citt\xE0 che Sale, dipinto di Umberto Boccioni, \xE8 una delle
+    opere pi\xF9 celebri del futurismo italiano. L\u2019opera rappresenta un paesaggio
+    urbano in costruzione, caratterizzato da una frenesia di movimento e un\u2019intensa
+    dinamicit\xE0. Le figure e le strutture sono deformate e sovrapposte, simboleggiando
+    il progresso tecnologico e il cambiamento incessante della citt\xE0 moderna.
+    Boccioni utilizza linee curve e pennellate vorticosi per evocare la forza e l\u2019energia
+    del mondo contemporaneo, creando un senso di fusione tra l\u2019uomo, la macchina
+    e l\u2019ambiente che li circonda. La Citt\xE0 che Sale esprime l\u2019entusiasmo
+    futurista per la modernit\xE0 e l\u2019industrializzazione, pur evidenziando
+    la trasformazione e l\u2019alienazione che ne derivano. "
+  audioClip: {fileID: 8300000, guid: 10e35353e1fb3c64d9743d4100ef1c5a, type: 3}
   size: {x: 302, y: 200}
 --- !u!4 &171352004 stripped
 Transform:
@@ -10835,7 +10878,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: d8354fc0dfc0b714ab4db12c6171cbaf, type: 3}
   title: I tre musici
-  description: 
+  description: "I Tre Musici, dipinto da Pablo Picasso, rappresenta tre figure stilizzate,
+    ciascuna con uno strumento musicale, in uno stile cubista. Le forme geometriche
+    e la semplificazione delle figure umane creano un'armoniosa fusione tra soggetto
+    e composizione. Il dipinto gioca con la divisione delle forme e la sovrapposizione
+    di piani, creando un effetto di astrazione che rappresenta non solo i musicisti,
+    ma anche la musica stessa come entit\xE0 visiva. Il colore vivace e il contrasto
+    accentuano il dinamismo e l'energia del tema musicale. "
   audioClip: {fileID: 0}
   size: {x: 221.6, y: 200}
 --- !u!64 &231238653
@@ -11010,7 +11059,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: d8caaf25aab86d44da1477f7b7b386a2, type: 3}
   title: Lampada ad arco
-  description: 
+  description: "Lampada ad Arco, dipinto da Umberto Boccioni, \xE8 un'opera futurista
+    che esplora la modernit\xE0 e l'energia della vita urbana attraverso l'uso di
+    oggetti quotidiani. La lampada ad arco, un'innovazione tecnologica dell'epoca,
+    \xE8 rappresentata in modo dinamico, con linee curve e sfumate che evocano movimento
+    e tensione. Il dipinto riflette l'interesse futurista per la tecnologia, il progresso
+    e la velocit\xE0, e rappresenta la luce come simbolo di modernit\xE0 che illumina
+    e trasforma l'ambiente urbano. La lampada diventa, quindi, non solo un oggetto,
+    ma anche un'emanazione di energia e dinamismo.  "
   audioClip: {fileID: 0}
   size: {x: 131.3, y: 200}
 --- !u!65 &231575336
@@ -11631,7 +11687,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 3cd89b09d23bb3944b1e56e0d6c4a180, type: 3}
   title: Gli amanti
-  description: 
+  description: "Gli Amanti, dipinto da Ren\xE9 Magritte, rappresenta due figure,
+    un uomo e una donna, con il volto coperto da un drappo bianco che li separa,
+    mentre si abbracciano. L'opera esplora il tema dell'amore, ma anche della separazione
+    e dell'incomunicabilit\xE0. La copertura dei volti suggerisce l'impossibilit\xE0
+    di un'intimit\xE0 totale, mettendo in evidenza l'idea che, nonostante la vicinanza
+    fisica, c'\xE8 una barriera tra le persone che impedisce una connessione completa.
+    Come molte delle opere di Magritte, Gli Amanti gioca con l'ambiguit\xE0 e il
+    contrasto, invitando alla riflessione sul significato dell'amore e delle relazioni. "
   audioClip: {fileID: 0}
   size: {x: 270, y: 200}
 --- !u!1 &248056213
@@ -13608,7 +13671,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 1ad979f475dbf6a4fab64eda8d50c098, type: 3}
   title: La Dama con l'ermellino
-  description: 
+  description: "La Dama con l\u2019ermellino, dipinta da Leonardo da Vinci, ritrae
+    una giovane donna, Cecilia Gallerani, con uno sguardo sereno e un elegante ermellino
+    tra le braccia. L\u2019opera si distingue per la sua raffinatezza nei dettagli,
+    come l\u2019illuminazione che modella il volto e l\u2019espressione vivace del
+    soggetto. Il rapporto tra la dama e l\u2019ermellino simboleggia purezza e virt\xF9,
+    aggiungendo profondit\xE0 simbolica a questo straordinario ritratto. "
   audioClip: {fileID: 0}
   size: {x: 147.2, y: 200}
 --- !u!64 &291851092
@@ -14219,7 +14287,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 38b20aca43c95fa439436e96bd76856b, type: 3}
   title: L.H.O.O.Q.
-  description: 
+  description: "L.H.O.O.Q., un'opera di Marcel Duchamp, \xE8 una versione modificata
+    della famosa Monna Lisa di Leonardo da Vinci. In questa reinterpretazione, Duchamp
+    aggiunge alla figura della Mona Lisa una barba e dei baffi, accompagnando l'opera
+    con il titolo \"L.H.O.O.Q.\", che, pronunciato in francese, suona come \"Elle
+    a chaud au cul\" (\"Ha il sedere caldo\"). Il lavoro \xE8 un esempio di ready-made
+    e di umorismo provocatorio, in cui Duchamp sfida le convenzioni artistiche e
+    la sacralit\xE0 dell'arte tradizionale. L'opera mette in discussione l'autenticit\xE0,
+    l'idea di bellezza e l'autorit\xE0 nell'arte, rappresentando un atto di ribellione
+    e una riflessione sulla natura della percezione artistica. "
   audioClip: {fileID: 0}
   size: {x: 138.3, y: 200}
 --- !u!64 &298362120
@@ -16238,8 +16314,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 4cf5e4d40bdfceb4d9ce0ba5cde37722, type: 3}
   title: Bambina con il palloncino
-  description: 
-  audioClip: {fileID: 0}
+  description: "Bambina con il Palloncino, opera di Banksy, ritrae una bambina che
+    guarda un palloncino rosso a forma di cuore che vola via. L'immagine \xE8 semplice
+    ma potente, simbolizzando la perdita, l'innocenza e i sogni infranti. Il contrasto
+    tra la figura monocromatica della bambina e il palloncino colorato crea un forte
+    impatto visivo. L'opera, spesso interpretata come una riflessione sulla speranza
+    e sulla fragilit\xE0 della vita, \xE8 una delle pi\xF9 iconiche del famoso artista
+    di street art, che con il suo stile sobrio ma provocatorio, invita alla riflessione
+    sociale e politica. "
+  audioClip: {fileID: 8300000, guid: f71a4db5b993513468046bb0bf3e4a21, type: 3}
   size: {x: 100, y: 200}
 --- !u!64 &334383055
 MeshCollider:
@@ -22973,8 +23056,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 8dd103f3394b855438ae70e0030c26d4, type: 3}
   title: Guernica
-  description: 
-  audioClip: {fileID: 0}
+  description: "Guernica, dipinto da Pablo Picasso, rappresenta il bombardamento
+    aereo della citt\xE0 di Guernica durante la Guerra Civile Spagnola. L'opera,
+    simbolo della sofferenza e della violenza, mostra figure distorte e grottesche
+    che esprimono dolore e disperazione. Le immagini di un toro, una madre che grida
+    con il suo bambino morto, e una figura di uomo lacerato creano una composizione
+    drammatica. L'uso di toni di grigio, bianco e nero amplifica la brutalit\xE0
+    e il caos, facendo di Guernica un potente manifesto contro la guerra e la distruzione.  "
+  audioClip: {fileID: 8300000, guid: d083d7b0c087fe946a67766e95f98ee1, type: 3}
   size: {x: 445.7, y: 200}
 --- !u!1 &480286970 stripped
 GameObject:
@@ -23145,7 +23234,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 1520c14bc079f8848a80f36db88c4702, type: 3}
   title: "La Grenouill\xE8re "
-  description: 
+  description: "La Grenouill\xE8re, dipinta da Claude Monet, rappresenta una scena
+    di svago e socialit\xE0 su una terrazza galleggiante lungo la Senna. I soggetti
+    sono ritratti mentre si godono il paesaggio e la tranquillit\xE0 del luogo, circondati
+    da riflessi sull'acqua. Monet utilizza pennellate rapide e leggere, tipiche dell'impressionismo,
+    per catturare la luce e il movimento dell'acqua, creando un'atmosfera di serenit\xE0
+    e vivacit\xE0. Il dipinto esprime la bellezza della natura e la quotidianit\xE0,
+    attraverso un trattamento luminoso e atmosferico del paesaggio. "
   audioClip: {fileID: 0}
   size: {x: 245.3, y: 200}
 --- !u!64 &482073139
@@ -24040,8 +24135,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: d359d2cd4e533bc479503aff9623192e, type: 3}
   title: 'Il bacio '
-  description: 
-  audioClip: {fileID: 0}
+  description: "Il Bacio, dipinto da Gustav Klimt, rappresenta un abbraccio appassionato
+    tra una coppia, immersa in un\u2019atmosfera dorata e simbolica. La figura maschile
+    e quella femminile sono avvolte in un manto decorato con motivi ornamentali,
+    mentre il fondo dorato enfatizza la sacralit\xE0 e l'intensit\xE0 del momento.
+    L'opera celebra l\u2019amore e la fusione tra due esseri, con un forte impatto
+    visivo grazie all'uso di colori ricchi e a un'estetica sontuosa tipica dello
+    stile Art Nouveau. "
+  audioClip: {fileID: 8300000, guid: 16138889480747842b34996475148266, type: 3}
   size: {x: 200, y: 200}
 --- !u!4 &501309619 stripped
 Transform:
@@ -24650,7 +24751,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: afb8514b2a254214396c63659a9175c9, type: 3}
   title: Creazione di Adamo
-  description: 
+  description: "La Creazione di Adamo, affresco di Michelangelo, mostra il momento
+    biblico in cui Dio d\xE0 la vita ad Adamo. Le due mani, quasi a toccarsi, sono
+    al centro dell\u2019opera, simbolizzando il passaggio di energia divina all\u2019essere
+    umano. La figura di Dio, circondata da angeli, appare maestosa e protettiva,
+    mentre Adamo \xE8 raffigurato con un corpo idealizzato, esprimendo l\u2019umanit\xE0
+    in tutta la sua perfezione. L\u2019opera \xE8 un\u2019emblema della creazione
+    e della connessione tra l\u2019umano e il divino. "
   audioClip: {fileID: 0}
   size: {x: 407.1, y: 200}
 --- !u!1 &510836412 stripped
@@ -30780,8 +30887,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 738ae6acd075da146b025355fb430923, type: 3}
   title: Untitled #96
-  description: 
-  audioClip: {fileID: 0}
+  description: "Untitled 96, una fotografia di Cindy Sherman, fa parte della sua
+    celebre serie in cui l'artista esplora i temi dell'identit\xE0, della mascolinit\xE0,
+    della femminilit\xE0 e delle convenzioni sociali. In quest'opera, Sherman si
+    ritrae come una figura enigmatica, travestita e trasformata attraverso il trucco,
+    il costume e la scenografia. L'immagine \xE8 intrisa di un'atmosfera inquietante,
+    in cui il suo volto \xE8 parzialmente nascosto o camuffato, enfatizzando l'idea
+    che l'identit\xE0 sia fluida e costruita, piuttosto che essenzialmente \"naturale\".
+    Il lavoro di Sherman spesso mette in discussione le aspettative sociali legate
+    al genere e all'immagine, utilizzando il suo corpo come mezzo per riflettere
+    sulla costruzione e sulla manipolazione dell'identit\xE0 visiva e culturale.  "
+  audioClip: {fileID: 8300000, guid: fa236e1381b66b24b961c29b395ecc40, type: 3}
   size: {x: 400, y: 200}
 --- !u!64 &611438923
 MeshCollider:
@@ -32839,7 +32955,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 0db0de9fee74f4d4f8267bb447bd1817, type: 3}
   title: 'Il Viandante sul mare di nebbia '
-  description: 
+  description: "Il Viandante sul Mare di Nebbia, dipinto da Caspar David Friedrich,
+    mostra una figura solitaria, un viandante, che osserva un paesaggio montano avvolto
+    dalla nebbia. La scena evoca un senso di isolamento e riflessione interiore,
+    con l'uomo che sembra confrontarsi con la vastit\xE0 della natura. L'opera, tipica
+    del romanticismo, esplora il tema dell'individuo di fronte all'infinito e all'ignoto,
+    utilizzando la nebbia e il paesaggio come metafore della condizione umana. "
   audioClip: {fileID: 0}
   size: {x: 154.64, y: 200}
 --- !u!1001 &655990059
@@ -34424,7 +34545,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 40c88a8dd2791fc4d8de6632f65eced6, type: 3}
   title: I nottambuli
-  description: 
+  description: "I Nottambuli, dipinto da Edward Hopper, ritrae una scena notturna
+    in un diner americano, dove una coppia e un cliente solitario si trovano immersi
+    in un\u2019atmosfera di solitudine e alienazione. L'illuminazione artificiale
+    crea un contrasto netto con l'oscurit\xE0 esterna, accentuando il senso di isolamento.
+    L'uso dei colori freddi e delle linee pulite amplifica il distacco emotivo dei
+    personaggi, che sembrano persi nei loro pensieri. L'opera \xE8 diventata un\u2019icona
+    della solitudine urbana e della condizione umana nell'America del XX secolo. "
   audioClip: {fileID: 0}
   size: {x: 362, y: 200}
 --- !u!64 &704580014
@@ -39648,7 +39775,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 3b61cecf92df2214a9ae3e9facc8a3e9, type: 3}
   title: 'Impressione, levar del sole '
-  description: 
+  description: "Impressione, sole nascente, dipinta da Claude Monet, cattura l'alba
+    sul porto di Le Havre, immerso in una luce morbida e sfumata. La scena \xE8 dominata
+    da riflessi dell'acqua e da una nebbiolina che avvolge l'ambiente, dando un senso
+    di intangibilit\xE0 e movimento. Monet utilizza colori vividi e pennellate rapide,
+    caratteristiche tipiche dell'impressionismo, per trasmettere l'effetto della
+    luce naturale e l'impressione fugace del momento, anzich\xE9 una resa realistica
+    dei dettagli. "
   audioClip: {fileID: 0}
   size: {x: 266, y: 200}
 --- !u!65 &806922369
@@ -40685,7 +40818,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 650225d779f82b644bba6e89c480fd95, type: 3}
   title: Dinamismo di un cane al guinzaglio
-  description: 
+  description: "Dinamismo di un Cane al Guinzaglio, dipinto da Umberto Boccioni,
+    \xE8 un'opera futurista che cattura il movimento e l'energia di un cane che corre
+    al guinzaglio. L'uso delle linee curve e dei colori vibranti crea una sensazione
+    di velocit\xE0 e vitalit\xE0, rendendo il cane e il suo padrone protagonisti
+    di un'azione in corso. Le forme scomposte e sovrapposte rappresentano l'intensit\xE0
+    del dinamismo, mentre l'ambientazione sfocata accentua l'idea di movimento continuo.
+    L'opera esplora la fusione tra uomo e animale, e tra il movimento fisico e l'energia
+    interna, temi centrali nel futurismo. "
   audioClip: {fileID: 0}
   size: {x: 242.7, y: 200}
 --- !u!1 &826309109
@@ -45116,7 +45256,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 389d7ad4ad38f994ab1fdc13cd7b95c5, type: 3}
   title: "La Libert\xE0 che guida il popolo"
-  description: 
+  description: "La Libert\xE0 che Guida il Popolo, dipinta da Eug\xE8ne Delacroix,
+    rappresenta un momento di lotta e speranza durante le rivoluzioni del XIX secolo.
+    La figura centrale, personificazione della Libert\xE0, \xE8 una donna che solleva
+    la bandiera tricolore mentre guida un gruppo di rivoluzionari di diverse classi
+    sociali. L'opera \xE8 un simbolo di lotta per la libert\xE0 e l'uguaglianza,
+    con un forte dinamismo e un uso di colori vivaci che esprimono passione e determinazione.  "
   audioClip: {fileID: 0}
   size: {x: 250, y: 200}
 --- !u!1001 &897604163
@@ -47686,8 +47831,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 53b160823aa7c0c4f8d3e9d05d998723, type: 3}
   title: L'urlo
-  description: 
-  audioClip: {fileID: 0}
+  description: "L'Urlo, dipinto da Edvard Munch, rappresenta una figura umana che
+    urla, sovrastata da un cielo infernale, contorto e vibrante. La scena evoca un
+    forte senso di angoscia e disperazione, con la figura centrale che sembra essere
+    sopraffatta da una paura cosmica, mentre il paesaggio si distorce intorno a lei.
+    L\u2019uso di colori intensi e di linee ondulate enfatizza l\u2019emozione e
+    il conflitto interiore, facendo de L'Urlo una delle immagini pi\xF9 potenti e
+    iconiche della psicologia umana e dell\u2019espressionismo. "
+  audioClip: {fileID: 8300000, guid: 4cb53981a45ad0a4bb1d698fa0b4055c, type: 3}
   size: {x: 162.2, y: 200}
 --- !u!4 &955219668 stripped
 Transform:
@@ -47903,7 +48054,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: f34297e35e9e25741b89028a53b77888, type: 3}
   title: "Il bar delle Folies-Berg\xE8re"
-  description: 
+  description: "Il Bar delle Folies-Berg\xE8re, dipinto da \xC9douard Manet, rappresenta
+    una scena all'interno di un famoso cabaret parigino, con una donna che lavora
+    come barista. La figura centrale, un'operatrice del bar, \xE8 ritratta in una
+    posa pensierosa, quasi distante, mentre riflette sul suo lavoro e sulla sua vita.
+    L'opera si distingue per l'uso innovativo dello specchio sullo sfondo, che riflette
+    i clienti e l'ambiente, creando un gioco di prospettive e un contrasto tra la
+    realt\xE0 immediata e quella riflessa. Manet esplora temi di solitudine, alienazione
+    e la divisione tra il pubblico e il privato nella societ\xE0 urbana dell'epoca.  "
   audioClip: {fileID: 0}
   size: {x: 270.7, y: 200}
 --- !u!1 &965864978
@@ -48032,7 +48190,7 @@ MonoBehaviour:
     circondata da figure simboliche come le Grazie danzanti, Mercurio, e Flora che
     sparge fiori. L'opera celebra la bellezza, l'amore e il rinnovamento, con una
     ricchezza di dettagli naturalistici che donano al dipinto un fascino eterno.
-  audioClip: {fileID: 8300000, guid: 9cba734ac5843044994d57c7a2d2f5ea, type: 3}
+  audioClip: {fileID: 8300000, guid: 7ab206b863deee240953aeca4221866e, type: 3}
   size: {x: 308, y: 200}
 --- !u!4 &966549798 stripped
 Transform:
@@ -49061,8 +49219,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 3489637a0a421b14c94a8c36d25c1d18, type: 3}
   title: Il tradimento delle immagini
-  description: 
-  audioClip: {fileID: 0}
+  description: "Il Tradimento delle Immagini, dipinto da Ren\xE9 Magritte, \xE8 un'opera
+    che sfida la relazione tra realt\xE0 e rappresentazione. L'immagine mostra una
+    pipa, accompagnata dalla scritta \"Ceci n'est pas une pipe\" (\"Questa non \xE8
+    una pipa\"). Magritte gioca sul contrasto tra l'oggetto reale e la sua rappresentazione
+    visiva, suggerendo che ci\xF2 che vediamo non \xE8 mai la realt\xE0 stessa, ma
+    solo una sua imitazione. L'opera invita a riflettere sulla natura dell'arte,
+    della percezione e del linguaggio, esplorando l'idea che le immagini non sono
+    mai la realt\xE0 ma semplici simboli o segni.  "
+  audioClip: {fileID: 8300000, guid: e0c20368d9ec8c24ea1dd00eeb13385b, type: 3}
   size: {x: 271.2, y: 200}
 --- !u!1 &982376327
 GameObject:
@@ -50209,8 +50374,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 5e9d3b0d5f93dc44ba28cf70e6c4bfd2, type: 3}
   title: Les Demoiselles d'Avignon
-  description: 
-  audioClip: {fileID: 0}
+  description: "Les Demoiselles d'Avignon, dipinto da Pablo Picasso, rappresenta
+    cinque figure femminili in un bordello, stilizzate in modo audace e frammentato.
+    L'opera segna una rottura con la tradizione della pittura occidentale, introducendo
+    un uso innovativo del cubismo, con forme geometriche e prospettive distorte.
+    Le figure, rappresentate in pose provocatorie e con volti ispirati all'arte africana,
+    sfidano le convenzioni estetiche, diventando un manifesto della modernit\xE0
+    e della rivoluzione visiva che Picasso ha portato nell'arte del XX secolo. "
+  audioClip: {fileID: 8300000, guid: dd15df2d72488294e83f580c4e300e13, type: 3}
   size: {x: 191.6, y: 200}
 --- !u!64 &1006999858
 MeshCollider:
@@ -51300,7 +51471,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 9c7e7f1561f392e46a1a3739cfe256d7, type: 3}
   title: Ritratto di Ambroise Vollard
-  description: 
+  description: "Ritratto di Ambroise Vollard, dipinto da Pablo Picasso, raffigura
+    il famoso mercante d'arte e collezionista Ambroise Vollard. L'opera mostra il
+    soggetto in un'immagine stilizzata, con tratti cubisti che frammentano il volto
+    e il corpo, creando una composizione dinamica e astratta. Picasso esplora la
+    prospettiva e la geometria, sfidando le convenzioni tradizionali del ritratto
+    e offrendo una visione pi\xF9 intima e interpretativa del soggetto, tipica del
+    suo periodo cubista. "
   audioClip: {fileID: 0}
   size: {x: 141.25, y: 200}
 --- !u!65 &1031122459
@@ -51385,6 +51562,7 @@ MonoBehaviour:
   displayText: {fileID: 1209345007}
   descriptionText: {fileID: 1781746252}
   maxDistance: 5
+  wordDelay: 0.05
   id: Clickable
 --- !u!4 &1033296162
 Transform:
@@ -73715,7 +73893,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 09ab79bc5b6821643a75a09d9123ec06, type: 3}
   title: La Scuola di Atene
-  description: 
+  description: "La Scuola di Atene, affresco di Raffaello, rappresenta una grande
+    assemblea di filosofi e pensatori dell\u2019antichit\xE0, tra cui Platone e Aristotele,
+    al centro della scena. L\u2019opera riflette l'ideale dell'intellettualismo rinascimentale,
+    con figure che dialogano e si confrontano sotto una maestosa architettura. L'uso
+    della prospettiva e la disposizione dinamica dei personaggi conferiscono all\u2019opera
+    una straordinaria profondit\xE0 e un senso di equilibrio tra filosofia e arte. "
   audioClip: {fileID: 0}
   size: {x: 280, y: 200}
 --- !u!64 &1451946174
@@ -76461,8 +76644,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: a3213d99bec2e004cb84b83f48e6b7b5, type: 3}
   title: La persistenza della memoria
-  description: 
-  audioClip: {fileID: 0}
+  description: "La Persistenza della Memoria, dipinta da Salvador Dal\xED, \xE8 una
+    delle opere pi\xF9 celebri del surrealismo. Il dipinto rappresenta un paesaggio
+    onirico in cui orologi morbidi e deformati si sciolgono su rami di alberi e su
+    superfici dure, sfidando la nozione tradizionale del tempo. Il contrasto tra
+    il paesaggio arido e la distorsione degli orologi crea un senso di irrealt\xE0
+    e disorientamento. L'opera esplora il concetto di tempo come qualcosa di relativo
+    e soggettivo, suggerendo che la nostra percezione del tempo pu\xF2 essere fluida
+    e sfuggente. "
+  audioClip: {fileID: 8300000, guid: 938e26f54c1317946a3d6e14f1a6f1b4, type: 3}
   size: {x: 274.7, y: 200}
 --- !u!1 &1508607946 stripped
 GameObject:
@@ -78505,7 +78695,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 555d1ea868652804ab267e1b7de88481, type: 3}
   title: La notte stellata
-  description: 
+  description: "La Notte Stellata, dipinta da Vincent van Gogh, rappresenta un paesaggio
+    notturno con un cielo turbinante e illuminato da stelle brillanti sopra un tranquillo
+    villaggio. Le linee ondulate e i colori intensi, caratteristici dello stile di
+    Van Gogh, creano un contrasto tra la calma della terra e l'energia vibrante del
+    cielo. L'opera trasmette una sensazione di movimento e intensit\xE0 emotiva,
+    rendendo la bellezza della natura e la profondit\xE0 dell\u2019animo umano attraverso
+    pennellate dinamiche e un uso "
   audioClip: {fileID: 0}
   size: {x: 252, y: 200}
 --- !u!65 &1558768290
@@ -82786,8 +82982,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 6d38d6ed822ca2043beeffbbeb6cf881, type: 3}
   title: La zattera della Medusa
-  description: 
-  audioClip: {fileID: 0}
+  description: "La Zattera della Medusa, dipinta da Th\xE9odore G\xE9ricault, raffigura
+    il drammatico naufragio della fregata Medusa e la lotta per la sopravvivenza
+    dei suoi superstiti. L'opera cattura un momento di grande tensione emotiva, con
+    figure contorte in agonia, speranza e disperazione. La composizione \xE8 potente
+    e realistica, evidenziando l'orrore e la miseria, ma anche la resistenza umana
+    di fronte alla morte. Il dipinto \xE8 un grido di denuncia contro l'incapacit\xE0
+    della classe dirigente e un capolavoro del romanticismo.  "
+  audioClip: {fileID: 8300000, guid: df5e0c5472e84994ba42e232d5789000, type: 3}
   size: {x: 291.6, y: 200}
 --- !u!4 &1633356556 stripped
 Transform:
@@ -83152,8 +83354,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 2e01d5e5f437eab4490af70bb289848f, type: 3}
   title: La colazione dei canottieri
-  description: 
-  audioClip: {fileID: 0}
+  description: "La Colazione dei Canottieri, dipinta da Pierre-Auguste Renoir, ritrae
+    un gruppo di amici che si godono un momento di relax e convivialit\xE0 al bordo
+    della Senna. La scena \xE8 luminosa e vibrante, con i soggetti rappresentati
+    in un ambiente all'aperto, mentre chiacchierano, mangiano e bevono. Renoir utilizza
+    pennellate fluide e colori caldi per catturare la luce naturale e l\u2019atmosfera
+    di spensieratezza. L'opera \xE8 un esempio perfetto dell'impressionismo, esprimendo
+    la gioia della vita quotidiana e l'interazione sociale in modo vivace e dinamico. "
+  audioClip: {fileID: 8300000, guid: 8c09fad256ee7e84daac858c87d98160, type: 3}
   size: {x: 248, y: 200}
 --- !u!65 &1644094158
 BoxCollider:
@@ -83791,7 +83999,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 1dc6c3cd4bec7e64297508737bbce754, type: 3}
   title: Il Ballo al Moulin de la Galette
-  description: 
+  description: "Il Ballo al Moulin de la Galette, dipinto da Pierre-Auguste Renoir,
+    ritrae una scena vivace di socialit\xE0 e danza all'aperto, in una tipica domenica
+    parigina. La composizione cattura l'atmosfera gioiosa di un ballo tra amici,
+    con figure sorridenti e abbigliate elegantemente, immerse in una luce calda e
+    morbida. Renoir utilizza pennellate fluide e colori vivaci per esprimere la vitalit\xE0
+    e il movimento, trasmettendo un senso di leggerezza e spensieratezza tipico della
+    Parigi dell'epoca. "
   audioClip: {fileID: 0}
   size: {x: 248, y: 200}
 --- !u!65 &1658784772
@@ -96929,7 +97143,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: ce0a7ee72161f494d9538ea4f2035aac, type: 3}
   title: Composizione VIII
-  description: 
+  description: "Composizione VIII, dipinta da Wassily Kandinsky, \xE8 un\u2019opera
+    astratta che utilizza forme geometriche, linee e colori vivaci per creare un
+    senso di equilibrio dinamico. Il dipinto \xE8 una delle espressioni pi\xF9 mature
+    del linguaggio visivo di Kandinsky, dove cerchi, rettangoli e linee si intersecano
+    in una composizione che suggerisce movimento e armonia. Il contrasto tra colori
+    primari e forme solide evoca una sensazione di energia controllata, riflettendo
+    l\u2019idea che l'arte pu\xF2 trasmettere emozioni e dinamiche simili alla musica.  "
   audioClip: {fileID: 0}
   size: {x: 286.7, y: 200}
 --- !u!64 &1902061892
@@ -100483,7 +100703,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 749d7da8a96f6fd408b02275abe6f399, type: 3}
   title: 'Natura Morta Con Tovaglia '
-  description: 
+  description: "Natura Morta con Tovaglia, dipinta da Juan Gris, \xE8 un esempio
+    di cubismo sintetico, in cui l'oggetto viene scomposto in forme geometriche e
+    rappresentato da diverse angolazioni. Gris utilizza toni terrosi e un contrasto
+    di luci e ombre per creare profondit\xE0 e realismo all'interno della composizione.
+    La tovaglia, uno degli elementi centrali, \xE8 rappresentata con grande attenzione
+    ai dettagli, mentre gli altri oggetti come il vaso e la bottiglia sono ritratti
+    in modo stilizzato, riflettendo la sua innovativa fusione di realt\xE0 e astrazione."
   audioClip: {fileID: 0}
   size: {x: 133.3, y: 200}
 --- !u!65 &1986753398
@@ -100720,8 +100946,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: fdee87fc9220ccb429a3779d8944e1c6, type: 3}
   title: La lezione di danza
-  description: 
-  audioClip: {fileID: 0}
+  description: "La Lezione di Danza, dipinta da Edgar Degas, rappresenta un momento
+    di insegnamento di danza in una sala di balletto. Al centro dell'opera, una ballerina
+    \xE8 guidata da un maestro mentre altre giovani danzatrici osservano o si preparano
+    per la lezione. Degas cattura la grazia del movimento, la disciplina e la concentrazione
+    attraverso il suo tipico uso della prospettiva inusuale e della luce. La composizione
+    \xE8 animata e dinamica, esprimendo non solo la bellezza della danza, ma anche
+    la fatica e l\u2019impegno necessari per perfezionarla. "
+  audioClip: {fileID: 8300000, guid: b5f087ddac78e084c88a707e49deb3ba, type: 3}
   size: {x: 177.2, y: 200}
 --- !u!1 &1987943045
 GameObject:
@@ -101005,7 +101237,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 6ea6d6343645b5647b8cc8c22280e6e9, type: 3}
   title: La Grande Jatte
-  description: 
+  description: "La Grande Jatte, dipinta da Georges Seurat, \xE8 un esempio di puntinismo,
+    una tecnica in cui i colori sono applicati in piccoli punti separati che, visti
+    da lontano, si mescolano visivamente. Il dipinto ritrae una scena di svago in
+    una grande isola parigina, con persone che passeggiano e si rilassano lungo le
+    rive della Senna. Seurat crea una composizione ordinata e armoniosa, enfatizzando
+    la calma e l'ordine sociale, mentre il punto di vista elevato e la disposizione
+    rigorosa delle figure riflettono un'analisi scientifica della luce e del colore. "
   audioClip: {fileID: 0}
   size: {x: 297.3, y: 200}
 --- !u!64 &1993218289
@@ -101531,7 +101769,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 848ef545fa3db3242839443afdd56865, type: 3}
   title: Composizione in rosso, giallo, blu e nero
-  description: 
+  description: "Composizione di Rosso, Giallo, Blu e Nero, dipinta da Wassily Kandinsky,
+    \xE8 un\u2019opera astratta che esplora l'uso simbolico e emotivo dei colori
+    primari. Le forme geometriche e lineari si combinano in un equilibrio dinamico,
+    con il rosso, il giallo e il blu che risaltano in contrasto tra loro, mentre
+    il nero accentua le linee e le forme pi\xF9 strutturate. L'opera riflette l'intenzione
+    di Kandinsky di comunicare emozioni attraverso il colore e la forma, cercando
+    di suscitare una risposta viscerale nel pubblico, come se fosse una composizione
+    musicale visiva.  "
   audioClip: {fileID: 0}
   size: {x: 200, y: 200}
 --- !u!64 &2000951292
@@ -104674,7 +104919,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: e3a8d998d9600634dacc36a52bf45b0e, type: 3}
   title: Il figlio dell'uomo
-  description: 
+  description: "Il Figlio dell'Uomo, dipinto da Ren\xE9 Magritte, \xE8 uno dei suoi
+    lavori pi\xF9 famosi e rappresenta un uomo in abito scuro, con il volto parzialmente
+    nascosto da una mela verde sospesa davanti alla sua faccia. L'opera \xE8 un esempio
+    del surrealismo, con il contrasto tra la figura apparentemente ordinaria e l'elemento
+    misterioso della mela, che crea una sensazione di estraneit\xE0 e di curiosit\xE0.
+    Il dipinto esplora temi di identit\xE0, segretezza e percezione, mettendo in
+    discussione ci\xF2 che \xE8 visibile e ci\xF2 che rimane nascosto, riflettendo
+    il gioco di illusioni tipico dello stile di Magritte.  "
   audioClip: {fileID: 0}
   size: {x: 154.5, y: 200}
 --- !u!64 &2058804118
@@ -105454,7 +105706,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 1212581cd7e375546b9b8592ebb2a048, type: 3}
   title: Case all'Estaque
-  description: 
+  description: "Casa all'Estaque, dipinta da Georges Braque, rappresenta una scena
+    paesaggistica con una casa situata nel villaggio di Estaque, in Francia. L'opera,
+    appartenente al periodo cubista, \xE8 caratterizzata dall'uso di forme geometriche
+    e linee frammentate, che semplificano la rappresentazione della realt\xE0. Braque
+    sperimenta con la prospettiva e la composizione, riducendo gli elementi naturali
+    e architettonici a piani sovrapposti e angolazioni diverse, rendendo il paesaggio
+    un gioco di forme e colori. "
   audioClip: {fileID: 0}
   size: {x: 162.7, y: 200}
 --- !u!65 &2068166769
@@ -105874,14 +106132,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 88ab9dc3177830d4c956529e2c2d37e5, type: 3}
-  title: La Gioconda
-  description: "La Nascita di Venere, dipinta da Sandro Botticelli, rappresenta la
-    dea Venere che emerge dalla spuma del mare su una conchiglia, trasportata verso
-    la riva da venti allegorici. La figura di Venere \xE8 elegante e idealizzata,
-    simbolo di bellezza e amore. L'opera, ricca di dettagli mitologici, celebra la
-    nascita della bellezza divina e l'armonia, con una composizione delicata e una
-    ricca simbologia."
-  audioClip: {fileID: 8300000, guid: 5a75949ac0515574b9976697b7893dbb, type: 3}
+  title: La Monna Lisa
+  description: "La Monna Lisa, capolavoro di Leonardo da Vinci, ritrae una donna
+    con un sorriso enigmatico e un\u2019espressione che sembra mutare sotto lo sguardo
+    dell\u2019osservatore. Seduta davanti a un paesaggio sfumato e onirico, la figura
+    \xE8 resa viva grazie alla tecnica dello sfumato, che dona al dipinto profondit\xE0
+    e un fascino senza tempo. L\u2019aura di mistero che avvolge l\u2019opera ne
+    fa un\u2019icona universale.  "
+  audioClip: {fileID: 8300000, guid: 18ac4e5bc55a1294489fc16e3c2c39d8, type: 3}
   size: {x: 128.2, y: 200}
 --- !u!4 &2078926852 stripped
 Transform:
@@ -106837,8 +107095,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 7d3a059e5cc873144b80cd3b9a5bee17, type: 3}
   title: Nascita di Venere
-  description: 
-  audioClip: {fileID: 0}
+  description: "La Nascita di Venere, dipinta da Sandro Botticelli, rappresenta la
+    dea Venere che emerge dalla spuma del mare su una conchiglia, trasportata verso
+    la riva da venti allegorici. La figura di Venere \xE8 elegante e idealizzata,
+    simbolo di bellezza e amore. L'opera, ricca di dettagli mitologici, celebra la
+    nascita della bellezza divina e l'armonia, con una composizione delicata e una
+    ricca simbologia. "
+  audioClip: {fileID: 8300000, guid: dc6a53dc0e442164c848c9741b98bb07, type: 3}
   size: {x: 322.9, y: 200}
 --- !u!1 &2099126630
 GameObject:
@@ -108435,7 +108698,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: a6e6b0b7734883641be64f978313fee4, type: 3}
   title: Campo di grano con voli di corvi
-  description: 
+  description: "Campo di grano con voli di corvi, dipinto da Vincent van Gogh, raffigura
+    un vasto campo di grano sotto un cielo turbolento, con numerosi corvi che volano
+    sopra di esso. L'opera \xE8 caratterizzata da pennellate forti e vibranti, con
+    colori intensi che esprimono emozioni di inquietudine e solitudine. Il contrasto
+    tra il grano dorato e il cielo tempestoso, insieme ai corvi, crea un'atmosfera
+    drammatica e simbolica, che riflette i turbamenti interiori di Van Gogh. "
   audioClip: {fileID: 0}
   size: {x: 413.3, y: 200}
 --- !u!64 &2127770202
@@ -108560,7 +108828,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 86e656bf8b6ddac40a108c3d234c5256, type: 3}
   title: Sera sul viale karl johan
-  description: 
+  description: "Sera sul Viale di Karl J, dipinto da Egon Schiele, rappresenta un
+    paesaggio urbano con un viale alberato al crepuscolo. L'atmosfera \xE8 cupa e
+    inquietante, con il cielo scuro che avvolge le figure stilizzate e gli alberi.
+    Schiele, noto per il suo stile espressionista e la sua attenzione alle emozioni
+    interiori, utilizza linee forti e colori intensi per creare una sensazione di
+    solitudine e angoscia, riflettendo le sue preoccupazioni esistenziali e l\u2019alienazione.
+    La scena esprime il contrasto tra la quiete apparente del paesaggio e la tensione
+    emotiva sottostante.  "
   audioClip: {fileID: 0}
   size: {x: 286, y: 200}
 --- !u!64 &2128016005
