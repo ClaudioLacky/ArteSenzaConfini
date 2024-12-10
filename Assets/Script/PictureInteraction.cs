@@ -20,11 +20,19 @@ public class PictureInteraction : MonoBehaviour
     private AudioManager audioManager; // Riferimento all'AudioManager
     private Coroutine descriptionCoroutine; // Riferimento alla coroutine attiva
 
+    private UIDocument documentLogin;
+
+
     void Start()
     {
         mainCamera = Camera.main;
         panel.SetActive(isPanelActive); // Nascondi il pannello all'inizio
         audioManager = FindObjectOfType<AudioManager>(); // Trova l'AudioManager nella scena
+
+        documentLogin = GameObject.Find("Login").GetComponent<UIDocument>();
+        documentLogin.enabled = false;
+
+
     }
 
     void Update()
