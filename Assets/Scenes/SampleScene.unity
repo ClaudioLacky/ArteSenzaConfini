@@ -181,7 +181,7 @@ MonoBehaviour:
     e di consumo delle figure pubbliche. L'opera \xE8 una fusione di arte e cultura
     popolare, che critica la mercificazione delle icone mediatiche e la loro elevazione
     a oggetti di culto. "
-  audioClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: da06aacc4a2de9041a1f6f2a11a0b9f0, type: 3}
   size: {x: 200, y: 200}
 --- !u!64 &64415
 MeshCollider:
@@ -419,7 +419,7 @@ MonoBehaviour:
     sono dipinti con colori caldi e intensi, che vanno dal giallo dorato all\u2019arancione,
     creando un contrasto visivo che esprime vitalit\xE0 e passione. Questo dipinto
     \xE8 anche simbolico della bellezza effimera della vita e della natura. "
-  audioClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 94832818f755ca547a3ba06b76b39c7f, type: 3}
   size: {x: 159.1, y: 200}
 --- !u!64 &1608710
 MeshCollider:
@@ -3476,7 +3476,7 @@ MonoBehaviour:
     futuristi di velocit\xE0, movimento e la fusione tra corpo umano e il mondo circostante.
     L'opera riflette l'idea di una realt\xE0 in costante cambiamento, dove la materia
     e la forma si adattano all'energia e al movimento. "
-  audioClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 32a0d05f9cf137d45b9375bf903d3a09, type: 3}
   size: {x: 200, y: 200}
 --- !u!65 &77651959
 BoxCollider:
@@ -10885,7 +10885,7 @@ MonoBehaviour:
     di piani, creando un effetto di astrazione che rappresenta non solo i musicisti,
     ma anche la musica stessa come entit\xE0 visiva. Il colore vivace e il contrasto
     accentuano il dinamismo e l'energia del tema musicale. "
-  audioClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 998edb02cbab3c3478baf6416f0d3c73, type: 3}
   size: {x: 221.6, y: 200}
 --- !u!64 &231238653
 MeshCollider:
@@ -11067,7 +11067,7 @@ MonoBehaviour:
     e la velocit\xE0, e rappresenta la luce come simbolo di modernit\xE0 che illumina
     e trasforma l'ambiente urbano. La lampada diventa, quindi, non solo un oggetto,
     ma anche un'emanazione di energia e dinamismo.  "
-  audioClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 435438280fd26cd4fac6307bc52a9c7b, type: 3}
   size: {x: 131.3, y: 200}
 --- !u!65 &231575336
 BoxCollider:
@@ -11695,7 +11695,7 @@ MonoBehaviour:
     fisica, c'\xE8 una barriera tra le persone che impedisce una connessione completa.
     Come molte delle opere di Magritte, Gli Amanti gioca con l'ambiguit\xE0 e il
     contrasto, invitando alla riflessione sul significato dell'amore e delle relazioni. "
-  audioClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 125eb117e497e6346837c45562449e57, type: 3}
   size: {x: 270, y: 200}
 --- !u!1 &248056213
 GameObject:
@@ -14296,7 +14296,7 @@ MonoBehaviour:
     la sacralit\xE0 dell'arte tradizionale. L'opera mette in discussione l'autenticit\xE0,
     l'idea di bellezza e l'autorit\xE0 nell'arte, rappresentando un atto di ribellione
     e una riflessione sulla natura della percezione artistica. "
-  audioClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 2c29cc99158e38442a1c1b0a7e8cc0f0, type: 3}
   size: {x: 138.3, y: 200}
 --- !u!64 &298362120
 MeshCollider:
@@ -15304,7 +15304,7 @@ GameObject:
   - component: {fileID: 323366735}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Clickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18987,7 +18987,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 32.000023}
+  m_AnchoredPosition: {x: 0, y: 37}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &389395575
@@ -23234,14 +23234,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 1520c14bc079f8848a80f36db88c4702, type: 3}
   title: "La Grenouill\xE8re "
-  description: "La Grenouill\xE8re, dipinta da Claude Monet, rappresenta una scena
-    di svago e socialit\xE0 su una terrazza galleggiante lungo la Senna. I soggetti
-    sono ritratti mentre si godono il paesaggio e la tranquillit\xE0 del luogo, circondati
-    da riflessi sull'acqua. Monet utilizza pennellate rapide e leggere, tipiche dell'impressionismo,
+  description: "La Grenouill\xE8re, dipinta da Monet, rappresenta una scena di svago
+    e socialit\xE0 su una terrazza galleggiante lungo la Senna. I soggetti sono ritratti
+    mentre si godono il paesaggio e la tranquillit\xE0 del luogo, circondati da riflessi
+    sull'acqua. Monet utilizza pennellate rapide e leggere, tipiche dell'impressionismo,
     per catturare la luce e il movimento dell'acqua, creando un'atmosfera di serenit\xE0
     e vivacit\xE0. Il dipinto esprime la bellezza della natura e la quotidianit\xE0,
     attraverso un trattamento luminoso e atmosferico del paesaggio. "
-  audioClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: ae81b4ceebc1e5b429af3ccc7b69a22b, type: 3}
   size: {x: 245.3, y: 200}
 --- !u!64 &482073139
 MeshCollider:
@@ -27697,7 +27697,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5108214030140521710, guid: 93df58e233fa4fd4eac383666ed341ea, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.51503277
+      value: -0.51
       objectReference: {fileID: 0}
     - target: {fileID: 5108214030140521710, guid: 93df58e233fa4fd4eac383666ed341ea, type: 3}
       propertyPath: m_LocalPosition.z
@@ -27731,6 +27731,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6072644801666088783, guid: 93df58e233fa4fd4eac383666ed341ea, type: 3}
+      propertyPath: m_TagString
+      value: Clickable
+      objectReference: {fileID: 0}
     - target: {fileID: 6450752785222368994, guid: 93df58e233fa4fd4eac383666ed341ea, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.35
@@ -27746,7 +27750,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6072644801666088783, guid: 93df58e233fa4fd4eac383666ed341ea, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1043985312}
   m_SourcePrefab: {fileID: 100100000, guid: 93df58e233fa4fd4eac383666ed341ea, type: 3}
 --- !u!4 &557343051 stripped
 Transform:
@@ -34552,7 +34559,7 @@ MonoBehaviour:
     L'uso dei colori freddi e delle linee pulite amplifica il distacco emotivo dei
     personaggi, che sembrano persi nei loro pensieri. L'opera \xE8 diventata un\u2019icona
     della solitudine urbana e della condizione umana nell'America del XX secolo. "
-  audioClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 17c79beb791c473468de53cff0f2be19, type: 3}
   size: {x: 362, y: 200}
 --- !u!64 &704580014
 MeshCollider:
@@ -39124,6 +39131,37 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1554243084170544005, guid: 911afdef4b782214b8634f0480d69a85, type: 3}
+--- !u!1 &788808416 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7823310272705202865, guid: 738b5a9777fd2fb4fb52c057138df7fc, type: 3}
+  m_PrefabInstance: {fileID: 832191614}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &788808420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788808416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 0}
+  title: Comedian
+  description: "Comedian, un'opera di Maurizio Cattelan, \xE8 una banana attaccata
+    a un muro con del nastro adesivo. La sua presentazione ha suscitato grande dibattito,
+    sia per la sua apparente semplicit\xE0 che per il suo valore di mercato, che
+    ha raggiunto cifre molto elevate. Comedian sfida le convenzioni sull'arte, giocando
+    con il concetto di ready-made e l'idea che qualsiasi oggetto, se contestualizzato
+    correttamente, possa essere considerato arte. L'opera esplora temi legati al
+    valore, alla consumabilit\xE0 e alla mercificazione dell'arte, oltre a sollevare
+    riflessioni sull'umorismo e sulla transitoriet\xE0. Il gesto di Cattelan invita
+    a interrogarsi su cosa possa essere definito arte e su come il significato dell'arte
+    sia spesso determinato dal contesto e dal mercato.."
+  audioClip: {fileID: 8300000, guid: 9742c8fd159c83c47bddcf8e99e3f590, type: 3}
+  size: {x: 0, y: 0}
 --- !u!1 &789450281
 GameObject:
   m_ObjectHideFlags: 0
@@ -40826,7 +40864,7 @@ MonoBehaviour:
     del dinamismo, mentre l'ambientazione sfocata accentua l'idea di movimento continuo.
     L'opera esplora la fusione tra uomo e animale, e tra il movimento fisico e l'energia
     interna, temi centrali nel futurismo. "
-  audioClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 2fb1b6cc07aa9a447b92bc01ff04f047, type: 3}
   size: {x: 242.7, y: 200}
 --- !u!1 &826309109
 GameObject:
@@ -41096,6 +41134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Comedian
       objectReference: {fileID: 0}
+    - target: {fileID: 7823310272705202865, guid: 738b5a9777fd2fb4fb52c057138df7fc, type: 3}
+      propertyPath: m_TagString
+      value: Clickable
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3792773938656617937, guid: 738b5a9777fd2fb4fb52c057138df7fc, type: 3}
     m_RemovedGameObjects: []
@@ -41112,7 +41154,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7483341640500924427, guid: 738b5a9777fd2fb4fb52c057138df7fc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 359914455}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7823310272705202865, guid: 738b5a9777fd2fb4fb52c057138df7fc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 788808420}
   m_SourcePrefab: {fileID: 100100000, guid: 738b5a9777fd2fb4fb52c057138df7fc, type: 3}
 --- !u!1001 &833653444
 PrefabInstance:
@@ -48054,15 +48099,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: f34297e35e9e25741b89028a53b77888, type: 3}
   title: "Il bar delle Folies-Berg\xE8re"
-  description: "Il Bar delle Folies-Berg\xE8re, dipinto da \xC9douard Manet, rappresenta
-    una scena all'interno di un famoso cabaret parigino, con una donna che lavora
-    come barista. La figura centrale, un'operatrice del bar, \xE8 ritratta in una
-    posa pensierosa, quasi distante, mentre riflette sul suo lavoro e sulla sua vita.
+  description: "Il Bar delle Folies-Berg\xE8re, dipinto da Manet, rappresenta una
+    scena all'interno di un famoso cabaret parigino, con una donna che lavora come
+    barista. La figura centrale, un'operatrice del bar, \xE8 ritratta in una posa
+    pensierosa, quasi distante, mentre riflette sul suo lavoro e sulla sua vita.
     L'opera si distingue per l'uso innovativo dello specchio sullo sfondo, che riflette
     i clienti e l'ambiente, creando un gioco di prospettive e un contrasto tra la
     realt\xE0 immediata e quella riflessa. Manet esplora temi di solitudine, alienazione
     e la divisione tra il pubblico e il privato nella societ\xE0 urbana dell'epoca.  "
-  audioClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: d04738bb10e2d664c80b974e98736c9b, type: 3}
   size: {x: 270.7, y: 200}
 --- !u!1 &965864978
 GameObject:
@@ -51478,7 +51523,7 @@ MonoBehaviour:
     prospettiva e la geometria, sfidando le convenzioni tradizionali del ritratto
     e offrendo una visione pi\xF9 intima e interpretativa del soggetto, tipica del
     suo periodo cubista. "
-  audioClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 99993fc7f7c56a4458bae4979fa52143, type: 3}
   size: {x: 141.25, y: 200}
 --- !u!65 &1031122459
 BoxCollider:
@@ -51562,7 +51607,7 @@ MonoBehaviour:
   displayText: {fileID: 1209345007}
   descriptionText: {fileID: 1781746252}
   maxDistance: 5
-  wordDelay: 0.05
+  wordDelay: 0.5
   id: Clickable
 --- !u!4 &1033296162
 Transform:
@@ -51798,6 +51843,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4667380264713814, guid: 3793ad411fa918d4685c2c4c1494c970, type: 3}
   m_PrefabInstance: {fileID: 1860648661}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1043985310 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6072644801666088783, guid: 93df58e233fa4fd4eac383666ed341ea, type: 3}
+  m_PrefabInstance: {fileID: 557343050}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1043985312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043985310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 0}
+  title: Ballon Dog
+  description: 
+  audioClip: {fileID: 0}
+  size: {x: 0, y: 0}
 --- !u!1001 &1044250481
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62442,7 +62509,7 @@ GameObject:
   - component: {fileID: 1277632352}
   m_Layer: 0
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: Clickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69983,6 +70050,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4432409121194468, guid: 57a987e39cc3143448c053e7a5925600, type: 3}
   m_PrefabInstance: {fileID: 1888254380}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1441020600 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6081572564831438493, guid: 8241ffa2db322f148a140189e8ca4afd, type: 3}
+  m_PrefabInstance: {fileID: 1793318225}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1441020604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441020600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 0}
+  title: America
+  description: "America, una scultura di Maurizio Cattelan, rappresenta una toilette
+    dorata a grandezza naturale, progettata per essere utilizzata come un normale
+    bagno. Esposta in modo provocatorio, l'opera esplora il tema del lusso, della
+    consumabilit\xE0 e del potere, utilizzando l'ironia per commentare la societ\xE0
+    contemporanea, il consumismo e le disuguaglianze economiche. Il fatto che una
+    toilette cos\xEC preziosa sia destinata ad essere usata crea un contrasto tra
+    la funzionalit\xE0 quotidiana e l'esibizione ostentata della ricchezza. America
+    \xE8 anche un atto di provocazione verso le istituzioni artistiche, spingendo
+    lo spettatore a riflettere sul valore dell'arte e sul significato di oggetti
+    ordinari trasformati in simboli di status. "
+  audioClip: {fileID: 8300000, guid: 80a14e681a60caa479bd7ce3f4e7022a, type: 3}
+  size: {x: 0, y: 0}
 --- !u!1001 &1441984065
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71977,7 +72075,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: fe522d7b1289c4345b686fc29ee51adf, type: 2}
     - target: {fileID: 5135277217957187511, guid: 911afdef4b782214b8634f0480d69a85, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5179610411232914057, guid: 911afdef4b782214b8634f0480d69a85, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -92002,10 +92100,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: America
       objectReference: {fileID: 0}
+    - target: {fileID: 6081572564831438493, guid: 8241ffa2db322f148a140189e8ca4afd, type: 3}
+      propertyPath: m_TagString
+      value: Clickable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6081572564831438493, guid: 8241ffa2db322f148a140189e8ca4afd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1441020604}
   m_SourcePrefab: {fileID: 100100000, guid: 8241ffa2db322f148a140189e8ca4afd, type: 3}
 --- !u!1 &1793763898 stripped
 GameObject:
@@ -97142,14 +97247,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: ce0a7ee72161f494d9538ea4f2035aac, type: 3}
   title: Composizione VIII
-  description: "Composizione VIII, dipinta da Wassily Kandinsky, \xE8 un\u2019opera
-    astratta che utilizza forme geometriche, linee e colori vivaci per creare un
-    senso di equilibrio dinamico. Il dipinto \xE8 una delle espressioni pi\xF9 mature
-    del linguaggio visivo di Kandinsky, dove cerchi, rettangoli e linee si intersecano
+  description: "Composizione VIII, dipinta da Kandinsky, \xE8 un\u2019opera astratta
+    che utilizza forme geometriche, linee e colori vivaci per creare un senso di
+    equilibrio dinamico. Il dipinto \xE8 una delle espressioni pi\xF9 mature del
+    linguaggio visivo di Kandinsky, dove cerchi, rettangoli e linee si intersecano
     in una composizione che suggerisce movimento e armonia. Il contrasto tra colori
     primari e forme solide evoca una sensazione di energia controllata, riflettendo
     l\u2019idea che l'arte pu\xF2 trasmettere emozioni e dinamiche simili alla musica.  "
-  audioClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: f5e0ed9eba472f94c91db783987510b5, type: 3}
   size: {x: 286.7, y: 200}
 --- !u!64 &1902061892
 MeshCollider:
@@ -100110,7 +100215,7 @@ GameObject:
   - component: {fileID: 1969908940}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: Clickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100709,7 +100814,7 @@ MonoBehaviour:
     La tovaglia, uno degli elementi centrali, \xE8 rappresentata con grande attenzione
     ai dettagli, mentre gli altri oggetti come il vaso e la bottiglia sono ritratti
     in modo stilizzato, riflettendo la sua innovativa fusione di realt\xE0 e astrazione."
-  audioClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 8c423531a240b1445afb3b5725605d57, type: 3}
   size: {x: 133.3, y: 200}
 --- !u!65 &1986753398
 BoxCollider:
@@ -101236,14 +101341,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 6ea6d6343645b5647b8cc8c22280e6e9, type: 3}
   title: La Grande Jatte
-  description: "La Grande Jatte, dipinta da Georges Seurat, \xE8 un esempio di puntinismo,
+  description: "La Grande Jatte, dipinta da Seurat, \xE8 un esempio di puntinismo,
     una tecnica in cui i colori sono applicati in piccoli punti separati che, visti
     da lontano, si mescolano visivamente. Il dipinto ritrae una scena di svago in
     una grande isola parigina, con persone che passeggiano e si rilassano lungo le
     rive della Senna. Seurat crea una composizione ordinata e armoniosa, enfatizzando
     la calma e l'ordine sociale, mentre il punto di vista elevato e la disposizione
     rigorosa delle figure riflettono un'analisi scientifica della luce e del colore. "
-  audioClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 8d6bb9b6d00e3f14eb9cdef7401d53eb, type: 3}
   size: {x: 297.3, y: 200}
 --- !u!64 &1993218289
 MeshCollider:
@@ -101768,7 +101873,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 848ef545fa3db3242839443afdd56865, type: 3}
   title: Composizione in rosso, giallo, blu e nero
-  description: "Composizione di Rosso, Giallo, Blu e Nero, dipinta da Wassily Kandinsky,
+  description: "Composizione di Rosso, Giallo, Blu e Nero, dipinta da Kandinsky,
     \xE8 un\u2019opera astratta che esplora l'uso simbolico e emotivo dei colori
     primari. Le forme geometriche e lineari si combinano in un equilibrio dinamico,
     con il rosso, il giallo e il blu che risaltano in contrasto tra loro, mentre
@@ -101776,7 +101881,7 @@ MonoBehaviour:
     di Kandinsky di comunicare emozioni attraverso il colore e la forma, cercando
     di suscitare una risposta viscerale nel pubblico, come se fosse una composizione
     musicale visiva.  "
-  audioClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 4b19b06597d81e84980e46a3befc4030, type: 3}
   size: {x: 200, y: 200}
 --- !u!64 &2000951292
 MeshCollider:
@@ -104926,7 +105031,7 @@ MonoBehaviour:
     Il dipinto esplora temi di identit\xE0, segretezza e percezione, mettendo in
     discussione ci\xF2 che \xE8 visibile e ci\xF2 che rimane nascosto, riflettendo
     il gioco di illusioni tipico dello stile di Magritte.  "
-  audioClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 7edb420114a77ac45b662c97ef489391, type: 3}
   size: {x: 154.5, y: 200}
 --- !u!64 &2058804118
 MeshCollider:
@@ -105712,7 +105817,7 @@ MonoBehaviour:
     sperimenta con la prospettiva e la composizione, riducendo gli elementi naturali
     e architettonici a piani sovrapposti e angolazioni diverse, rendendo il paesaggio
     un gioco di forme e colori. "
-  audioClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 2ca3bac6959fc534f9a36eace44fac2e, type: 3}
   size: {x: 162.7, y: 200}
 --- !u!65 &2068166769
 BoxCollider:
@@ -108703,7 +108808,7 @@ MonoBehaviour:
     colori intensi che esprimono emozioni di inquietudine e solitudine. Il contrasto
     tra il grano dorato e il cielo tempestoso, insieme ai corvi, crea un'atmosfera
     drammatica e simbolica, che riflette i turbamenti interiori di Van Gogh. "
-  audioClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 83a0d33a3a1e4a14bb3075e223d21fd9, type: 3}
   size: {x: 413.3, y: 200}
 --- !u!64 &2127770202
 MeshCollider:
@@ -108827,15 +108932,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 86e656bf8b6ddac40a108c3d234c5256, type: 3}
   title: Sera sul viale karl johan
-  description: "Sera sul Viale di Karl J, dipinto da Egon Schiele, rappresenta un
-    paesaggio urbano con un viale alberato al crepuscolo. L'atmosfera \xE8 cupa e
-    inquietante, con il cielo scuro che avvolge le figure stilizzate e gli alberi.
+  description: "Sera sul Viale di Karl Johan, dipinto da Egon Schiele, rappresenta
+    un paesaggio urbano con un viale alberato al crepuscolo. L'atmosfera \xE8 cupa
+    e inquietante, con il cielo scuro che avvolge le figure stilizzate e gli alberi.
     Schiele, noto per il suo stile espressionista e la sua attenzione alle emozioni
     interiori, utilizza linee forti e colori intensi per creare una sensazione di
     solitudine e angoscia, riflettendo le sue preoccupazioni esistenziali e l\u2019alienazione.
     La scena esprime il contrasto tra la quiete apparente del paesaggio e la tensione
-    emotiva sottostante.  "
-  audioClip: {fileID: 0}
+    emotiva sottostante."
+  audioClip: {fileID: 8300000, guid: b2d874cb9c4110943921f6ae485831f3, type: 3}
   size: {x: 286, y: 200}
 --- !u!64 &2128016005
 MeshCollider:
