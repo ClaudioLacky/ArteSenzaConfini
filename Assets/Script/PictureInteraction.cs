@@ -1,12 +1,11 @@
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
 using System.Collections;
 
 public class PictureInteraction : MonoBehaviour
 {
     public GameObject panel; // Pannello che si apre
-    public Image displayImage; // Immagine ingrandita nel pannello
+    public UnityEngine.UI.Image displayImage; // Immagine ingrandita nel pannello
     public TextMeshProUGUI displayText; // Testo nel pannello
     public TextMeshProUGUI descriptionText; // Descrizione nel pannello
     public float maxDistance = 5f;
@@ -20,19 +19,12 @@ public class PictureInteraction : MonoBehaviour
     private AudioManager audioManager; // Riferimento all'AudioManager
     private Coroutine descriptionCoroutine; // Riferimento alla coroutine attiva
 
-    private UIDocument documentLogin;
-
 
     void Start()
     {
         mainCamera = Camera.main;
         panel.SetActive(isPanelActive); // Nascondi il pannello all'inizio
         audioManager = FindObjectOfType<AudioManager>(); // Trova l'AudioManager nella scena
-
-        documentLogin = GameObject.Find("Login").GetComponent<UIDocument>();
-        documentLogin.enabled = false;
-
-
     }
 
     void Update()
