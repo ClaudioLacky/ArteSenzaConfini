@@ -25,7 +25,7 @@ public class MySqlManager : MonoBehaviour
         form.AddField("password", password);
         form.AddField("nomeUtente", nomeUtente);
 
-        using (UnityWebRequest www = UnityWebRequest.Post("http://localhost/Register_User.php", form))
+        using (UnityWebRequest www = UnityWebRequest.Post("http://localhost/ArteSenzaConfini/Register_User.php", form))
         {
             yield return www.SendWebRequest();
 
@@ -75,8 +75,8 @@ public class MySqlManager : MonoBehaviour
                     document.rootVisualElement.style.display = DisplayStyle.None;
                     PopUpManager.instance.SetDocument(document);
                     PopUpManager.instance.ShowDocument();
-                    PopUpManager.instance.setStringHeader("Registrazione effettuata", "Museo");
-                    PopUpManager.instance.setStringText("Registrazione effettuata con successo, benvenuto/a " + name);
+                    PopUpManager.instance.setStringHeader("Registrazione effettuata", "Registration");
+                    PopUpManager.instance.setStringText("Registrazione effettuata con successo, benvenuto/a " + nomeUtente);
                     break;
             }
         }
@@ -88,7 +88,7 @@ public class MySqlManager : MonoBehaviour
         form.AddField("mail", email);
         form.AddField("passwordLogin", password);
 
-        using (UnityWebRequest www = UnityWebRequest.Post("http://localhost/metaGallery/LoginUser.php", form))
+        using (UnityWebRequest www = UnityWebRequest.Post("http://localhost/ArteSenzaConfini/Login_User.php", form))
         {
             yield return www.SendWebRequest();
 
@@ -141,7 +141,7 @@ public class MySqlManager : MonoBehaviour
                     PopUpManager.instance.SetDocument(document);
                     PopUpManager.instance.ShowDocument();
                     PopUpManager.instance.setStringHeader("Login effetuato", "Login");
-                    PopUpManager.instance.setStringText("Benvenuto/a");
+                    PopUpManager.instance.setStringText("Benvenuto/a " +  controllo.Split("&", 2));
                     break;
             }
         }
@@ -153,7 +153,7 @@ public class MySqlManager : MonoBehaviour
         form1.AddField("descrizione", descrizione);
         form1.AddField("nomeUtente", nomeUtente);
 
-        using (UnityWebRequest www = UnityWebRequest.Post("http://localhost/register_description.php", form1))
+        using (UnityWebRequest www = UnityWebRequest.Post("http://localhost/ArteSenzaConfini/Register_Description.php", form1))
         {
             yield return www.SendWebRequest();
 

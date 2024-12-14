@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PictureInteraction : MonoBehaviour
 {
@@ -19,12 +20,17 @@ public class PictureInteraction : MonoBehaviour
     private AudioManager audioManager; // Riferimento all'AudioManager
     private Coroutine descriptionCoroutine; // Riferimento alla coroutine attiva
 
+    private GameObject pauseMenu;
 
     void Start()
     {
         mainCamera = Camera.main;
         panel.SetActive(isPanelActive); // Nascondi il pannello all'inizio
         audioManager = FindObjectOfType<AudioManager>(); // Trova l'AudioManager nella scena
+
+        pauseMenu = GameObject.FindGameObjectWithTag("Pause");
+
+        pauseMenu.SetActive(false);
     }
 
     void Update()
@@ -46,6 +52,17 @@ public class PictureInteraction : MonoBehaviour
                     }
                 }
             }
+        }
+        else if(Input.GetKeyDown(KeyCode.P))
+        {
+            // Pausa il gioco
+            Time.timeScale = 0f;
+
+            // Riabilita i cursori standard di Unity
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+
+            pauseMenu.SetActive(true);
         }
 
         if (isPanelActive && Input.GetKeyDown(KeyCode.Escape)) // Chiudi pannello con ESC

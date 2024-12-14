@@ -57,38 +57,36 @@ public class RegistrationEvents : MonoBehaviour
     {
         bool controllo = false;
 
-        //while (!controllo)
-        //{
-            if (string.IsNullOrWhiteSpace(textFieldName.text) || textFieldName.text.Length < 2)
-            {
-                Debug.LogError("Inserire un nome valido di almeno 2 caratteri");
-                controllo = true;
-            }
+        if (string.IsNullOrWhiteSpace(textFieldName.text) || textFieldName.text.Length < 2)
+        {
+            Debug.LogError("Inserire un nome valido di almeno 2 caratteri");
+            controllo = true;
+        }
 
-            if (string.IsNullOrWhiteSpace(textFieldSurname.text) || textFieldSurname.text.Length < 2)
-            {
-                Debug.LogError("Inserire un cognome valido di almeno 2 caratteri");
-                controllo = true;
-            }
+        if (string.IsNullOrWhiteSpace(textFieldSurname.text) || textFieldSurname.text.Length < 2)
+        {
+            Debug.LogError("Inserire un cognome valido di almeno 2 caratteri");
+            controllo = true;
+        }
 
-            if (string.IsNullOrWhiteSpace(textFieldEmail.text) || textFieldEmail.text.Length < 5)
-            {
-                Debug.LogError("Inserire un email valida");
-                controllo = true;
-            }
+        if (string.IsNullOrWhiteSpace(textFieldEmail.text) || textFieldEmail.text.Length < 5)
+        {
+            Debug.LogError("Inserire un email valida");
+            controllo = true;
+        }
 
-            if (string.IsNullOrWhiteSpace(textFieldPassword.text) || isValid(textFieldPassword.text))
-            {
-                Debug.LogError("Inserire una password valida che deve contenere:\n" +
-                    " lunghezza minina di 8 caratteri, una lettera maiuscola, una lettera minuscola e un carattere speciale.");
-                controllo = true;
-            }
+        if (string.IsNullOrWhiteSpace(textFieldPassword.text) || isValid(textFieldPassword.text))
+        {
+            Debug.LogError("Inserire una password valida che deve contenere:\n" +
+                " lunghezza minina di 8 caratteri, una lettera maiuscola, una lettera minuscola e un carattere speciale.");
+            controllo = true;
+        }
 
-            if (string.IsNullOrWhiteSpace(textFieldNomeUtente.text) || textFieldNomeUtente.text.Length < 5)
-            {
-                Debug.LogError("Inserire un Nome Utente");
-                controllo = true;
-            }
+        if (string.IsNullOrWhiteSpace(textFieldNomeUtente.text) || textFieldNomeUtente.text.Length < 5)
+        {
+            Debug.LogError("Inserire un Nome Utente");
+            controllo = true;
+        }
 
         if (controllo)
         {
@@ -109,7 +107,7 @@ public class RegistrationEvents : MonoBehaviour
         {
             Debug.Log("Hai premuto Crea Account Button");
             print("Successfully Registered!");
-            StartCoroutine(MySqlManager.instance.RegisterUser(textFieldName.text, textFieldSurname.text, textFieldEmail.text, textFieldPassword.text,textFieldNomeUtente.text, document));
+            StartCoroutine(MySqlManager.instance.RegisterUser(textFieldName.text, textFieldSurname.text, textFieldEmail.text, textFieldPassword.text, textFieldNomeUtente.text, document));
         }
         else
         {

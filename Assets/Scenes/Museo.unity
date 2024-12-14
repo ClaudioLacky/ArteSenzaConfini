@@ -19471,6 +19471,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VIP_Rope_Barrier Variant (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7127393288133529574, guid: 09f62888a31213240ab1388135e1f1a6, type: 3}
+      propertyPath: m_TagString
+      value: Barriera
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -38097,6 +38101,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VIP_Rope_Barrier Variant (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 7127393288133529574, guid: 09f62888a31213240ab1388135e1f1a6, type: 3}
+      propertyPath: m_TagString
+      value: Barriera
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -43327,6 +43335,50 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &867152714
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 867152715}
+  - component: {fileID: 867152716}
+  m_Layer: 0
+  m_Name: BarriereManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &867152715
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867152714}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -27.234104, y: -18.661045, z: 40.29684}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &867152716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867152714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98307cdd6c7eb914b8b56bc2a8fa6260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &870133448
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50837,6 +50889,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VIP_Rope_Barrier Variant (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 7127393288133529574, guid: 09f62888a31213240ab1388135e1f1a6, type: 3}
+      propertyPath: m_TagString
+      value: Barriera
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -53740,6 +53796,10 @@ PrefabInstance:
     - target: {fileID: 7127393288133529574, guid: 09f62888a31213240ab1388135e1f1a6, type: 3}
       propertyPath: m_Name
       value: VIP_Rope_Barrier Variant (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7127393288133529574, guid: 09f62888a31213240ab1388135e1f1a6, type: 3}
+      propertyPath: m_TagString
+      value: Barriera
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -57924,6 +57984,67 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2932619291441955721, guid: 0eb02ebfde63b3040b243ecdce81d533, type: 3}
   m_PrefabInstance: {fileID: 1072536289}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1173167448
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1173167450}
+  - component: {fileID: 1173167449}
+  - component: {fileID: 1173167451}
+  m_Layer: 5
+  m_Name: MenuPause
+  m_TagString: Pause
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1173167449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173167448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PanelSettings: {fileID: 11400000, guid: 6cb2306abbca0f74abbbb1591e0edaab, type: 2}
+  m_ParentUI: {fileID: 0}
+  sourceAsset: {fileID: 9197481963319205126, guid: 9ab55948d34608148aa7958da91d492c, type: 3}
+  m_SortingOrder: 0
+--- !u!4 &1173167450
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173167448}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1173167451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173167448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8fa7fbcb02785045bc88bdb402987ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1173190484 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -39887662801371318, guid: 911afdef4b782214b8634f0480d69a85, type: 3}
@@ -64945,6 +65066,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VIP_Rope_Barrier Variant (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7127393288133529574, guid: 09f62888a31213240ab1388135e1f1a6, type: 3}
+      propertyPath: m_TagString
+      value: Barriera
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -66233,6 +66358,10 @@ PrefabInstance:
     - target: {fileID: 7127393288133529574, guid: 09f62888a31213240ab1388135e1f1a6, type: 3}
       propertyPath: m_Name
       value: VIP_Rope_Barrier Variant (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7127393288133529574, guid: 09f62888a31213240ab1388135e1f1a6, type: 3}
+      propertyPath: m_TagString
+      value: Barriera
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -110176,3 +110305,5 @@ SceneRoots:
   - {fileID: 1441984065}
   - {fileID: 1309089240}
   - {fileID: 1685653073}
+  - {fileID: 867152715}
+  - {fileID: 1173167450}

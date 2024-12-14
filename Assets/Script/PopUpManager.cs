@@ -66,7 +66,8 @@ public class PopUpManager : MonoBehaviour
         {
             MouseLook.instance.Start();
             MouseLook.instance.Update();
-            //MouseHover.instance.SetUserLog(false);
+            MouseHover.instance.SetUserLog(false);
+            Time.timeScale = 1f;  // Sblocca il gioco
             SceneManager.UnloadSceneAsync(scena);
         }
         else
