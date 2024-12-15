@@ -149,7 +149,6 @@ public class MySqlManager : MonoBehaviour
                     PopUpManager.instance.ShowDocument();
                     PopUpManager.instance.SetStringHeader("Login effetuato", null);
                     PopUpManager.instance.SetStringText("Benvenuto/a ");
-                    // +  controllo.Split("&", 2)
                     break;
             }
         }

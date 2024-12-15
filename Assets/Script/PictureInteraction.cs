@@ -21,20 +21,39 @@ public class PictureInteraction : MonoBehaviour
     private AudioManager audioManager; // Riferimento all'AudioManager
     private Coroutine descriptionCoroutine; // Riferimento alla coroutine attiva
 
-    //private GameObject pauseMenu;
+    private AudioSource audioSource;
+
+    private UIDocument documentTutorial;
 
     private UIDocument documentPause;
 
+    private UIDocument documentAlert;
     void Start()
     {
+
+        // Riabilita i cursori standard di Unity
+        UnityEngine.Cursor.lockState = CursorLockMode.None;
+        UnityEngine.Cursor.visible = true;
+
         mainCamera = Camera.main;
         panel.SetActive(isPanelActive); // Nascondi il pannello all'inizio
         audioManager = FindObjectOfType<AudioManager>(); // Trova l'AudioManager nella scena
 
         documentPause = GameObject.FindGameObjectWithTag("Pause").GetComponent<UIDocument>();
 
-        //pauseMenu.SetActive(false);
+        documentTutorial = GameObject.FindGameObjectWithTag("Tutorial").GetComponent<UIDocument>();
+
+        documentAlert = GameObject.FindGameObjectWithTag("Alert").GetComponent<UIDocument>();
+
+        audioSource = GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>();
+
+        audioSource.Play();
+
         documentPause.rootVisualElement.style.display = DisplayStyle.None;
+
+        documentAlert.rootVisualElement.style.display = DisplayStyle.None;
+
+        documentTutorial.rootVisualElement.style.display = DisplayStyle.Flex;
     }
 
     void Update()
@@ -78,6 +97,8 @@ public class PictureInteraction : MonoBehaviour
 
     void OpenPanel(PictureData data)
     {
+        audioSource.Pause();
+
         // Imposta immagine, titolo e dimensione dell'immagine
         displayImage.sprite = data.image;
         displayImage.rectTransform.sizeDelta = data.size;
@@ -124,6 +145,11 @@ public class PictureInteraction : MonoBehaviour
             StopCoroutine(descriptionCoroutine);
             descriptionCoroutine = null;
         }
+
+        MouseLook.instance.Start();
+        MouseLook.instance.Update();
+
+        audioSource.UnPause();
     }
 
     IEnumerator DisplayDescription(string description)

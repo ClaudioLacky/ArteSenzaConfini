@@ -7,6 +7,8 @@ public class MainMenuEvents : MonoBehaviour
 {
     private UIDocument document;
 
+    private UIDocument documentAlert;
+
     private Button buttonEnter;
     private Button buttonSettings;
     private Button buttonExit;
@@ -19,6 +21,10 @@ public class MainMenuEvents : MonoBehaviour
     {
         //audioSource = GetComponent<AudioSource>();
         document = GetComponent<UIDocument>();
+
+        documentAlert = GameObject.FindGameObjectWithTag("Alert").GetComponent<UIDocument>();
+
+        documentAlert.rootVisualElement.style.display = DisplayStyle.N;
 
         buttonEnter = document.rootVisualElement.Q("ButtonEnter") as Button;
         buttonEnter.RegisterCallback<ClickEvent>(OnButtonEnter);
@@ -49,8 +55,11 @@ public class MainMenuEvents : MonoBehaviour
 
     private void OnButtonExit(ClickEvent evt)
     {
-        Debug.Log("Hai premuto Exit Button");
-        Application.Quit();
+        document.rootVisualElement.style.display = DisplayStyle.None;
+        AlertEvents.instance.SetDocument(document);
+        AlertEvents.instance.SetScena("Museo");
+        AlertEvents.instance.SetStringHeader("Sei sicuro/a di voler uscire?");
+        documentAlert.rootVisualElement.style.display = DisplayStyle.Flex;
     }
 
     private void OnDisable()

@@ -10,13 +10,13 @@ public class MenuPauseEvents : MonoBehaviour
 
     private UIDocument documentSettings;
 
+    private UIDocument documentAlert;
+
     private Button buttonReturn;
 
     private Button buttonSettings;
 
     private Button buttonExit;
-
-    //private GameObject gameObject;
 
     private void Awake()
     {
@@ -24,7 +24,7 @@ public class MenuPauseEvents : MonoBehaviour
 
         documentSettings = GameObject.FindGameObjectWithTag("Settings").GetComponent<UIDocument>();
 
-        //gameObject = GetComponent<GameObject>();
+        documentAlert = GameObject.FindGameObjectWithTag("Alert").GetComponent<UIDocument>();
 
         buttonReturn = documentPause.rootVisualElement.Q("ButtonReturn") as Button;
         buttonReturn.RegisterCallback<ClickEvent>(OnButtonReturn);
@@ -54,7 +54,11 @@ public class MenuPauseEvents : MonoBehaviour
 
     private void OnButtonExit(ClickEvent evt)
     {
-        SceneManager.LoadScene("Menu");
+        documentPause.rootVisualElement.style.display = DisplayStyle.None;
+        AlertEvents.instance.SetDocument(documentPause);
+        AlertEvents.instance.SetScena("Museo");
+        AlertEvents.instance.SetStringHeader("Sei sicuro/a di voler tornare al menù principale?");
+        documentAlert.rootVisualElement.style.display = DisplayStyle.Flex;
     }
 
     private void OnDisable()

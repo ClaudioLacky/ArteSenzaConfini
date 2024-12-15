@@ -10,6 +10,9 @@ TagManager:
   - Login
   - Registration
   - Settings
+  - Music
+  - Tutorial
+  - Alert
   layers:
   - Default
   - TransparentFX

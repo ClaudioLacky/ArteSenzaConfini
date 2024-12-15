@@ -10,6 +10,7 @@ public class BarriereManager : MonoBehaviour
 
     private void Awake()
     {
+        instance = this;
 
         // Troviamo tutti gli oggetti con il tag "Cordone"
         gameObjects = GameObject.FindGameObjectsWithTag("Barriera");
