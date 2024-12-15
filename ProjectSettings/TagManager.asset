@@ -7,6 +7,9 @@ TagManager:
   - Clickable
   - Barriera
   - Pause
+  - Login
+  - Registration
+  - Settings
   layers:
   - Default
   - TransparentFX

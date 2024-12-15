@@ -5,7 +5,9 @@ using UnityEngine.UIElements;
 
 public class LoginEvents : MonoBehaviour
 {
-    private UIDocument document;
+    private UIDocument documentLogin;
+
+    private UIDocument documentRegistration;
 
     private Button buttonAccessoLogin;
     private Button buttonRegistrationLogin;
@@ -21,22 +23,26 @@ public class LoginEvents : MonoBehaviour
     private void Awake()
     {
         //audioSource = GetComponent<AudioSource>();
-        document = GetComponent<UIDocument>();
+        documentLogin = GetComponent<UIDocument>();
 
-        buttonAccessoLogin = document.rootVisualElement.Q("ButtonAccessoLogin") as Button;
+        documentRegistration = GameObject.FindGameObjectWithTag("Registration").GetComponent<UIDocument>();
+
+        documentLogin.rootVisualElement.style.display = DisplayStyle.None;
+
+        buttonAccessoLogin = documentLogin.rootVisualElement.Q("ButtonAccessoLogin") as Button;
         buttonAccessoLogin.RegisterCallback<ClickEvent>(OnButtonAccesso);
 
-        buttonRegistrationLogin = document.rootVisualElement.Q("ButtonRegistrationLogin") as Button;
+        buttonRegistrationLogin = documentLogin.rootVisualElement.Q("ButtonRegistrationLogin") as Button;
         buttonRegistrationLogin.RegisterCallback<ClickEvent>(OnButtonRegistration);
 
-        buttonReturnLogin = document.rootVisualElement.Q("ButtonReturnLogin") as Button;
+        buttonReturnLogin = documentLogin.rootVisualElement.Q("ButtonReturnLogin") as Button;
         buttonReturnLogin.RegisterCallback<ClickEvent>(OnButtonReturn);
 
         //menuButtons = document.rootVisualElement.Query<Button>().ToList();
 
-        textFieldEmail = document.rootVisualElement.Q("EmailLogin") as TextField;
+        textFieldEmail = documentLogin.rootVisualElement.Q("EmailLogin") as TextField;
 
-        textFieldPassword = document.rootVisualElement.Q("PasswordLogin") as TextField;
+        textFieldPassword = documentLogin.rootVisualElement.Q("PasswordLogin") as TextField;
 
         /*for (int i = 0; i < menuButtons.Count; i++)
         {
@@ -47,19 +53,20 @@ public class LoginEvents : MonoBehaviour
     private void OnButtonAccesso(ClickEvent evt)
     {
         Debug.Log("Hai premuto Accesso Button");
-        StartCoroutine(MySqlManager.instance.LoginUser(textFieldEmail.text, textFieldPassword.text, document));
+        StartCoroutine(MySqlManager.instance.LoginUser(textFieldEmail.text, textFieldPassword.text, documentLogin));
     }
 
     private void OnButtonRegistration(ClickEvent evt)
     {
         Debug.Log("Hai premuto Registration Button");
-        SceneManager.LoadScene("Registration");
+        documentLogin.rootVisualElement.style.display = DisplayStyle.None;
+        documentRegistration.rootVisualElement.style.display = DisplayStyle.Flex;
     }
 
     private void OnButtonReturn(ClickEvent evt)
     {
         Debug.Log("Hai premuto Return Button");
-        SceneManager.LoadScene("MainMenu");
+        documentLogin.rootVisualElement.style.display = DisplayStyle.None;
     }
 
     private void OnDisable()

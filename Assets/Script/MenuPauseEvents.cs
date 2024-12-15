@@ -6,7 +6,9 @@ using UnityEngine.UIElements;
 
 public class MenuPauseEvents : MonoBehaviour
 {
-    private UIDocument document;
+    private UIDocument documentPause;
+
+    private UIDocument documentSettings;
 
     private Button buttonReturn;
 
@@ -14,34 +16,40 @@ public class MenuPauseEvents : MonoBehaviour
 
     private Button buttonExit;
 
-    private GameObject gameObject;
+    //private GameObject gameObject;
 
     private void Awake()
     {
-        document = GetComponent<UIDocument>();
+        documentPause = GetComponent<UIDocument>();
 
-        gameObject = GetComponent<GameObject>();
+        documentSettings = GameObject.FindGameObjectWithTag("Settings").GetComponent<UIDocument>();
 
-        buttonReturn = document.rootVisualElement.Q("ButtonReturn") as Button;
+        //gameObject = GetComponent<GameObject>();
+
+        buttonReturn = documentPause.rootVisualElement.Q("ButtonReturn") as Button;
         buttonReturn.RegisterCallback<ClickEvent>(OnButtonReturn);
 
-        buttonSettings = document.rootVisualElement.Q("ButtonSettings") as Button;
+        buttonSettings = documentPause.rootVisualElement.Q("ButtonSettings") as Button;
         buttonSettings.RegisterCallback<ClickEvent>(OnButtonSettings);
 
-        buttonExit = document.rootVisualElement.Q("ButtonExit") as Button;
+        buttonExit = documentPause.rootVisualElement.Q("ButtonExit") as Button;
         buttonExit.RegisterCallback<ClickEvent>(OnButtonExit);
     }
 
     private void OnButtonReturn(ClickEvent evt)
     {
         Time.timeScale = 1f;  // Sblocca il gioco
-        gameObject.SetActive(false);
+        MouseLook.instance.Start();
+        MouseLook.instance.Update();
+        //gameObject.SetActive(false);
+        documentPause.rootVisualElement.style.display = DisplayStyle.None;
     }
 
     private void OnButtonSettings(ClickEvent evt)
     {
         Debug.Log("Settings");
-        SceneManager.LoadScene("Settings", LoadSceneMode.Additive);
+        documentPause.rootVisualElement.style.display = DisplayStyle.None;
+        documentSettings.rootVisualElement.style.display = DisplayStyle.Flex;
     }
 
     private void OnButtonExit(ClickEvent evt)

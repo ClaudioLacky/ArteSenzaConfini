@@ -8,7 +8,9 @@ public class SettingsEvents : MonoBehaviour
 {
     public static SettingsEvents instance;
 
-    private UIDocument document;
+    private UIDocument documentSettings;
+
+    private UIDocument documentPause;
 
     private DropdownField dropdownResolution;
 
@@ -31,22 +33,26 @@ public class SettingsEvents : MonoBehaviour
 
         float volumeInit;
 
-        document = GetComponent<UIDocument>();
+        documentSettings = GetComponent<UIDocument>();
 
-        dropdownResolution = document.rootVisualElement.Q("DropdownResolution") as DropdownField;
+        documentSettings.rootVisualElement.style.display = DisplayStyle.None;
 
-        dropdownQuality = document.rootVisualElement.Q("DropdownQuality") as DropdownField;
+        documentPause = GameObject.FindGameObjectWithTag("Pause").GetComponent<UIDocument>();
 
-        sliderVolume = document.rootVisualElement.Q("SliderVolume") as Slider;
+        dropdownResolution = documentSettings.rootVisualElement.Q("DropdownResolution") as DropdownField;
+
+        dropdownQuality = documentSettings.rootVisualElement.Q("DropdownQuality") as DropdownField;
+
+        sliderVolume = documentSettings.rootVisualElement.Q("SliderVolume") as Slider;
 
         InitDisplayResolution();
         InitQualitySettings();
 
-        buttonApply = document.rootVisualElement.Q("ButtonApply") as Button;
+        buttonApply = documentSettings.rootVisualElement.Q("ButtonApply") as Button;
         buttonApply.RegisterCallback<ClickEvent>(OnButtonApply);
 
 
-        buttonReturn = document.rootVisualElement.Q("ButtonReturn") as Button;
+        buttonReturn = documentSettings.rootVisualElement.Q("ButtonReturn") as Button;
         buttonReturn.RegisterCallback<ClickEvent>(OnButtonReturn);
 
         audioMixer.GetFloat("volume", out volumeInit);
@@ -92,7 +98,8 @@ public class SettingsEvents : MonoBehaviour
 
     private void OnButtonReturn(ClickEvent evt)
     {
-        SceneManager.UnloadSceneAsync("Settings");
+        documentSettings.rootVisualElement.style.display = DisplayStyle.None;
+        documentPause.rootVisualElement.style.display = DisplayStyle.Flex;
     }
 
     private void OnDisable()

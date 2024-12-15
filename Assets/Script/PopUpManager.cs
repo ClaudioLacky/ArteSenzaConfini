@@ -18,11 +18,13 @@ public class PopUpManager : MonoBehaviour
 
     private string scena;
 
+    private bool controllo = false;
+
     private void Awake()
     {
         instance = this;
 
-        documentInternal = GameObject.Find("PopUp").GetComponent<UIDocument>();
+        documentInternal = GetComponent<UIDocument>();
 
         documentInternal.rootVisualElement.style.display = DisplayStyle.None;
 
@@ -40,16 +42,21 @@ public class PopUpManager : MonoBehaviour
         documentExternal = document;
     }
 
-    public void setStringHeader(string msg, string scena)
+    public void SetStringHeader(string msg, string scena)
     {
         header.text = msg;
 
         this.scena = scena;
     }
 
-    public void setStringText(string msg)
+    public void SetStringText(string msg)
     {
         textPopUp.text = msg;
+    }
+
+    public void SetControllo(bool controllo)
+    {
+        this.controllo = controllo;
     }
 
     public void ShowDocument()
@@ -62,17 +69,16 @@ public class PopUpManager : MonoBehaviour
         Debug.Log("Ciao");
         documentInternal.rootVisualElement.style.display = DisplayStyle.None;
 
-        if (scena != null)
+        if (controllo)
+        {
+            documentExternal.rootVisualElement.style.display = DisplayStyle.Flex;
+        }
+        else
         {
             MouseLook.instance.Start();
             MouseLook.instance.Update();
             MouseHover.instance.SetUserLog(false);
             Time.timeScale = 1f;  // Sblocca il gioco
-            SceneManager.UnloadSceneAsync(scena);
-        }
-        else
-        {
-            documentExternal.rootVisualElement.style.display = DisplayStyle.Flex;
         }
     }
 

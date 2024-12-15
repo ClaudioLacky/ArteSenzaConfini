@@ -37,46 +37,50 @@ public class MySqlManager : MonoBehaviour
                     Debug.Log("Failed to Register User!");
                     document.rootVisualElement.style.display = DisplayStyle.None;
                     PopUpManager.instance.SetDocument(document);
+                    PopUpManager.instance.SetControllo(true);
                     PopUpManager.instance.ShowDocument();
-                    PopUpManager.instance.setStringHeader("Attenzione!", null);
-                    PopUpManager.instance.setStringText("Connessione al server fallita");
+                    PopUpManager.instance.SetStringHeader("Attenzione!", null);
+                    PopUpManager.instance.SetStringText("Connessione al server fallita");
                     break;
 
                 case "2: Email check failed":
                     Debug.Log("Failed to Register User!");
                     document.rootVisualElement.style.display = DisplayStyle.None;
                     PopUpManager.instance.SetDocument(document);
+                    PopUpManager.instance.SetControllo(true);
                     PopUpManager.instance.ShowDocument();
-                    PopUpManager.instance.setStringHeader("Attenzione!", null);
-                    PopUpManager.instance.setStringText("Controllo dell'email fallito");
+                    PopUpManager.instance.SetStringHeader("Attenzione!", null);
+                    PopUpManager.instance.SetStringText("Controllo dell'email fallito");
                     break;
 
                 case "3: Email already exists":
                     Debug.Log("Failed to Register User!");
                     document.rootVisualElement.style.display = DisplayStyle.None;
                     PopUpManager.instance.SetDocument(document);
+                    PopUpManager.instance.SetControllo(true);
                     PopUpManager.instance.ShowDocument();
-                    PopUpManager.instance.setStringHeader("Attenzione!", null);
-                    PopUpManager.instance.setStringText("Utente già esistente");
+                    PopUpManager.instance.SetStringHeader("Attenzione!", null);
+                    PopUpManager.instance.SetStringText("Utente già esistente");
                     break;
 
                 case "4: Insert user query failed":
                     Debug.Log("Failed to Register User!");
                     document.rootVisualElement.style.display = DisplayStyle.None;
                     PopUpManager.instance.SetDocument(document);
+                    PopUpManager.instance.SetControllo(true);
                     PopUpManager.instance.ShowDocument();
-                    PopUpManager.instance.setStringHeader("Attenzione!", null);
-                    PopUpManager.instance.setStringText("Invio dei dati fallito");
+                    PopUpManager.instance.SetStringHeader("Attenzione!", null);
+                    PopUpManager.instance.SetStringText("Invio dei dati fallito");
                     break;
 
                 case "success":
                     Debug.Log("Successfully Registered!");
-                    //Gestore.instance.controlloBarriere();
+                    BarriereManager.instance.controlloBarriere();
                     document.rootVisualElement.style.display = DisplayStyle.None;
                     PopUpManager.instance.SetDocument(document);
                     PopUpManager.instance.ShowDocument();
-                    PopUpManager.instance.setStringHeader("Registrazione effettuata", "Registration");
-                    PopUpManager.instance.setStringText("Registrazione effettuata con successo, benvenuto/a " + nomeUtente);
+                    PopUpManager.instance.SetStringHeader("Registrazione effettuata", null);
+                    PopUpManager.instance.SetStringText("Registrazione effettuata con successo, benvenuto/a " + nomeUtente);
                     break;
             }
         }
@@ -102,9 +106,10 @@ public class MySqlManager : MonoBehaviour
                     Debug.Log("Failed to Login User!");
                     document.rootVisualElement.style.display = DisplayStyle.None;
                     PopUpManager.instance.SetDocument(document);
+                    PopUpManager.instance.SetControllo(true);
                     PopUpManager.instance.ShowDocument();
-                    PopUpManager.instance.setStringHeader("Attenzione!", null);
-                    PopUpManager.instance.setStringText("Connessione al server fallita");
+                    PopUpManager.instance.SetStringHeader("Attenzione!", null);
+                    PopUpManager.instance.SetStringText("Connessione al server fallita");
                     break;
 
                 case "2: Email check failed":
@@ -112,36 +117,39 @@ public class MySqlManager : MonoBehaviour
                     document.rootVisualElement.style.display = DisplayStyle.None;
                     PopUpManager.instance.SetDocument(document);
                     PopUpManager.instance.ShowDocument();
-                    PopUpManager.instance.setStringHeader("Attenzione!", null);
-                    PopUpManager.instance.setStringText("Controllo dell'email fallito");
+                    PopUpManager.instance.SetStringHeader("Attenzione!", null);
+                    PopUpManager.instance.SetStringText("Controllo dell'email fallito");
                     break;
 
                 case "5: Either no user with email, or more that one":
                     Debug.Log("Failed to Login User!");
                     document.rootVisualElement.style.display = DisplayStyle.None;
                     PopUpManager.instance.SetDocument(document);
+                    PopUpManager.instance.SetControllo(true);
                     PopUpManager.instance.ShowDocument();
-                    PopUpManager.instance.setStringHeader("Attenzione!", null);
-                    PopUpManager.instance.setStringText("Email errata o inesistente");
+                    PopUpManager.instance.SetStringHeader("Attenzione!", null);
+                    PopUpManager.instance.SetStringText("Email errata o inesistente");
                     break;
 
                 case "6: Incorrect password":
                     Debug.Log("Failed to Login User!");
                     document.rootVisualElement.style.display = DisplayStyle.None;
                     PopUpManager.instance.SetDocument(document);
+                    PopUpManager.instance.SetControllo(true);
                     PopUpManager.instance.ShowDocument();
-                    PopUpManager.instance.setStringHeader("Attenzione!", null);
-                    PopUpManager.instance.setStringText("Password errata");
+                    PopUpManager.instance.SetStringHeader("Attenzione!", null);
+                    PopUpManager.instance.SetStringText("Password errata");
                     break;
 
                 case "success":
                     Debug.Log("Successfully Login!");
-                    //Gestore.instance.controlloBarriere();
+                    BarriereManager.instance.controlloBarriere();
                     document.rootVisualElement.style.display = DisplayStyle.None;
                     PopUpManager.instance.SetDocument(document);
                     PopUpManager.instance.ShowDocument();
-                    PopUpManager.instance.setStringHeader("Login effetuato", "Login");
-                    PopUpManager.instance.setStringText("Benvenuto/a " +  controllo.Split("&", 2));
+                    PopUpManager.instance.SetStringHeader("Login effetuato", null);
+                    PopUpManager.instance.SetStringText("Benvenuto/a ");
+                    // +  controllo.Split("&", 2)
                     break;
             }
         }

@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class MouseHover : MonoBehaviour
 {
@@ -7,11 +8,15 @@ public class MouseHover : MonoBehaviour
 
     private Material material;
 
+    private UIDocument document;
+
     private bool userLog = true;
 
     private void Awake()
     {
         material = new Material(Shader.Find("Standard"));
+
+        document = GameObject.FindGameObjectWithTag("Login").GetComponent<UIDocument>();
 
         instance = this;
     }
@@ -43,18 +48,20 @@ public class MouseHover : MonoBehaviour
         if (userLog)
         {
             // Riabilita i cursori standard di Unity
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
+            UnityEngine.Cursor.lockState = CursorLockMode.None;
+            UnityEngine.Cursor.visible = true;
 
             // Pausa il gioco
             Time.timeScale = 0f;
 
-            SceneManager.LoadScene("Login", LoadSceneMode.Additive);
+            //SceneManager.LoadScene("Login", LoadSceneMode.Additive);
+            document.rootVisualElement.style.display = DisplayStyle.Flex;
         }
     }
 
     public void SetUserLog(bool userLog)
     {
+        Debug.Log("SetUserLog");
         this.userLog = userLog;
     }
 }

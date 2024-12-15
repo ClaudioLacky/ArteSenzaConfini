@@ -9,7 +9,9 @@ using UnityEngine.UIElements;
 
 public class RegistrationEvents : MonoBehaviour
 {
-    private UIDocument document;
+    private UIDocument documentRegistration;
+
+    private UIDocument documentLogin;
 
     private Button buttonRegistration;
     private Button buttonReturnRegistration;
@@ -27,23 +29,27 @@ public class RegistrationEvents : MonoBehaviour
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
-        document = GetComponent<UIDocument>();
+        documentRegistration = GetComponent<UIDocument>();
 
-        buttonRegistration = document.rootVisualElement.Q("ButtonRegistration") as Button;
+        documentRegistration.rootVisualElement.style.display = DisplayStyle.None;
+
+        documentLogin = GameObject.FindGameObjectWithTag("Login").GetComponent<UIDocument>();
+
+        buttonRegistration = documentRegistration.rootVisualElement.Q("ButtonRegistration") as Button;
         buttonRegistration.RegisterCallback<ClickEvent>(OnButtonRegistration);
 
-        buttonReturnRegistration = document.rootVisualElement.Q("ButtonReturnRegistration") as Button;
+        buttonReturnRegistration = documentRegistration.rootVisualElement.Q("ButtonReturnRegistration") as Button;
         buttonReturnRegistration.RegisterCallback<ClickEvent>(OnButtonReturn);
 
-        textFieldName = document.rootVisualElement.Q("NameRegistration") as TextField;
+        textFieldName = documentRegistration.rootVisualElement.Q("NameRegistration") as TextField;
 
-        textFieldSurname = document.rootVisualElement.Q("SurnameRegistration") as TextField;
+        textFieldSurname = documentRegistration.rootVisualElement.Q("SurnameRegistration") as TextField;
 
-        textFieldEmail = document.rootVisualElement.Q("EmailRegistration") as TextField;
+        textFieldEmail = documentRegistration.rootVisualElement.Q("EmailRegistration") as TextField;
 
-        textFieldPassword = document.rootVisualElement.Q("PasswordRegistration") as TextField;
+        textFieldPassword = documentRegistration.rootVisualElement.Q("PasswordRegistration") as TextField;
 
-        textFieldNomeUtente = document.rootVisualElement.Q("NomeutenteRegistration") as TextField;
+        textFieldNomeUtente = documentRegistration.rootVisualElement.Q("NomeutenteRegistration") as TextField;
 
         //menuButtons = document.rootVisualElement.Query<Button>().ToList();
 
@@ -90,11 +96,12 @@ public class RegistrationEvents : MonoBehaviour
 
         if (controllo)
         {
-            document.rootVisualElement.style.display = DisplayStyle.None;
-            PopUpManager.instance.SetDocument(document);
+            documentRegistration.rootVisualElement.style.display = DisplayStyle.None;
+            PopUpManager.instance.SetDocument(documentRegistration);
+            PopUpManager.instance.SetControllo(true);
             PopUpManager.instance.ShowDocument();
-            PopUpManager.instance.setStringHeader("Attenzione!", null);
-            PopUpManager.instance.setStringText("Inserire un nome valido di almeno 2 caratteri\n\n" +
+            PopUpManager.instance.SetStringHeader("Attenzione!", null);
+            PopUpManager.instance.SetStringText("Inserire un nome valido di almeno 2 caratteri\n\n" +
                 "Inserire un cognome valido di almeno 2 caratteri\n\n" +
                 "Inserire un email valida\n\n" +
                 "Inserire un nome utente valido di almeno 5 caratteri\n\n" +
@@ -107,7 +114,7 @@ public class RegistrationEvents : MonoBehaviour
         {
             Debug.Log("Hai premuto Crea Account Button");
             print("Successfully Registered!");
-            StartCoroutine(MySqlManager.instance.RegisterUser(textFieldName.text, textFieldSurname.text, textFieldEmail.text, textFieldPassword.text, textFieldNomeUtente.text, document));
+            StartCoroutine(MySqlManager.instance.RegisterUser(textFieldName.text, textFieldSurname.text, textFieldEmail.text, textFieldPassword.text, textFieldNomeUtente.text, documentRegistration));
         }
         else
         {
@@ -165,7 +172,8 @@ public class RegistrationEvents : MonoBehaviour
     private void OnButtonReturn(ClickEvent evt)
     {
         Debug.Log("Hai premuto Return Button");
-        SceneManager.LoadScene("Login");
+        documentRegistration.rootVisualElement.style.display = DisplayStyle.None;
+        documentLogin.rootVisualElement.style.display = DisplayStyle.Flex;
     }
 
     private void OnDisable()

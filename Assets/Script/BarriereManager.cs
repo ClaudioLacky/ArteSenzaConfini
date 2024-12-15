@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GestioneBarriere : MonoBehaviour
+public class BarriereManager : MonoBehaviour
 {
-    public static GestioneBarriere instance;
+    public static BarriereManager instance;
 
     private static GameObject[] gameObjects;
 
@@ -13,23 +13,6 @@ public class GestioneBarriere : MonoBehaviour
 
         // Troviamo tutti gli oggetti con il tag "Cordone"
         gameObjects = GameObject.FindGameObjectsWithTag("Barriera");
-
-        if (instance == null)
-        {
-            instance = this;
-            // Itera su ogni nemico e disabilitalo
-            foreach (GameObject barriera in gameObjects)
-            {
-                DontDestroyOnLoad(barriera);
-            }
-        }
-        else
-        {
-            foreach (GameObject barriera in gameObjects)
-            {
-                Destroy(barriera);
-            }
-        }
     }
 
     public void controlloBarriere()
