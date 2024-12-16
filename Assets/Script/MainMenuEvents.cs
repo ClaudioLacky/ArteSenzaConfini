@@ -2,12 +2,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class MainMenuEvents : MonoBehaviour
 {
     private UIDocument document;
 
     private UIDocument documentAlert;
+
+    private UIDocument documentSettings;
 
     private Button buttonEnter;
     private Button buttonSettings;
@@ -24,7 +27,11 @@ public class MainMenuEvents : MonoBehaviour
 
         documentAlert = GameObject.FindGameObjectWithTag("Alert").GetComponent<UIDocument>();
 
-        documentAlert.rootVisualElement.style.display = DisplayStyle.N;
+        documentAlert.rootVisualElement.style.display = DisplayStyle.None;
+
+        documentSettings = GameObject.FindGameObjectWithTag("Settings").GetComponent<UIDocument>();
+
+        documentSettings.rootVisualElement.style.display = DisplayStyle.None;
 
         buttonEnter = document.rootVisualElement.Q("ButtonEnter") as Button;
         buttonEnter.RegisterCallback<ClickEvent>(OnButtonEnter);
@@ -50,7 +57,9 @@ public class MainMenuEvents : MonoBehaviour
     }
     private void OnButtonSettings(ClickEvent evt)
     {
-        SceneManager.LoadScene("Settings", LoadSceneMode.Additive);
+        document.rootVisualElement.style.display = DisplayStyle.None;
+        SettingsEvents.instance.SetDocument(document);
+        documentSettings.rootVisualElement.style.display = DisplayStyle.Flex;
     }
 
     private void OnButtonExit(ClickEvent evt)

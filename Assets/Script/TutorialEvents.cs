@@ -21,6 +21,7 @@ public class TutorialEvents : MonoBehaviour
     {
         MouseLook.instance.Start();
         MouseLook.instance.Update();
+        Time.timeScale = 1f;  // Sblocca il gioco
         document.rootVisualElement.style.display = DisplayStyle.None;
     }
 

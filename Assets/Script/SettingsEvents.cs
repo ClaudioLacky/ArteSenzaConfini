@@ -10,7 +10,7 @@ public class SettingsEvents : MonoBehaviour
 
     private UIDocument documentSettings;
 
-    private UIDocument documentPause;
+    private UIDocument documentExternal;
 
     private DropdownField dropdownResolution;
 
@@ -37,8 +37,6 @@ public class SettingsEvents : MonoBehaviour
 
         documentSettings.rootVisualElement.style.display = DisplayStyle.None;
 
-        documentPause = GameObject.FindGameObjectWithTag("Pause").GetComponent<UIDocument>();
-
         dropdownResolution = documentSettings.rootVisualElement.Q("DropdownResolution") as DropdownField;
 
         dropdownQuality = documentSettings.rootVisualElement.Q("DropdownQuality") as DropdownField;
@@ -62,6 +60,11 @@ public class SettingsEvents : MonoBehaviour
         sliderVolume.value = volumeInit;
 
         sliderVolume.RegisterCallback<ChangeEvent<float>>(OnValueChanged);
+    }
+
+    public void SetDocument(UIDocument document)
+    {
+        documentExternal = document;
     }
 
     private void OnValueChanged(ChangeEvent<float> changeEvent)
@@ -99,7 +102,7 @@ public class SettingsEvents : MonoBehaviour
     private void OnButtonReturn(ClickEvent evt)
     {
         documentSettings.rootVisualElement.style.display = DisplayStyle.None;
-        documentPause.rootVisualElement.style.display = DisplayStyle.Flex;
+        documentExternal.rootVisualElement.style.display = DisplayStyle.Flex;
     }
 
     private void OnDisable()

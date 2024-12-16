@@ -6,7 +6,7 @@
 .my-text-field > .unity-base-field__label {
     font-size: 30px;
     -unity-font-style: normal;
-    -unity-text-align: upper-center;
+    -unity-text-align: middle-center;
     align-self: center;
     border-top-width: 5px;
     border-right-width: 5px;
@@ -16,7 +16,7 @@
     border-right-color: rgb(95, 3, 0);
     border-top-color: rgb(95, 3, 0);
     border-bottom-color: rgb(95, 3, 0);
-    background-color: rgba(123, 3, 15, 0.99);
+    background-color: rgb(123, 3, 15);
     color: rgb(0, 0, 0);
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
@@ -53,8 +53,8 @@
 
 .button {
     font-size: 40px;
-    width: 310px;
-    height: 60px;
+    width: 230px;
+    height: 80px;
     align-self: center;
     justify-content: flex-start;
     align-items: center;
@@ -77,7 +77,7 @@
 
 .button:hover {
     font-size: 40px;
-    width: 310px;
+    width: 230px;
     height: 80px;
     align-self: center;
     justify-content: flex-start;

@@ -39,7 +39,7 @@ public class MySqlManager : MonoBehaviour
                     PopUpManager.instance.SetDocument(document);
                     PopUpManager.instance.SetControllo(true);
                     PopUpManager.instance.ShowDocument();
-                    PopUpManager.instance.SetStringHeader("Attenzione!", null);
+                    PopUpManager.instance.SetStringHeader("Attenzione!");
                     PopUpManager.instance.SetStringText("Connessione al server fallita");
                     break;
 
@@ -49,7 +49,7 @@ public class MySqlManager : MonoBehaviour
                     PopUpManager.instance.SetDocument(document);
                     PopUpManager.instance.SetControllo(true);
                     PopUpManager.instance.ShowDocument();
-                    PopUpManager.instance.SetStringHeader("Attenzione!", null);
+                    PopUpManager.instance.SetStringHeader("Attenzione!");
                     PopUpManager.instance.SetStringText("Controllo dell'email fallito");
                     break;
 
@@ -59,7 +59,7 @@ public class MySqlManager : MonoBehaviour
                     PopUpManager.instance.SetDocument(document);
                     PopUpManager.instance.SetControllo(true);
                     PopUpManager.instance.ShowDocument();
-                    PopUpManager.instance.SetStringHeader("Attenzione!", null);
+                    PopUpManager.instance.SetStringHeader("Attenzione!");
                     PopUpManager.instance.SetStringText("Utente già esistente");
                     break;
 
@@ -69,7 +69,7 @@ public class MySqlManager : MonoBehaviour
                     PopUpManager.instance.SetDocument(document);
                     PopUpManager.instance.SetControllo(true);
                     PopUpManager.instance.ShowDocument();
-                    PopUpManager.instance.SetStringHeader("Attenzione!", null);
+                    PopUpManager.instance.SetStringHeader("Attenzione!");
                     PopUpManager.instance.SetStringText("Invio dei dati fallito");
                     break;
 
@@ -79,7 +79,7 @@ public class MySqlManager : MonoBehaviour
                     document.rootVisualElement.style.display = DisplayStyle.None;
                     PopUpManager.instance.SetDocument(document);
                     PopUpManager.instance.ShowDocument();
-                    PopUpManager.instance.SetStringHeader("Registrazione effettuata", null);
+                    PopUpManager.instance.SetStringHeader("Registrazione effettuata");
                     PopUpManager.instance.SetStringText("Registrazione effettuata con successo, benvenuto/a " + nomeUtente);
                     break;
             }
@@ -108,7 +108,7 @@ public class MySqlManager : MonoBehaviour
                     PopUpManager.instance.SetDocument(document);
                     PopUpManager.instance.SetControllo(true);
                     PopUpManager.instance.ShowDocument();
-                    PopUpManager.instance.SetStringHeader("Attenzione!", null);
+                    PopUpManager.instance.SetStringHeader("Attenzione!");
                     PopUpManager.instance.SetStringText("Connessione al server fallita");
                     break;
 
@@ -117,7 +117,7 @@ public class MySqlManager : MonoBehaviour
                     document.rootVisualElement.style.display = DisplayStyle.None;
                     PopUpManager.instance.SetDocument(document);
                     PopUpManager.instance.ShowDocument();
-                    PopUpManager.instance.SetStringHeader("Attenzione!", null);
+                    PopUpManager.instance.SetStringHeader("Attenzione!");
                     PopUpManager.instance.SetStringText("Controllo dell'email fallito");
                     break;
 
@@ -127,7 +127,7 @@ public class MySqlManager : MonoBehaviour
                     PopUpManager.instance.SetDocument(document);
                     PopUpManager.instance.SetControllo(true);
                     PopUpManager.instance.ShowDocument();
-                    PopUpManager.instance.SetStringHeader("Attenzione!", null);
+                    PopUpManager.instance.SetStringHeader("Attenzione!");
                     PopUpManager.instance.SetStringText("Email errata o inesistente");
                     break;
 
@@ -137,7 +137,7 @@ public class MySqlManager : MonoBehaviour
                     PopUpManager.instance.SetDocument(document);
                     PopUpManager.instance.SetControllo(true);
                     PopUpManager.instance.ShowDocument();
-                    PopUpManager.instance.SetStringHeader("Attenzione!", null);
+                    PopUpManager.instance.SetStringHeader("Attenzione!");
                     PopUpManager.instance.SetStringText("Password errata");
                     break;
 
@@ -147,33 +147,79 @@ public class MySqlManager : MonoBehaviour
                     document.rootVisualElement.style.display = DisplayStyle.None;
                     PopUpManager.instance.SetDocument(document);
                     PopUpManager.instance.ShowDocument();
-                    PopUpManager.instance.SetStringHeader("Login effetuato", null);
-                    PopUpManager.instance.SetStringText("Benvenuto/a ");
+                    PopUpManager.instance.SetStringHeader("Login effetuato");
+                    PopUpManager.instance.SetStringText("Benvenuto/a");
                     break;
             }
         }
     }
 
-    public static IEnumerator sendToDescription(string descrizione, string nomeUtente)
+    public static IEnumerator sendToFeedback(string nomeUtente, string feedback, UIDocument document)
     {
-        WWWForm form1 = new WWWForm();
-        form1.AddField("descrizione", descrizione);
-        form1.AddField("nomeUtente", nomeUtente);
+        WWWForm form = new WWWForm();
+        form.AddField("nomeUtente", nomeUtente);
+        form.AddField("feedback", feedback);
 
-        using (UnityWebRequest www = UnityWebRequest.Post("http://localhost/ArteSenzaConfini/Register_Description.php", form1))
+        using (UnityWebRequest www = UnityWebRequest.Post("http://localhost/ArteSenzaConfini/Register_Feedback.php", form))
         {
             yield return www.SendWebRequest();
 
-            if (www.result != UnityWebRequest.Result.Success)
+            string controllo = www.downloadHandler.text;
+
+            Debug.Log(controllo);
+
+            switch (controllo)
             {
-                Debug.LogError(www.error);  
-                Debug.Log("Failed to Register description!");
+                case "1: Connection failed":
+                    Debug.Log("Failed to Feedback!");
+                    document.rootVisualElement.style.display = DisplayStyle.None;
+                    PopUpManager.instance.SetDocument(document);
+                    PopUpManager.instance.SetControllo(true);
+                    PopUpManager.instance.ShowDocument();
+                    PopUpManager.instance.SetStringHeader("Attenzione!");
+                    PopUpManager.instance.SetStringText("Connessione al server fallita");
+                    break;
+
+                case "2: User check failed":
+                    Debug.Log("Failed to Feedback!");
+                    document.rootVisualElement.style.display = DisplayStyle.None;
+                    PopUpManager.instance.SetDocument(document);
+                    PopUpManager.instance.ShowDocument();
+                    PopUpManager.instance.SetStringHeader("Attenzione!");
+                    PopUpManager.instance.SetStringText("Controllo del nome utente fallito");
+                    break;
+
+                case "5: Either no user with username, or more that one":
+                    Debug.Log("Failed to Feedback!");
+                    document.rootVisualElement.style.display = DisplayStyle.None;
+                    PopUpManager.instance.SetDocument(document);
+                    PopUpManager.instance.SetControllo(true);
+                    PopUpManager.instance.ShowDocument();
+                    PopUpManager.instance.SetStringHeader("Attenzione!");
+                    PopUpManager.instance.SetStringText("Nome utente errato o inesistente");
+                    break;
+
+                case "4: Insert feedback query failed":
+                    Debug.Log("Failed to Feedback!");
+                    document.rootVisualElement.style.display = DisplayStyle.None;
+                    PopUpManager.instance.SetDocument(document);
+                    PopUpManager.instance.SetControllo(true);
+                    PopUpManager.instance.ShowDocument();
+                    PopUpManager.instance.SetStringHeader("Attenzione!");
+                    PopUpManager.instance.SetStringText("Invio dei dati fallito");
+                    break;
+
+                case "success":
+                    Debug.Log("Successfully Feedback!");
+                    BarriereManager.instance.controlloBarriere();
+                    document.rootVisualElement.style.display = DisplayStyle.None;
+                    PopUpManager.instance.SetDocument(document);
+                    PopUpManager.instance.SetScena("MuseoPorta");
+                    PopUpManager.instance.ShowDocument();
+                    PopUpManager.instance.SetStringHeader("Feedback effettuato");
+                    PopUpManager.instance.SetStringText("Grazie per aver partecipato!");
+                    break;
             }
-            else
-            {
-                Debug.Log("Successfully Registered!");
-                //SceneManager.LoadScene("");
-            }       
         }
     }
 }

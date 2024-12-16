@@ -100,7 +100,7 @@ public class RegistrationEvents : MonoBehaviour
             PopUpManager.instance.SetDocument(documentRegistration);
             PopUpManager.instance.SetControllo(true);
             PopUpManager.instance.ShowDocument();
-            PopUpManager.instance.SetStringHeader("Attenzione!", null);
+            PopUpManager.instance.SetStringHeader("Attenzione!");
             PopUpManager.instance.SetStringText("Inserire un nome valido di almeno 2 caratteri\n\n" +
                 "Inserire un cognome valido di almeno 2 caratteri\n\n" +
                 "Inserire un email valida\n\n" +

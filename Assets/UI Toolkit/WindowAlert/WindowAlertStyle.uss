@@ -4,7 +4,7 @@
 
 .button {
     font-size: 40px;
-    width: 100px;
+    width: 120px;
     height: 60px;
     align-self: center;
     justify-content: flex-start;
@@ -28,7 +28,7 @@
 
 .button:hover {
     font-size: 40px;
-    width: 100px;
+    width: 120px;
     height: 60px;
     align-self: center;
     justify-content: flex-start;

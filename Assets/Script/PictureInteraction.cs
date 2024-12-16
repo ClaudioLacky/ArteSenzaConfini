@@ -28,6 +28,9 @@ public class PictureInteraction : MonoBehaviour
     private UIDocument documentPause;
 
     private UIDocument documentAlert;
+
+    private UIDocument documentFeedback;
+
     void Start()
     {
 
@@ -45,6 +48,8 @@ public class PictureInteraction : MonoBehaviour
 
         documentAlert = GameObject.FindGameObjectWithTag("Alert").GetComponent<UIDocument>();
 
+        documentFeedback = GameObject.FindGameObjectWithTag("Feedback").GetComponent<UIDocument>();
+
         audioSource = GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>();
 
         audioSource.Play();
@@ -53,7 +58,12 @@ public class PictureInteraction : MonoBehaviour
 
         documentAlert.rootVisualElement.style.display = DisplayStyle.None;
 
+        documentFeedback.rootVisualElement.style.display = DisplayStyle.None;
+
         documentTutorial.rootVisualElement.style.display = DisplayStyle.Flex;
+
+        // Pausa il gioco
+        Time.timeScale = 0f;
     }
 
     void Update()

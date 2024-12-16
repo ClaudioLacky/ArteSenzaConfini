@@ -16,7 +16,7 @@ public class PopUpManager : MonoBehaviour
 
     private Button buttonPopUp;
 
-    private string scena;
+    private string scena = "";
 
     private bool controllo = false;
 
@@ -42,11 +42,9 @@ public class PopUpManager : MonoBehaviour
         documentExternal = document;
     }
 
-    public void SetStringHeader(string msg, string scena)
+    public void SetStringHeader(string msg)
     {
         header.text = msg;
-
-        this.scena = scena;
     }
 
     public void SetStringText(string msg)
@@ -64,20 +62,31 @@ public class PopUpManager : MonoBehaviour
         documentInternal.rootVisualElement.style.display = DisplayStyle.Flex;
     }
 
+    public void SetScena(string scena)
+    {
+        this.scena = scena;
+    }
+
     private void OnButtonExit(ClickEvent evt)
     {
         Debug.Log("Ciao");
         documentInternal.rootVisualElement.style.display = DisplayStyle.None;
 
+        
         if (controllo)
         {
             documentExternal.rootVisualElement.style.display = DisplayStyle.Flex;
+        }
+        else if (scena.Equals("MuseoPorta"))
+        {
+            SceneManager.LoadScene("MainMenu");
         }
         else
         {
             MouseLook.instance.Start();
             MouseLook.instance.Update();
-            MouseHover.instance.SetUserLog(false);
+            MouseHoverPC.instance.SetUserLog(false);
+            MouseHoverDoor.instance.SetUserLog(true);
             Time.timeScale = 1f;  // Sblocca il gioco
         }
     }

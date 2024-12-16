@@ -49,6 +49,7 @@ public class MenuPauseEvents : MonoBehaviour
     {
         Debug.Log("Settings");
         documentPause.rootVisualElement.style.display = DisplayStyle.None;
+        SettingsEvents.instance.SetDocument(documentPause);
         documentSettings.rootVisualElement.style.display = DisplayStyle.Flex;
     }
 

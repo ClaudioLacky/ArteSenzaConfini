@@ -1,22 +1,27 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
-public class MouseHover : MonoBehaviour
+public class MouseHoverDoor : MonoBehaviour
 {
-    public static MouseHover instance;
+    public static MouseHoverDoor instance;
 
     private Material material;
 
     private UIDocument document;
 
-    private bool userLog = true;
+    private UIDocument documentAlert;
+
+    private bool userLog = false;
 
     private void Awake()
     {
         material = new Material(Shader.Find("Standard"));
 
-        document = GameObject.FindGameObjectWithTag("Login").GetComponent<UIDocument>();
+        document = GameObject.FindGameObjectWithTag("Feedback").GetComponent<UIDocument>();
+
+        documentAlert = GameObject.FindGameObjectWithTag("Alert").GetComponent<UIDocument>();
 
         instance = this;
     }
@@ -47,6 +52,10 @@ public class MouseHover : MonoBehaviour
     {
         if (userLog)
         {
+            AlertEvents.instance.SetStringHeader("Sei sicuro di voler terminare l'esperienza?");
+            AlertEvents.instance.SetDocument(document);
+            AlertEvents.instance.SetScena("MuseoPorta");
+
             // Riabilita i cursori standard di Unity
             UnityEngine.Cursor.lockState = CursorLockMode.None;
             UnityEngine.Cursor.visible = true;
@@ -54,8 +63,7 @@ public class MouseHover : MonoBehaviour
             // Pausa il gioco
             Time.timeScale = 0f;
 
-            //SceneManager.LoadScene("Login", LoadSceneMode.Additive);
-            document.rootVisualElement.style.display = DisplayStyle.Flex;
+            documentAlert.rootVisualElement.style.display = DisplayStyle.Flex;
         }
     }
 

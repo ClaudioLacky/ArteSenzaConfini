@@ -63,6 +63,7 @@ public class AlertEvents : MonoBehaviour
         else if (scena.Equals("MuseoPorta"))
         {
             documentAlert.rootVisualElement.style.display = DisplayStyle.None;
+
             documentExternal.rootVisualElement.style.display = DisplayStyle.Flex;
         }
     }
@@ -73,6 +74,7 @@ public class AlertEvents : MonoBehaviour
         {
             MouseLook.instance.Start();
             MouseLook.instance.Update();
+            Time.timeScale = 1f;  // Sblocca il gioco
             documentAlert.rootVisualElement.style.display = DisplayStyle.None;
         }
         else

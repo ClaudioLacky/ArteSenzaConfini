@@ -19,33 +19,37 @@
         echo "1: Connection failed"; // error code #1 = connenction failed
 		exit();
     }
-
-	$name = $_POST["nome"];
-	$surname = $_POST["cognome"];
+	
 	$userEmail = $_POST["mail"];
-	$userPassword = $_POST["password"];
-	$nomeutente = $_POST["nomeUtente"];
-
+	$userPassword = $_POST["passwordLogin"];
+	
 	// Querying the database to check if the users email is already in the db
-	$emailCheckQuery = "SELECT email FROM persone WHERE email='" . $userEmail . "';";
+	$emailCheckQuery = "SELECT email, password, nomeUtente, salt FROM persone WHERE email='" . $userEmail . "';";
 	
 	$emailCheck = mysqli_query($conn, $emailCheckQuery) or die("2: Email check failed"); // error code #2 - email check query failed
 	
-	if(mysqli_num_rows($emailCheck)>0)
+	if(mysqli_num_rows($emailCheck) != 1)
 	{
-		echo "3: Email already exists"; // error code #3 - email exists cannot register
+		echo "5: Either no user with email, or more that one"; // error code #5 - number of emails matching != 1
 		exit();
 	}
 	
-	// Add user to the table
-	$salt = "\$5\$rounds=5000\$" . "steamedhams" . $userEmail . "\$";
-	$hash = crypt($userPassword, $salt);
+	// Get login info from query
+	$existinginfo = mysqli_fetch_assoc($emailCheck);
+	$email = $existinginfo["email"];
+	$salt = $existinginfo["salt"];
+	$hash = $existinginfo["password"];
 	
-	$insertUserQuery = "INSERT INTO persone (nome, cognome, email, password, nomeUtente, salt) VALUES ('" . $name . "', '" . $surname . "', '" . $userEmail . "', '" . $hash . "', '" . $nomeutente . "', '" . $salt . "');";
+	$loginhash = crypt($userPassword, $salt);
 	
-	mysqli_query($conn, $insertUserQuery) or die("4: Insert user query failed"); // error code #4 - insert query failed
-	
-	// Success
-	echo("success");
-	$conn->close();
+	if ($hash != $loginhash)
+	{
+		echo "6: Incorrect password"; // error code #6 - password does not hash to match table
+		exit();
+	}
+	else
+	{
+		echo("success");
+		$conn->close();
+	}
 ?>
