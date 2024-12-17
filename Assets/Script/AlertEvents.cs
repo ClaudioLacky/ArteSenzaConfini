@@ -62,6 +62,8 @@ public class AlertEvents : MonoBehaviour
         }
         else if (scena.Equals("MuseoPorta"))
         {
+            MouseHoverDoor.instance.SetUserLog(false);
+
             documentAlert.rootVisualElement.style.display = DisplayStyle.None;
 
             documentExternal.rootVisualElement.style.display = DisplayStyle.Flex;
