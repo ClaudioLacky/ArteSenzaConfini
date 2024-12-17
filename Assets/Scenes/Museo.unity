@@ -38837,7 +38837,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24300002, guid: 944bdfd0a80790240a19dc330d806399, type: 2}
   m_audioClip: {fileID: 8300000, guid: 0f26d3c83d810c6499e671bcf770101f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -39442,7 +39442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 6ac6fd521b7377a4983270fb17e2e312, type: 3}
   title: Comedian
   description: "Comedian, un'opera di Maurizio Cattelan, \xE8 una banana attaccata
     a un muro con del nastro adesivo. La sua presentazione ha suscitato grande dibattito,
@@ -39455,7 +39455,7 @@ MonoBehaviour:
     a interrogarsi su cosa possa essere definito arte e su come il significato dell'arte
     sia spesso determinato dal contesto e dal mercato.."
   audioClip: {fileID: 8300000, guid: 9742c8fd159c83c47bddcf8e99e3f590, type: 3}
-  size: {x: 0, y: 0}
+  size: {x: 200, y: 200}
 --- !u!1 &789450281
 GameObject:
   m_ObjectHideFlags: 0
@@ -70714,7 +70714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11678e1ed8f3c004a95d791eeea988aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: e700e10424472004d955901b6484cf4c, type: 3}
   title: America
   description: "America, una scultura di Maurizio Cattelan, rappresenta una toilette
     dorata a grandezza naturale, progettata per essere utilizzata come un normale
@@ -70727,7 +70727,7 @@ MonoBehaviour:
     lo spettatore a riflettere sul valore dell'arte e sul significato di oggetti
     ordinari trasformati in simboli di status. "
   audioClip: {fileID: 8300000, guid: 80a14e681a60caa479bd7ce3f4e7022a, type: 3}
-  size: {x: 0, y: 0}
+  size: {x: 200, y: 200}
 --- !u!1001 &1441984065
 PrefabInstance:
   m_ObjectHideFlags: 0
