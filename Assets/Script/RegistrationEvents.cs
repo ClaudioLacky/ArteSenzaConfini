@@ -9,6 +9,8 @@ using UnityEngine.UIElements;
 
 public class RegistrationEvents : MonoBehaviour
 {
+    public static RegistrationEvents instance;
+
     private UIDocument documentRegistration;
 
     private UIDocument documentLogin;
@@ -26,8 +28,12 @@ public class RegistrationEvents : MonoBehaviour
     private TextField textFieldPassword;
     private TextField textFieldNomeUtente;
 
+    private bool isRegistred = true;
+
     private void Awake()
     {
+        instance = this;
+
         audioSource = GetComponent<AudioSource>();
         documentRegistration = GetComponent<UIDocument>();
 
@@ -167,6 +173,16 @@ public class RegistrationEvents : MonoBehaviour
             return false;
         }
         return (numero && maiuscola && minuscola && simbolo);
+    }
+
+    public void SetRegistered(bool isRegistered)
+    {
+        this.isRegistred = isRegistered;
+    }
+
+    public bool GetRegistered()
+    {
+        return isRegistred;
     }
 
     private void OnButtonReturn(ClickEvent evt)

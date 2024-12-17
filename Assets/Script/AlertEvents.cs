@@ -64,6 +64,10 @@ public class AlertEvents : MonoBehaviour
         {
             MouseHoverDoor.instance.SetUserLog(false);
 
+            FeedbackEvents.instance.SetFeedback(false);
+            LoginEvents.instance.SetLogged(false);
+            RegistrationEvents.instance.SetRegistered(false);
+
             documentAlert.rootVisualElement.style.display = DisplayStyle.None;
 
             documentExternal.rootVisualElement.style.display = DisplayStyle.Flex;

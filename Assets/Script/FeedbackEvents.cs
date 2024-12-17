@@ -9,6 +9,8 @@ using UnityEngine.UIElements;
 
 public class FeedbackEvents: MonoBehaviour
 {
+    public static FeedbackEvents instance;
+
     private UIDocument document;
 
     private List<Button> menuButtons = new List<Button>();
@@ -20,8 +22,12 @@ public class FeedbackEvents: MonoBehaviour
 
     private Button buttonDescription;
 
+    private bool isFeedback = true;
+
     private void Awake()
 	{
+        instance = this;
+
         //audioSource = GetComponent<AudioSource>();
         document = GetComponent<UIDocument>();
 
@@ -79,6 +85,16 @@ public class FeedbackEvents: MonoBehaviour
         {
             print("Failed to Register description!");
         }
+    }
+
+    public void SetFeedback(bool isFeedback)
+    {
+        this.isFeedback = isFeedback;
+    }
+
+    public bool GetFeedback()
+    {
+        return this.isFeedback;
     }
 
     private void OnDisable()

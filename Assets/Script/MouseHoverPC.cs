@@ -47,6 +47,10 @@ public class MouseHoverPC : MonoBehaviour
     {
         if (userLog)
         {
+            LoginEvents.instance.SetLogged(false);
+            RegistrationEvents.instance.SetRegistered(false);
+            FeedbackEvents.instance.SetFeedback(false);
+
             // Riabilita i cursori standard di Unity
             UnityEngine.Cursor.lockState = CursorLockMode.None;
             UnityEngine.Cursor.visible = true;

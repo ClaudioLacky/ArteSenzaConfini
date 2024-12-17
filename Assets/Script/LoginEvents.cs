@@ -1,10 +1,13 @@
 using System.Collections.Generic;
+using Palmmedia.ReportGenerator.Core.Logging;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class LoginEvents : MonoBehaviour
 {
+    public static LoginEvents instance;
+
     private UIDocument documentLogin;
 
     private UIDocument documentRegistration;
@@ -18,10 +21,14 @@ public class LoginEvents : MonoBehaviour
     private TextField textFieldEmail;
     private TextField textFieldPassword;
 
+    private bool isLogged = true;
+
     //private AudioSource audioSource;
 
     private void Awake()
     {
+        instance = this;
+
         //audioSource = GetComponent<AudioSource>();
         documentLogin = GetComponent<UIDocument>();
 
@@ -66,7 +73,20 @@ public class LoginEvents : MonoBehaviour
     private void OnButtonReturn(ClickEvent evt)
     {
         Debug.Log("Hai premuto Return Button");
+        isLogged = true;
+        RegistrationEvents.instance.SetRegistered(true);
+        FeedbackEvents.instance.SetFeedback(true);
         documentLogin.rootVisualElement.style.display = DisplayStyle.None;
+    }
+
+    public void SetLogged(bool isLogged)
+    {
+        this.isLogged = isLogged;
+    }
+
+    public bool GetLogged()
+    {
+        return this.isLogged;
     }
 
     private void OnDisable()

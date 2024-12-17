@@ -66,7 +66,7 @@ public class MainMenuEvents : MonoBehaviour
     {
         document.rootVisualElement.style.display = DisplayStyle.None;
         AlertEvents.instance.SetDocument(document);
-        AlertEvents.instance.SetScena("Museo");
+        AlertEvents.instance.SetScena("MainMenu");
         AlertEvents.instance.SetStringHeader("Sei sicuro/a di voler uscire?");
         documentAlert.rootVisualElement.style.display = DisplayStyle.Flex;
     }

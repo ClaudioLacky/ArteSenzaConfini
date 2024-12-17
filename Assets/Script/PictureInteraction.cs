@@ -31,6 +31,10 @@ public class PictureInteraction : MonoBehaviour
 
     private UIDocument documentFeedback;
 
+    private UIDocument documentLogin;
+
+    private UIDocument documentRegistration;
+
     void Start()
     {
 
@@ -49,6 +53,10 @@ public class PictureInteraction : MonoBehaviour
         documentAlert = GameObject.FindGameObjectWithTag("Alert").GetComponent<UIDocument>();
 
         documentFeedback = GameObject.FindGameObjectWithTag("Feedback").GetComponent<UIDocument>();
+
+        documentLogin = GameObject.FindGameObjectWithTag("Login").GetComponent<UIDocument>();
+
+        documentRegistration = GameObject.FindGameObjectWithTag("Registration").GetComponent<UIDocument>();
 
         audioSource = GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>();
 
@@ -86,7 +94,7 @@ public class PictureInteraction : MonoBehaviour
                 }
             }
         }
-        else if(Input.GetKeyDown(KeyCode.P))
+        else if(Input.GetKeyDown(KeyCode.P) && LoginEvents.instance.GetLogged() && RegistrationEvents.instance.GetRegistered() && FeedbackEvents.instance.GetFeedback())
         {
             // Pausa il gioco
             Time.timeScale = 0f;

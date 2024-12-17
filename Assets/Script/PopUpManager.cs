@@ -83,6 +83,10 @@ public class PopUpManager : MonoBehaviour
         }
         else
         {
+            LoginEvents.instance.SetLogged(true);
+            RegistrationEvents.instance.SetRegistered(true);
+            FeedbackEvents.instance.SetFeedback(true);
+
             MouseLook.instance.Start();
             MouseLook.instance.Update();
             MouseHoverPC.instance.SetUserLog(false);

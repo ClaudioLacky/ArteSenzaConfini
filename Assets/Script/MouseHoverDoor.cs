@@ -62,7 +62,7 @@ public class MouseHoverDoor : MonoBehaviour
 
             // Pausa il gioco
             Time.timeScale = 0f;
-
+            
             documentAlert.rootVisualElement.style.display = DisplayStyle.Flex;
         }
     }
