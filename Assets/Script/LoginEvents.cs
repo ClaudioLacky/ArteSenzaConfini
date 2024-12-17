@@ -76,6 +76,11 @@ public class LoginEvents : MonoBehaviour
         isLogged = true;
         RegistrationEvents.instance.SetRegistered(true);
         FeedbackEvents.instance.SetFeedback(true);
+
+        MouseLook.instance.Start();
+        MouseLook.instance.Update();
+        Time.timeScale = 1f;  // Sblocca il gioco
+
         documentLogin.rootVisualElement.style.display = DisplayStyle.None;
     }
 

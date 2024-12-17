@@ -12,8 +12,11 @@ public class MainMenuEvents : MonoBehaviour
 
     private UIDocument documentSettings;
 
+    private UIDocument documentCredits;
+
     private Button buttonEnter;
     private Button buttonSettings;
+    private Button buttonCredits;
     private Button buttonExit;
 
     //private List<Button> menuButtons = new List<Button>();
@@ -29,6 +32,10 @@ public class MainMenuEvents : MonoBehaviour
 
         documentAlert.rootVisualElement.style.display = DisplayStyle.None;
 
+        documentCredits = GameObject.FindGameObjectWithTag("Credits").GetComponent<UIDocument>();
+
+        documentCredits.rootVisualElement.style.display = DisplayStyle.None;
+
         documentSettings = GameObject.FindGameObjectWithTag("Settings").GetComponent<UIDocument>();
 
         documentSettings.rootVisualElement.style.display = DisplayStyle.None;
@@ -38,6 +45,9 @@ public class MainMenuEvents : MonoBehaviour
 
         buttonSettings = document.rootVisualElement.Q("ButtonSettings") as Button;
         buttonSettings.RegisterCallback<ClickEvent>(OnButtonSettings);
+
+        buttonCredits = document.rootVisualElement.Q("ButtonCredits") as Button;
+        buttonCredits.RegisterCallback<ClickEvent>(OnButtonCredits);
 
         buttonExit = document.rootVisualElement.Q("ButtonExit") as Button;
         buttonExit.RegisterCallback<ClickEvent>(OnButtonExit);
@@ -62,6 +72,12 @@ public class MainMenuEvents : MonoBehaviour
         documentSettings.rootVisualElement.style.display = DisplayStyle.Flex;
     }
 
+    private void OnButtonCredits(ClickEvent evt)
+    {
+        document.rootVisualElement.style.display = DisplayStyle.None;
+        documentCredits.rootVisualElement.style.display = DisplayStyle.Flex;
+    }
+
     private void OnButtonExit(ClickEvent evt)
     {
         document.rootVisualElement.style.display = DisplayStyle.None;
@@ -75,6 +91,7 @@ public class MainMenuEvents : MonoBehaviour
     {
         buttonEnter.UnregisterCallback<ClickEvent>(OnButtonEnter);
         buttonSettings.UnregisterCallback<ClickEvent>(OnButtonSettings);
+        buttonCredits.UnregisterCallback<ClickEvent>(OnButtonCredits);
         buttonExit.UnregisterCallback<ClickEvent>(OnButtonExit);
 
         /*for (int i = 0;i < menuButtons.Count;i++)
