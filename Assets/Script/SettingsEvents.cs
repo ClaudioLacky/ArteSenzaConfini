@@ -16,7 +16,7 @@ public class SettingsEvents : MonoBehaviour
 
     private DropdownField dropdownResolution;   // Componente dropdown del documento UXML per scegliere la risoluzione dello schermo
 
-    private DropdownField dropdownQuality;      // Componente dropdown del documento UXML per scegliere la qualità del gioco
+    private DropdownField dropdownQuality;      // Componente dropdown del documento UXML per scegliere la qualitï¿½ del gioco
 
     private Slider sliderVolume;                // Componente slider del documento UXML per sistemare il volume del gioco
 
@@ -27,10 +27,12 @@ public class SettingsEvents : MonoBehaviour
     [SerializeField]
     private AudioMixer audioMixer;              // Componente AudioMixer per regolare il volume del gioco
 
-    // Metodo Awake rispetto a Start è chiamato al caricamento dell'oggetto e non all'esecuzione dello script
+    // Metodo Awake rispetto a Start ï¿½ chiamato al caricamento dell'oggetto e non all'esecuzione dello script
     private void Awake()
     {
         instance = this;
+
+        Screen.SetResolution(Screen.currentResolution.width, Screen.currentResolution.height, true);
 
         float volumeInit;           // Volume iniziale
 
@@ -50,8 +52,8 @@ public class SettingsEvents : MonoBehaviour
         // Inizializzazione dello slider da assegnare allo specifico slider del documento UXML di cui si sta facendo riferimento
         sliderVolume = documentSettings.rootVisualElement.Q("SliderVolume") as Slider;
 
-        InitDisplayResolution();    // Metodo che inizializza il menù a tendina della risoluzione
-        InitQualitySettings();      // Metodo che inizializza il menù a tendina della qualità
+        InitDisplayResolution();    // Metodo che inizializza il menï¿½ a tendina della risoluzione
+        InitQualitySettings();      // Metodo che inizializza il menï¿½ a tendina della qualitï¿½
 
         // Inizializzazione del bottone da assegnare allo specifico bottone del documento UXML di cui si sta facendo riferimento
         buttonApply = documentSettings.rootVisualElement.Q("ButtonApply") as Button;
@@ -103,11 +105,11 @@ public class SettingsEvents : MonoBehaviour
     }
 
     /// <summary>
-    /// Metodo che inizializza il menù a tendina della risoluzione dello schermo
+    /// Metodo che inizializza il menï¿½ a tendina della risoluzione dello schermo
     /// </summary>
     private void InitDisplayResolution()
     {
-        // Prende le possibilità di risoluzione dalle impostazioni di Unity e le inscerisce nel menù a tendina
+        // Prende le possibilitï¿½ di risoluzione dalle impostazioni di Unity e le inscerisce nel menï¿½ a tendina
         dropdownResolution.choices = Screen.resolutions.Select(resolution => $"{resolution.width}x{resolution.height}").ToList();
         dropdownResolution.index = Screen.resolutions
             .Select((resolution, index) => (resolution, index))
@@ -116,11 +118,11 @@ public class SettingsEvents : MonoBehaviour
     }
 
     /// <summary>
-    /// Metodo che inizializza il menù a tendina della qualità del gioco
+    /// Metodo che inizializza il menï¿½ a tendina della qualitï¿½ del gioco
     /// </summary>
     private void InitQualitySettings()
     {
-        // Prende le possibilità di qualità dalle impostazioni di Unity e le inserisce nel menù a tendina
+        // Prende le possibilitï¿½ di qualitï¿½ dalle impostazioni di Unity e le inserisce nel menï¿½ a tendina
         dropdownQuality.choices = QualitySettings.names.ToList();
         dropdownQuality.index = QualitySettings.GetQualityLevel();
     }
