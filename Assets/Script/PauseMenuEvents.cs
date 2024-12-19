@@ -4,7 +4,7 @@ using UnityEngine.UIElements;
 /// <summary>
 /// Classe che gestisce l'interfaccia del Pause Menu
 /// </summary>
-public class MenuPauseEvents : MonoBehaviour
+public class PauseMenuEvents : MonoBehaviour
 {
     private UIDocument documentPause;       // Componente che collega l'oggetto ai documenti UXML per il rendering dell'interfaccia utente
 

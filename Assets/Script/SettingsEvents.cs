@@ -32,6 +32,7 @@ public class SettingsEvents : MonoBehaviour
     {
         instance = this;
 
+        // Imposta la risoluzione dello schermo
         Screen.SetResolution(Screen.currentResolution.width, Screen.currentResolution.height, true);
 
         float volumeInit;           // Volume iniziale

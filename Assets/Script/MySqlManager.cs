@@ -23,17 +23,17 @@ public class MySqlManager : MonoBehaviour
     /// <param name="surname">Cognome dell'utente</param>
     /// <param name="email">Email dell'utente</param>
     /// <param name="password">Password dell'utente</param>
-    /// <param name="nomeUtente">Nome utente dell'utente</param>
+    /// <param name="userName">Nome utente dell'utente</param>
     /// <param name="document">Documento dell'interfaccia di registrazione</param>
     /// <returns></returns>
-    public IEnumerator RegisterUser(string name, string surname, string email, string password, string nomeUtente, UIDocument document)
+    public IEnumerator RegisterUser(string name, string surname, string email, string password, string userName, UIDocument document)
     {
         WWWForm form = new WWWForm();               // Creazione del form che permette l'invio dei dati al database tramite PHP
         form.AddField("nome", name);                // Inserimento nel form del nome dell'utente
         form.AddField("cognome", surname);          // Inserimento nel form del cognome dell'utente
         form.AddField("mail", email);               // Inserimento nel form dell'email dell'utente
         form.AddField("password", password);        // Inserimento nel form della password dell'utente
-        form.AddField("nomeUtente", nomeUtente);    // Inserimento nel form del nome utente dell'utente
+        form.AddField("nomeUtente", userName);    // Inserimento nel form del nome utente dell'utente
 
         // Invio dei dati tramite richiesta di invio POST al file PHP del database
         using (UnityWebRequest www = UnityWebRequest.Post("http://localhost/ArteSenzaConfini/Register_User.php", form))
@@ -93,7 +93,7 @@ public class MySqlManager : MonoBehaviour
                     PopUpManager.instance.SetDocument(document);
                     PopUpManager.instance.ShowDocument();
                     PopUpManager.instance.SetStringHeader("Registrazione effettuata");
-                    PopUpManager.instance.SetStringText("Registrazione effettuata con successo, benvenuto/a " + nomeUtente);
+                    PopUpManager.instance.SetStringText("Registrazione effettuata con successo, benvenuto/a " + userName);
                     break;
             }
         }
@@ -178,14 +178,14 @@ public class MySqlManager : MonoBehaviour
     /// <summary>
     /// Metodo che permette di effettuare il feedback inviando i dati al database tramite PHP
     /// </summary>
-    /// <param name="nomeUtente">Nome utente dell'utente</param>
+    /// <param name="userName">Nome utente dell'utente</param>
     /// <param name="feedback">Recensione dell'utente</param>
     /// <param name="document">Documento dell'interfaccia di feedback</param>
     /// <returns></returns>
-    public static IEnumerator sendToFeedback(string nomeUtente, string feedback, UIDocument document)
+    public static IEnumerator SendToFeedback(string userName, string feedback, UIDocument document)
     {
         WWWForm form = new WWWForm();                   // Creazione del form che permette l'invio dei dati al database tramite PHP
-        form.AddField("nomeUtente", nomeUtente);        // Inserimento nel form del nome utente dell'utente
+        form.AddField("nomeUtente", userName);        // Inserimento nel form del nome utente dell'utente
         form.AddField("feedback", feedback);            // Inserimento nel form della recensione dell'utente
 
         // Invio dei dati tramite richiesta di invio POST al file PHP del database

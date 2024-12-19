@@ -21,7 +21,7 @@ public class RegistrationEvents : MonoBehaviour
     private TextField textFieldSurname;         // Componente TextField del documento UXML per inserire il cognome
     private TextField textFieldEmail;           // Componente TextField del documento UXML per inserire l'email
     private TextField textFieldPassword;        // Componente TextField del documento UXML per inserire la password
-    private TextField textFieldNomeUtente;      // Componente TextField del documento UXML per inserire il nome utente
+    private TextField textFieldUsername;      // Componente TextField del documento UXML per inserire il nome utente
 
     private bool isRegistered = true;            // Variabile che permette di capire se l'interfaccia di registrazione è attiva
 
@@ -61,7 +61,7 @@ public class RegistrationEvents : MonoBehaviour
         textFieldPassword = documentRegistration.rootVisualElement.Q("PasswordRegistration") as TextField;
 
         // Inizializzazione della textField da assegnare allo specifico textfield del documento UXML di cui si sta facendo riferimento
-        textFieldNomeUtente = documentRegistration.rootVisualElement.Q("NomeutenteRegistration") as TextField;
+        textFieldUsername = documentRegistration.rootVisualElement.Q("UsernameRegistration") as TextField;
     }
 
     /// <summary>
@@ -97,7 +97,7 @@ public class RegistrationEvents : MonoBehaviour
         }
 
         // Controllo se il nome utente è nullo o uno spazio bianco o se la lunghezza è minore di 5
-        if (string.IsNullOrWhiteSpace(textFieldNomeUtente.text) || textFieldNomeUtente.text.Length < 5)
+        if (string.IsNullOrWhiteSpace(textFieldUsername.text) || textFieldUsername.text.Length < 5)
         {
             controllo = true;
         }
@@ -125,7 +125,7 @@ public class RegistrationEvents : MonoBehaviour
         {
             // Metodo che fa partire la richiesta di registrazione
             StartCoroutine(MySqlManager.instance.RegisterUser(textFieldName.text, textFieldSurname.text, textFieldEmail.text, 
-                textFieldPassword.text, textFieldNomeUtente.text, documentRegistration));
+                textFieldPassword.text, textFieldUsername.text, documentRegistration));
         }
     }
 

@@ -11,7 +11,7 @@ public class FeedbackEvents: MonoBehaviour
 
     private UIDocument document;            // Componente che collega l'oggetto ai documenti UXML per il rendering dell'interfaccia utente  
 
-    private TextField NomeUtente;               // Componente TextField del documento UXML per inserire il nome utente
+    private TextField userName;               // Componente TextField del documento UXML per inserire il nome utente
     private TextField textFieldFeedback;        // Componente TextField del documento UXML per inserire la recensione
 
     private Button buttonFeedback;              // Componente bottone del documento UXML per inviare il feedback
@@ -26,7 +26,7 @@ public class FeedbackEvents: MonoBehaviour
         document = GetComponent<UIDocument>();      // Per prendere il documento UXML assegnato all'oggetto
 
         // Inizializzazione della textField da assegnare allo specifico textfield del documento UXML di cui si sta facendo riferimento
-        NomeUtente = document.rootVisualElement.Q("NomeUtente") as TextField;
+        userName = document.rootVisualElement.Q("TextUsername") as TextField;
 
         // Inizializzazione della textField da assegnare allo specifico textfield del documento UXML di cui si sta facendo riferimento
         textFieldFeedback = document.rootVisualElement.Q("TextFeedback") as TextField;
@@ -46,7 +46,7 @@ public class FeedbackEvents: MonoBehaviour
         bool controllo = false;     // Variabile di controllo inizialmente impostata a false
 
         // Controllo se il nome utente è nullo o uno spazio bianco o se la lunghezza è minore di 5
-        if (string.IsNullOrWhiteSpace(NomeUtente.text) || NomeUtente.text.Length < 5)
+        if (string.IsNullOrWhiteSpace(userName.text) || userName.text.Length < 5)
         {
             controllo = true;
         }
@@ -75,7 +75,7 @@ public class FeedbackEvents: MonoBehaviour
         if (!controllo)
         {
             // Metodo che fa partire la richiesta di invio del feedback
-            StartCoroutine(MySqlManager.sendToFeedback(NomeUtente.text, textFieldFeedback.text, document));
+            StartCoroutine(MySqlManager.SendToFeedback(userName.text, textFieldFeedback.text, document));
         }
     }
 
