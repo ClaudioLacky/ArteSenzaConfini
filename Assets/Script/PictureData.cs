@@ -1,5 +1,8 @@
 using UnityEngine;
 
+/// <summary>
+/// Classe che contiene i dati del quadro
+/// </summary>
 public class PictureData : MonoBehaviour
 {
     public Sprite image;               // Immagine del quadro

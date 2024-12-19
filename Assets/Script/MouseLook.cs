@@ -1,14 +1,18 @@
 using UnityEngine;
 
+/// <summary>
+/// Classe che gestisce il movimento del mouse come telecamera del player
+/// </summary>
 public class MouseLook : MonoBehaviour
 {
-    public static MouseLook instance;
+    public static MouseLook instance;           // Istanza della classe
 
-    public float mouseSensitivity = 100f; // Sensibilità del mouse
+    public float mouseSensitivity = 100f;       // Sensibilità del mouse
 
-    public Transform playerBody; // Riferimento al corpo del giocatore
-    private float xRotation = 0f; // Per la rotazione verticale (su/giù)
+    public Transform playerBody;                // Riferimento al corpo del giocatore
+    private float xRotation = 0f;               // Per la rotazione verticale (su/giù)
 
+    // Metodo Start che si avvia all'esecuzione dello script
     public void Start()
     {
         instance = this;
@@ -17,6 +21,8 @@ public class MouseLook : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
     }
 
+    // Metodo che si ripete ciclicamente per controllare e fare operazioni che avviene una volta per frame
+    // e che determina cosa avviene in scena
     public void Update()
     {
         // Leggere l'input del mouse

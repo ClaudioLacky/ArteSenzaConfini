@@ -1,70 +1,67 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Security;
-using Unity.VisualScripting;
+﻿using OpenCover.Framework.Model;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
+using static UnityEngine.ParticleSystem;
 
+/// <summary>
+/// Classe che gestisce l'interfaccia del feedback
+/// </summary>
 public class FeedbackEvents: MonoBehaviour
 {
-    public static FeedbackEvents instance;
+    public static FeedbackEvents instance;      // Istanza della classe
 
-    private UIDocument document;
+    private UIDocument document;            // Componente che collega l'oggetto ai documenti UXML per il rendering dell'interfaccia utente  
 
-    private List<Button> menuButtons = new List<Button>();
+    private TextField NomeUtente;               // Componente TextField del documento UXML per inserire il nome utente
+    private TextField textFieldFeedback;        // Componente TextField del documento UXML per inserire la recensione
 
-    private AudioSource audioSource;
+    private Button buttonFeedback;              // Componente bottone del documento UXML per inviare il feedback
 
-    private TextField NomeUtente;
-    private TextField textFieldFeedback;
+    private bool isFeedback = true;             // Variabile che permette di capire se l'interfaccia di feedback è attiva
 
-    private Button buttonDescription;
-
-    private bool isFeedback = true;
-
+    // Metodo Awake rispetto a Start è chiamato al caricamento dell'oggetto e non all'esecuzione dello script
     private void Awake()
 	{
         instance = this;
 
-        //audioSource = GetComponent<AudioSource>();
-        document = GetComponent<UIDocument>();
+        document = GetComponent<UIDocument>();      // Per prendere il documento UXML assegnato all'oggetto
 
+        // Inizializzazione della textField da assegnare allo specifico textfield del documento UXML di cui si sta facendo riferimento
         NomeUtente = document.rootVisualElement.Q("NomeUtente") as TextField;
 
+        // Inizializzazione della textField da assegnare allo specifico textfield del documento UXML di cui si sta facendo riferimento
         textFieldFeedback = document.rootVisualElement.Q("TextFeedback") as TextField;
 
-        buttonDescription = document.rootVisualElement.Q("ButtonFeedback") as Button;
-        buttonDescription.RegisterCallback<ClickEvent>(OnButtonFeedback);
-
-        /*for (int i = 0; i < menuButtons.Count; i++)
-        {
-            menuButtons[i].RegisterCallback<ClickEvent>(OnAllButtonsClick);
-        }*/
+        // Inizializzazione del bottone da assegnare allo specifico bottone del documento UXML di cui si sta facendo riferimento
+        buttonFeedback = document.rootVisualElement.Q("ButtonFeedback") as Button;
+        buttonFeedback.RegisterCallback<ClickEvent>(OnButtonFeedback);      // Aggiunge un gestore di eventi in questo caso
+                                                                            // se si clicca il bottone genera un evento
     }
 
-
+    /// <summary>
+    /// Gestisce l'evento del click sul bottone che attiva le varie azioni per inviare il feedback
+    /// </summary>
+    /// <param name="evt">Registra l'evento del click</param>
     private void OnButtonFeedback(ClickEvent evt)
     {
+        bool controllo = false;     // Variabile di controllo inizialmente impostata a false
 
-        Debug.Log("ciao");
-        bool controllo = false;
-
+        // Controllo se il nome utente è nullo o uno spazio bianco o se la lunghezza è minore di 5
         if (string.IsNullOrWhiteSpace(NomeUtente.text) || NomeUtente.text.Length < 5)
         {
-            Debug.LogError("Inserire un nome Utente");
             controllo = true;
         }
 
+        // Controllo se la recensione è nulla o uno spazio bianco o se la lunghezza è minore di 5
         if (string.IsNullOrWhiteSpace(textFieldFeedback.text) || textFieldFeedback.text.Length < 5)
         {
-            Debug.LogError("Inserire una descrizione");
             controllo = true;
         }
 
+        // Se si verifica qualcuna delle condizioni sopra controllate attiva il PopUp con l'avviso all'utente di sistemare
         if (controllo)
         {
+            // Disattiva l'interfaccia del feedback e attiva quella del PopUp impostando i vari messaggi di avviso
             document.rootVisualElement.style.display = DisplayStyle.None;
             PopUpManager.instance.SetDocument(document);
             PopUpManager.instance.SetControllo(true);
@@ -75,40 +72,37 @@ public class FeedbackEvents: MonoBehaviour
             return;
         }
 
+        // Se il controllo è superato invia la recensione
         if (!controllo)
         {
-            Debug.Log("Hai premuto Crea Account Button");
-            print("Successfully Registered!");
+            // Metodo che fa partire la richiesta di invio del feedback
             StartCoroutine(MySqlManager.sendToFeedback(NomeUtente.text, textFieldFeedback.text, document));
-        }
-        else
-        {
-            print("Failed to Register description!");
         }
     }
 
+    /// <summary>
+    /// Imposta la variabile di controllo
+    /// </summary>
+    /// <param name="isFeedback">Valore da impostare alla variabile isFeedback</param>
     public void SetFeedback(bool isFeedback)
     {
         this.isFeedback = isFeedback;
     }
 
+    /// <summary>
+    /// Acquisisce la variabile di controllo
+    /// </summary>
+    /// <returns>La variabile isFeedback</returns>
     public bool GetFeedback()
     {
         return this.isFeedback;
     }
 
+    /// <summary>
+    /// Metodo che disabilita l'evento sul bottone
+    /// </summary>
     private void OnDisable()
     {
-        buttonDescription.UnregisterCallback<ClickEvent>(OnButtonFeedback);
-
-        /*for (int i = 0; i < menuButtons.Count; i++)
-        {
-            menuButtons[i].UnregisterCallback<ClickEvent>(OnAllButtonsClick);
-        }*/
+        buttonFeedback.UnregisterCallback<ClickEvent>(OnButtonFeedback);
     }
-
-    /*private void OnAllButtonsClick(ClickEvent evt)
-    {
-        audioSource.Play();
-    }*/
 }
